@@ -20,16 +20,17 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="积分 定积分定义分划 $\to$ 近似和 $\to$ 取极限 $\lambda&#x3D;max_{1\le i \le n}{\Delta x_i}$$A&#x3D;lim_{\lambda \to 0}\sum_{i&#x3D;1}^{n}f(\varepsilon_i)\Delta x_i$ $\int_a^{b}f(x)dx$有极限：黎曼可积 :$\in R[a,b]$  上下限，积分区间">
+  <meta name="description" content="定积分定义分划 $\to$ 近似和 $\to$ 取极限 $\lambda&#x3D;max_{1\le i \le n}{\Delta x_i}$$A&#x3D;lim_{\lambda \to 0}\sum_{i&#x3D;1}^{n}f(\varepsilon_i)\Delta x_i$ $\int_a^{b}f(x)dx$有极限：黎曼可积 :$\in R[a,b]$  上下限，积分区间，被积">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Konjaccc の blogs">
+<meta property="og:title" content="积分">
 <meta property="og:url" content="http://example.com/2022/03/19/higher%20mathematics/%E7%A7%AF%E5%88%86/index.html">
 <meta property="og:site_name" content="Konjaccc の blogs">
-<meta property="og:description" content="积分 定积分定义分划 $\to$ 近似和 $\to$ 取极限 $\lambda&#x3D;max_{1\le i \le n}{\Delta x_i}$$A&#x3D;lim_{\lambda \to 0}\sum_{i&#x3D;1}^{n}f(\varepsilon_i)\Delta x_i$ $\int_a^{b}f(x)dx$有极限：黎曼可积 :$\in R[a,b]$  上下限，积分区间">
+<meta property="og:description" content="定积分定义分划 $\to$ 近似和 $\to$ 取极限 $\lambda&#x3D;max_{1\le i \le n}{\Delta x_i}$$A&#x3D;lim_{\lambda \to 0}\sum_{i&#x3D;1}^{n}f(\varepsilon_i)\Delta x_i$ $\int_a^{b}f(x)dx$有极限：黎曼可积 :$\in R[a,b]$  上下限，积分区间，被积">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-03-19T02:58:33.548Z">
-<meta property="article:modified_time" content="2022-01-04T12:45:04.195Z">
+<meta property="article:modified_time" content="2022-03-19T06:17:42.194Z">
 <meta property="article:author" content="Konjaccc">
+<meta property="article:tag" content="notes">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="http://example.com/2022/03/19/higher%20mathematics/%E7%A7%AF%E5%88%86/">
@@ -45,7 +46,7 @@
   };
 </script>
 
-  <title> | Konjaccc の blogs</title>
+  <title>积分 | Konjaccc の blogs</title>
   
 
 
@@ -183,7 +184,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          
+          积分
         </h1>
 
         <div class="post-meta">
@@ -192,16 +193,19 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2022-03-19 10:58:33" itemprop="dateCreated datePublished" datetime="2022-03-19T10:58:33+08:00">2022-03-19</time>
+              <time title="创建时间：2022-03-19 10:58:33 / 修改时间：14:17:42" itemprop="dateCreated datePublished" datetime="2022-03-19T10:58:33+08:00">2022-03-19</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-01-04 20:45:04" itemprop="dateModified" datetime="2022-01-04T20:45:04+08:00">2022-01-04</time>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
               </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/higher-mathematics/" itemprop="url" rel="index"><span itemprop="name">higher mathematics</span></a>
+                </span>
+            </span>
 
           
 
@@ -214,27 +218,26 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="积分"><a href="#积分" class="headerlink" title="积分"></a>积分</h1><hr>
-<h2 id="定积分"><a href="#定积分" class="headerlink" title="定积分"></a>定积分</h2><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><p>分划 $\to$ 近似和 $\to$ 取极限</p>
+        <h2 id="定积分"><a href="#定积分" class="headerlink" title="定积分"></a>定积分</h2><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><p>分划 $\to$ 近似和 $\to$ 取极限</p>
 <p><strong>$\lambda&#x3D;max_{1\le i \le n}{\Delta x_i}$</strong><br><strong>$A&#x3D;lim_{\lambda \to 0}\sum_{i&#x3D;1}^{n}f(\varepsilon_i)\Delta x_i$</strong> $\int_a^{b}f(x)dx$<br>有极限：<strong>黎曼可积</strong> :$\in R[a,b]$</p>
 <ul>
 <li>上下限，积分区间，被积函数，积分变量 略</li>
 </ul>
 <p>教材</p>
 <ul>
-<li><input disabled="" type="checkbox"> 例5.3<h3 id="性质"><a href="#性质" class="headerlink" title="性质"></a>性质</h3><h4 id="施瓦兹不等式-Schwarz"><a href="#施瓦兹不等式-Schwarz" class="headerlink" title="施瓦兹不等式(Schwarz)"></a>施瓦兹不等式(Schwarz)</h4>$f,g \in C[a,b]:(\int_a^bf(x)g(x)dx)^2&lt;&#x3D;\int_a^bf^2(x)\cdot \int_a^bg^2(x)$</li>
+<li><input disabled type="checkbox"> 例5.3<h3 id="性质"><a href="#性质" class="headerlink" title="性质"></a>性质</h3><h4 id="施瓦兹不等式-Schwarz"><a href="#施瓦兹不等式-Schwarz" class="headerlink" title="施瓦兹不等式(Schwarz)"></a>施瓦兹不等式(Schwarz)</h4>$f,g \in C[a,b]:(\int_a^bf(x)g(x)dx)^2&lt;&#x3D;\int_a^bf^2(x)\cdot \int_a^bg^2(x)$</li>
 </ul>
 <h4 id="积分中值定理"><a href="#积分中值定理" class="headerlink" title="积分中值定理"></a>积分中值定理</h4><p>$g$不变号！</p>
 <h2 id="变上限积分"><a href="#变上限积分" class="headerlink" title="变上限积分"></a>变上限积分</h2><ul>
-<li><input disabled="" type="checkbox"> 可积的变上限积分连续，连续的变上限积分可导 <h4 id="牛顿-莱布尼兹公式-微积分基本定理"><a href="#牛顿-莱布尼兹公式-微积分基本定理" class="headerlink" title="牛顿-莱布尼兹公式(微积分基本定理)"></a>牛顿-莱布尼兹公式(微积分基本定理)</h4><h4 id="求导"><a href="#求导" class="headerlink" title="求导"></a>求导</h4>$\frac{d}{dx}\int_{\psi(x)}^{\phi(x)}f(t)dt&#x3D;f[\phi(x)]\phi’(x)-f[\psi(x)]\psi’(x)$<h2 id="不定积分"><a href="#不定积分" class="headerlink" title="不定积分"></a>不定积分</h2></li>
-<li><input disabled="" type="checkbox"> 有限个断点不改变积分<h3 id="第一换元法-凑微分法"><a href="#第一换元法-凑微分法" class="headerlink" title="第一换元法(凑微分法)"></a>第一换元法(凑微分法)</h3><h3 id="第二换元法"><a href="#第二换元法" class="headerlink" title="第二换元法"></a>第二换元法</h3><h3 id="分部积分法"><a href="#分部积分法" class="headerlink" title="分部积分法"></a>分部积分法</h3><h3 id=""><a href="#" class="headerlink" title=""></a></h3></li>
+<li><input disabled type="checkbox"> 可积的变上限积分连续，连续的变上限积分可导 <h4 id="牛顿-莱布尼兹公式-微积分基本定理"><a href="#牛顿-莱布尼兹公式-微积分基本定理" class="headerlink" title="牛顿-莱布尼兹公式(微积分基本定理)"></a>牛顿-莱布尼兹公式(微积分基本定理)</h4><h4 id="求导"><a href="#求导" class="headerlink" title="求导"></a>求导</h4>$\frac{d}{dx}\int_{\psi(x)}^{\phi(x)}f(t)dt&#x3D;f[\phi(x)]\phi’(x)-f[\psi(x)]\psi’(x)$<h2 id="不定积分"><a href="#不定积分" class="headerlink" title="不定积分"></a>不定积分</h2></li>
+<li><input disabled type="checkbox"> 有限个断点不改变积分<h3 id="第一换元法-凑微分法"><a href="#第一换元法-凑微分法" class="headerlink" title="第一换元法(凑微分法)"></a>第一换元法(凑微分法)</h3><h3 id="第二换元法"><a href="#第二换元法" class="headerlink" title="第二换元法"></a>第二换元法</h3><h3 id="分部积分法"><a href="#分部积分法" class="headerlink" title="分部积分法"></a>分部积分法</h3><h3 id><a href="#" class="headerlink" title></a></h3></li>
 </ul>
 <ul>
 <li>有理函数：部分分式之和</li>
-<li>万能代换 $t&#x3D;tan \frac x 2$<h2 id="-1"><a href="#-1" class="headerlink" title=""></a></h2><h3 id="沃利斯-Wallis-公式"><a href="#沃利斯-Wallis-公式" class="headerlink" title="沃利斯(Wallis)公式"></a>沃利斯(Wallis)公式</h3></li>
+<li>万能代换 $t&#x3D;tan \frac x 2$<h2 id="-1"><a href="#-1" class="headerlink" title></a></h2><h3 id="沃利斯-Wallis-公式"><a href="#沃利斯-Wallis-公式" class="headerlink" title="沃利斯(Wallis)公式"></a>沃利斯(Wallis)公式</h3></li>
 </ul>
 <p>$I_n&#x3D;\int_0^\frac \pi 2sin^nx&#x3D;\int_0^\frac \pi 2cos^nx&#x3D;\displaystyle\frac{(n-1)!!}{n!!}[*(\frac \pi 2),n偶]$</p>
-<h2 id="反常积分"><a href="#反常积分" class="headerlink" title="反常积分"></a>反常积分</h2><h3 id="-2"><a href="#-2" class="headerlink" title=""></a></h3><p>$\int_a^{+\infty}\displaystyle\frac{dx}{x^p} $<br>p&gt;1收敛 p&lt;&#x3D;1 发散<br>奇点：任意邻域无界</p>
+<h2 id="反常积分"><a href="#反常积分" class="headerlink" title="反常积分"></a>反常积分</h2><h3 id="-2"><a href="#-2" class="headerlink" title></a></h3><p>$\int_a^{+\infty}\displaystyle\frac{dx}{x^p} $<br>p&gt;1收敛 p&lt;&#x3D;1 发散<br>奇点：任意邻域无界</p>
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({ tex2jax: {inlineMath: [['$', '$']]}, messageStyle: "none" });
@@ -246,6 +249,9 @@
     
 
       <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/notes/" rel="tag"># notes</a>
+          </div>
 
         
 
@@ -253,8 +259,8 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2022/03/19/higher%20mathematics/%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/" rel="prev" title="">
-      <i class="fa fa-chevron-left"></i> 
+    <a href="/2022/03/19/higher%20mathematics/%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/" rel="prev" title="微分方程">
+      <i class="fa fa-chevron-left"></i> 微分方程
     </a></div>
       <div class="post-nav-item">
     <a href="/2022/03/19/higher%20mathematics/%E9%87%8D%E7%A7%AF%E5%88%86/" rel="next" title="">
@@ -318,7 +324,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%A7%AF%E5%88%86"><span class="nav-number">1.</span> <span class="nav-text">积分</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%9A%E7%A7%AF%E5%88%86"><span class="nav-number">1.1.</span> <span class="nav-text">定积分</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9A%E4%B9%89"><span class="nav-number">1.1.1.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%A7%E8%B4%A8"><span class="nav-number">1.1.2.</span> <span class="nav-text">性质</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%96%BD%E7%93%A6%E5%85%B9%E4%B8%8D%E7%AD%89%E5%BC%8F-Schwarz"><span class="nav-number">1.1.2.1.</span> <span class="nav-text">施瓦兹不等式(Schwarz)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%A7%AF%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86"><span class="nav-number">1.1.2.2.</span> <span class="nav-text">积分中值定理</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%98%E4%B8%8A%E9%99%90%E7%A7%AF%E5%88%86"><span class="nav-number">1.2.</span> <span class="nav-text">变上限积分</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%89%9B%E9%A1%BF-%E8%8E%B1%E5%B8%83%E5%B0%BC%E5%85%B9%E5%85%AC%E5%BC%8F-%E5%BE%AE%E7%A7%AF%E5%88%86%E5%9F%BA%E6%9C%AC%E5%AE%9A%E7%90%86"><span class="nav-number">1.2.0.1.</span> <span class="nav-text">牛顿-莱布尼兹公式(微积分基本定理)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%B1%82%E5%AF%BC"><span class="nav-number">1.2.0.2.</span> <span class="nav-text">求导</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86"><span class="nav-number">1.3.</span> <span class="nav-text">不定积分</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E6%8D%A2%E5%85%83%E6%B3%95-%E5%87%91%E5%BE%AE%E5%88%86%E6%B3%95"><span class="nav-number">1.3.1.</span> <span class="nav-text">第一换元法(凑微分法)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E6%8D%A2%E5%85%83%E6%B3%95"><span class="nav-number">1.3.2.</span> <span class="nav-text">第二换元法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%86%E9%83%A8%E7%A7%AF%E5%88%86%E6%B3%95"><span class="nav-number">1.3.3.</span> <span class="nav-text">分部积分法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link"><span class="nav-number">1.3.4.</span> <span class="nav-text"></span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#-1"><span class="nav-number">1.4.</span> <span class="nav-text"></span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B2%83%E5%88%A9%E6%96%AF-Wallis-%E5%85%AC%E5%BC%8F"><span class="nav-number">1.4.1.</span> <span class="nav-text">沃利斯(Wallis)公式</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%8D%E5%B8%B8%E7%A7%AF%E5%88%86"><span class="nav-number">1.5.</span> <span class="nav-text">反常积分</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#-2"><span class="nav-number">1.5.1.</span> <span class="nav-text"></span></a></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%9A%E7%A7%AF%E5%88%86"><span class="nav-number">1.</span> <span class="nav-text">定积分</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9A%E4%B9%89"><span class="nav-number">1.1.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%A7%E8%B4%A8"><span class="nav-number">1.2.</span> <span class="nav-text">性质</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%96%BD%E7%93%A6%E5%85%B9%E4%B8%8D%E7%AD%89%E5%BC%8F-Schwarz"><span class="nav-number">1.2.1.</span> <span class="nav-text">施瓦兹不等式(Schwarz)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%A7%AF%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86"><span class="nav-number">1.2.2.</span> <span class="nav-text">积分中值定理</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%98%E4%B8%8A%E9%99%90%E7%A7%AF%E5%88%86"><span class="nav-number">2.</span> <span class="nav-text">变上限积分</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%89%9B%E9%A1%BF-%E8%8E%B1%E5%B8%83%E5%B0%BC%E5%85%B9%E5%85%AC%E5%BC%8F-%E5%BE%AE%E7%A7%AF%E5%88%86%E5%9F%BA%E6%9C%AC%E5%AE%9A%E7%90%86"><span class="nav-number">2.0.1.</span> <span class="nav-text">牛顿-莱布尼兹公式(微积分基本定理)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%B1%82%E5%AF%BC"><span class="nav-number">2.0.2.</span> <span class="nav-text">求导</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86"><span class="nav-number">3.</span> <span class="nav-text">不定积分</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E6%8D%A2%E5%85%83%E6%B3%95-%E5%87%91%E5%BE%AE%E5%88%86%E6%B3%95"><span class="nav-number">3.1.</span> <span class="nav-text">第一换元法(凑微分法)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E6%8D%A2%E5%85%83%E6%B3%95"><span class="nav-number">3.2.</span> <span class="nav-text">第二换元法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%86%E9%83%A8%E7%A7%AF%E5%88%86%E6%B3%95"><span class="nav-number">3.3.</span> <span class="nav-text">分部积分法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link"><span class="nav-number">3.4.</span> <span class="nav-text"></span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#-1"><span class="nav-number">4.</span> <span class="nav-text"></span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B2%83%E5%88%A9%E6%96%AF-Wallis-%E5%85%AC%E5%BC%8F"><span class="nav-number">4.1.</span> <span class="nav-text">沃利斯(Wallis)公式</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%8D%E5%B8%B8%E7%A7%AF%E5%88%86"><span class="nav-number">5.</span> <span class="nav-text">反常积分</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#-2"><span class="nav-number">5.1.</span> <span class="nav-text"></span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -332,20 +338,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">24</span>
+          <span class="site-state-item-count">23</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>

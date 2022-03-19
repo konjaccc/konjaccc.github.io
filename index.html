@@ -464,82 +464,6 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/03/19/MCM/%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E9%9A%8F%E6%9C%BA/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Konjaccc">
-      <meta itemprop="description" content="QwQ">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Konjaccc の blogs">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/03/19/MCM/%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E9%9A%8F%E6%9C%BA/" class="post-title-link" itemprop="url">未命名</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2022-03-19 10:58:34" itemprop="dateCreated datePublished" datetime="2022-03-19T10:58:34+08:00">2022-03-19</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-12-13 09:57:09" itemprop="dateModified" datetime="2021-12-13T09:57:09+08:00">2021-12-13</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="马尔科夫链模型："><a href="#马尔科夫链模型：" class="headerlink" title="马尔科夫链模型："></a>马尔科夫链模型：</h1><p>马尔可夫链（ Markov chain），因俄国数学家安德烈·马尔可夫得名，为状态空间中经过从一个状态到另一个状态的转换的随机过程。该过程要求具备“无记忆”的性质：下一状态的概率分布只能由当前状态决定，在时间序列中它前面的事件均与之无关。这种特定类型的“无记忆性”称作马可夫性质。通俗来说，离散过程的马尔科夫性指的是当前状态仅与上一过程有关。比如我们玩一个填词游戏，我\非常\喜欢\吃\（填一词语），常规来说我们肯定是根据这句话前面所有的词语为判断依据，但马尔科夫过程简化了这一模型，认为填写的词语仅与它上一个词语“吃”有关。马尔科夫链是满足马尔科夫性质的随机过程。<br>推荐链接：<a target="_blank" rel="noopener" href="https://blog.csdn.net/lucky_kai/article/details/97394778">https://blog.csdn.net/lucky_kai/article/details/97394778</a></p>
-<h1 id="随机游走："><a href="#随机游走：" class="headerlink" title="随机游走："></a>随机游走：</h1><p>随机游走（Random Walk）又称随机游动或随机漫步。在我们生活中处处都存在着与Random Walk有关的自然现象，例如气体分子的运动，滴入水中的墨水，气味的扩散等。Random Walk是扩散过程的基础，因此它被广泛地用于对物理和化学等扩散现象的模拟上。 此外，Random Walk又是设计随机算法的一个非常广泛的工具，其中一个典型的例子就是 “马尔可夫链蒙特卡罗”法（MCMC）。MCMC是解决近似计算问题一种重要方法，它能以比确定性算法快指数级的速度提供解决问题的最好随机方法，目前已经被广泛地应用在统计领域。<br>推荐链接：<a target="_blank" rel="noopener" href="https://www.cnblogs.com/hxsyl/p/5263114.html">https://www.cnblogs.com/hxsyl/p/5263114.html</a></p>
-<h1 id="生灭过程："><a href="#生灭过程：" class="headerlink" title="生灭过程："></a>生灭过程：</h1><p>是一种特殊的离散状态的连续时间马尔可夫过程，或被称为连续时间马尔可夫链。生灭过程的特殊性在于状态为有限个或可数个，并且系统的状态变化一定是在相邻的状态之间进行的。生灭过程的极限解或稳态解有很简单的形式。 设{N（t）}，t≥0}为一个随机过程。若N（t）的概率分布具有以下性质；<br>（1）假设N（t）&#x3D;n，则从时刻t起到下一个顾客到达时刻止的时间服从参数λn的负指数分布，n&#x3D;0,1,2,…<br>（2）假设N（t）&#x3D;n，则从时刻t起到下一个顾客离去时刻止的时间服从参数μn的负指数分布，n&#x3D;0,1,2,…<br>（3）同一时刻时只有一个顾客到达或离开。<br>则称{N（t）t≥0}为一个生灭过程。<br>生灭过程是每一次状态转移都发生在相邻状态之间的齐次马氏链，生灭过程有离散时间的也有连续时间的，以连续时间的生灭过程为例： 状态的变化只可能有三种情况：加1，减1，不变行和为0。主对角线及其上下两条平行斜线上有非零元素，其它所有元素均为0<br>若是有限个状态，则最后一个状态m，只能“灭”不能“生”。<br>推荐图书：王梓坤. 生灭过程与马尔可夫链[M]. 科学出版社, 2005.<br>推荐链接：<a target="_blank" rel="noopener" href="https://blog.csdn.net/xd15010130025/article/details/88750936">https://blog.csdn.net/xd15010130025/article/details/88750936</a></p>
-<p>泊松过程及其推广：一种累计随机事件发生次数的最基本的独立增量过程。例如随着时间增长累计某电话交换台收到的呼唤次数，就构成一个泊松过程。 一个泊松过程是在每个有界的时间区间或在某个空间（例如：一个欧几里得平面或三维的欧几里得空间）中的每一个有界的区域，赋予一个随机的事件数，使得在一个时间区间或空间区域内的事件数，和另一个互斥（不重叠）的时间区间或空间区域内的事件数，这两个随机变数是独立的。在每一个时间区间或空间区域内的事件数是一个随机变数，遵循泊松分布。（技术上而言，更精确地来说，每一个具有有限测度的集合，都被赋予一个泊松分布的随机变数。）泊松过程是莱维过程（Lévy process）中最有名的过程之一。时间齐次的泊松过程也是时间齐次的连续时间Markov过程的例子。一个时间齐次、一维的泊松过程是一个纯出生过程，是一个出生-死亡过程的最简单例子。<br>推荐链接：<a target="_blank" rel="noopener" href="https://blog.csdn.net/ccnt_2012/article/details/81114920%EF%BC%88%E6%B3%8A%E6%9D%BE%E5%88%86%E5%B8%83%EF%BC%89">https://blog.csdn.net/ccnt_2012/article/details/81114920（泊松分布）</a><br>     <a target="_blank" rel="noopener" href="http://www.ruanyifeng.com/blog/2013/01/poisson_distribution.html%EF%BC%88%E6%B3%8A%E6%9D%BE%E8%BF%87%E7%A8%8B%E7%9A%84%E4%B8%80%E4%B8%AA%E9%B2%9C%E6%B4%BB%E4%BE%8B%E5%AD%90%EF%BC%89">http://www.ruanyifeng.com/blog/2013/01/poisson_distribution.html（泊松过程的一个鲜活例子）</a></p>
-<p>极大似然估计：极大似然原理的直观想法是，一个随机试验如有若干个可能的结果A，B，C，… ，若在一次试验中，结果A出现了，那么可以认为实验条件对A的出现有利，也即出现的概率P(A)较大。极大似然估计是参数估计的方法之一。说的是已知某个随机样本满足某种概率分布，但是其中具体的参数不清楚，参数估计就是通过若干次试验，观察其结果，利用结果推出参数的大概值。极大似然估计是建立在这样的思想上：已知某个参数能使这个样本出现的概率最大，我们当然不会再去选择其他小概率的样本，所以干脆就把这个参数作为估计的真实值。当然极大似然估计只是一种粗略的数学期望，要知道它的误差大小还要做区间估计。<br>推荐链接：<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/26614750">https://zhuanlan.zhihu.com/p/26614750</a></p>
-<p>最大后验估计：在贝叶斯统计学中，“最大后验概率估计”是后验概率分布的众数。利用最大后验概率估计可以获得对实验数据中无法直接观察到的量的点估计。它与最大似然估计中的经典方法有密切关系，但是它使用了一个增广的优化目标，进一步考虑了被估计量的先验概率分布。所以最大后验概率估计可以看作是正则化（regularization）的最大似然估计。<br>最大后验估计可以用以下几种方法计算：</p>
-<ol>
-<li>解析方法，当后验分布的模能够用解析解方式表示的时候用这种方法。当使用共轭先验的时候就是这种情况。</li>
-<li>通过如共扼积分法或者牛顿法这样的数值优化方法进行，这通常需要一阶或者导数，导数需要通过解析或者数值方法得到。</li>
-<li>通过期望最大化算法的修改实现，这种方法不需要后验密度的导数。<br>推荐链接：<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/40024110">https://zhuanlan.zhihu.com/p/40024110</a></li>
-</ol>
-<p>贝叶斯估计：贝叶斯估计（Bayesian estimation）是利用贝叶斯定理结合新的证据及以前的先验概率，来得到新的概率。它提供了一种计算假设概率的方法，基于假设的先验概率、给定假设下观察到不同数据的概率以及观察到的数据本身。贝叶斯估计最关键的点是可以利用贝斯定理结合新的证据及以前的先验机率，来得到新的机率（这和频率论推论相反，频率论推论只考虑证据，不考虑先验机率）。而且贝叶斯估计可以迭代使用：在观察一些证据后得到的后设机率可以当作新的先验机率，再根据新的证据得到新的后设机率。因此贝斯定理可以应用在许多不同的证据上，不论这些证据是一起出现或是不同时出现都可以，这个程序称为贝叶斯更新（Bayesian updating）。<br>推荐链接：<a target="_blank" rel="noopener" href="https://www.jianshu.com/p/9c153d82ba2d">https://www.jianshu.com/p/9c153d82ba2d</a><br>推荐教材：李航. 统计学习方法[M]. 清华大学出版社, 2012.</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/2022/03/19/Machine%20Learning/PyTorch/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1114,6 +1038,91 @@
   
   
 
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/03/19/Linear%20Algebra/%E5%AE%9E%E4%BA%8C%E6%AC%A1%E5%9E%8B/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Konjaccc">
+      <meta itemprop="description" content="QwQ">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Konjaccc の blogs">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/03/19/Linear%20Algebra/%E5%AE%9E%E4%BA%8C%E6%AC%A1%E5%9E%8B/" class="post-title-link" itemprop="url">未命名</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-03-19 10:58:33" itemprop="dateCreated datePublished" datetime="2022-03-19T10:58:33+08:00">2022-03-19</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-12-22 23:40:08" itemprop="dateModified" datetime="2021-12-22T23:40:08+08:00">2021-12-22</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="实二次型"><a href="#实二次型" class="headerlink" title="实二次型"></a>实二次型</h1><hr>
+<ul>
+<li>二次型<ul>
+<li>实二次型</li>
+<li>复二次型</li>
+<li>标准二次型</li>
+<li>规范二次型</li>
+<li>二次型的矩阵和秩</li>
+</ul>
+</li>
+<li>非奇异线性变换<ul>
+<li>矩阵合同</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="二次型"><a href="#二次型" class="headerlink" title="二次型"></a>二次型</h2><h3 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h3><p><img src="/image/2021-12-16-10-01-14.png"><br><img src="/image/2021-12-16-10-02-46.png"></p>
+<h3 id="二次型的非奇异线性变换"><a href="#二次型的非奇异线性变换" class="headerlink" title="二次型的非奇异线性变换"></a>二次型的非奇异线性变换</h3><p><img src="/image/2021-12-16-10-04-43.png"></p>
+<h3 id="化二次型为标准二次型"><a href="#化二次型为标准二次型" class="headerlink" title="化二次型为标准二次型"></a>化二次型为标准二次型</h3><p><img src="/image/2021-12-21-12-37-54.png"><br>或配方（无平方项时用平方差公式先换元）<br><em>标准二次型不唯一</em></p>
+<h3 id="惯性定理"><a href="#惯性定理" class="headerlink" title="惯性定理"></a>惯性定理</h3><p><img src="/image/2021-12-21-12-44-00.png"><br><img src="/image/2021-12-21-12-43-03.png"><br><img src="/image/2021-12-21-12-43-17.png"></p>
+<h3 id="正定二次型-amp-正定矩阵"><a href="#正定二次型-amp-正定矩阵" class="headerlink" title="正定二次型&amp;正定矩阵"></a>正定二次型&amp;正定矩阵</h3><p><img src="/image/2021-12-21-12-45-22.png"><br><img src="/image/2021-12-21-12-44-28.png"><br><img src="/image/2021-12-21-12-44-39.png"><br><img src="/image/2021-12-21-12-44-59.png"><br><img src="/image/2021-12-21-12-45-11.png"></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
 
   
   <nav class="pagination">
@@ -1183,20 +1192,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">24</span>
+          <span class="site-state-item-count">23</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
