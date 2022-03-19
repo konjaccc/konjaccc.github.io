@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="#多元函数的微分学 概念 内点&#x2F;外点&#x2F;边界点&#x2F;孤立界点 开集&#x2F;闭集 开区域(区域)&#x2F;闭区域 $E^0$ 内核 聚点(内点+边界点):$\forall \epsilon$ $\bigcup^0(p_0,\epsilon)\bigcap E\ne \emptyset$ [导集 E’]   闭集的判断  差集为开集 聚点all in E 边界点all i">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Konjaccc の blogs">
+<meta property="og:url" content="http://example.com/2022/03/19/higher%20mathematics/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E5%BE%AE%E5%88%86%E5%AD%A6/index.html">
+<meta property="og:site_name" content="Konjaccc の blogs">
+<meta property="og:description" content="#多元函数的微分学 概念 内点&#x2F;外点&#x2F;边界点&#x2F;孤立界点 开集&#x2F;闭集 开区域(区域)&#x2F;闭区域 $E^0$ 内核 聚点(内点+边界点):$\forall \epsilon$ $\bigcup^0(p_0,\epsilon)\bigcap E\ne \emptyset$ [导集 E’]   闭集的判断  差集为开集 聚点all in E 边界点all i">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/2022-02-16-15-29-58.png">
+<meta property="og:image" content="http://example.com/2022-02-16-15-36-55.png">
+<meta property="og:image" content="http://example.com/2022-03-11-08-16-36.png">
+<meta property="og:image" content="http://example.com/2022-03-11-08-33-12.png">
+<meta property="article:published_time" content="2022-03-19T02:58:33.445Z">
+<meta property="article:modified_time" content="2022-03-14T01:32:13.123Z">
+<meta property="article:author" content="Konjaccc">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2022-02-16-15-29-58.png">
+
+<link rel="canonical" href="http://example.com/2022/03/19/higher%20mathematics/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E5%BE%AE%E5%88%86%E5%AD%A6/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title> | Konjaccc の blogs</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Konjaccc の blogs</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-resources">
+
+    <a href="/resources/" rel="section"><i class="download fa-fw"></i>resources</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/03/19/higher%20mathematics/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E5%BE%AE%E5%88%86%E5%AD%A6/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Konjaccc">
+      <meta itemprop="description" content="QwQ">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Konjaccc の blogs">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-03-19 10:58:33" itemprop="dateCreated datePublished" datetime="2022-03-19T10:58:33+08:00">2022-03-19</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-03-14 09:32:13" itemprop="dateModified" datetime="2022-03-14T09:32:13+08:00">2022-03-14</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h2 id="多元函数的微分学"><a href="#多元函数的微分学" class="headerlink" title="#多元函数的微分学"></a>#多元函数的微分学</h2><blockquote>
+<p>概念<br> 内点&#x2F;外点&#x2F;边界点&#x2F;孤立界点<br> 开集&#x2F;闭集<br> 开区域(区域)&#x2F;闭区域<br> $E^0$ 内核<br> 聚点(内点+边界点):$\forall \epsilon$ $\bigcup^0(p_0,\epsilon)\bigcap E\ne \emptyset$ [导集 E’]</p>
+</blockquote>
+<ul>
+<li><p>闭集的判断</p>
+<ul>
+<li>差集为开集</li>
+<li>聚点all in E</li>
+<li>边界点all in E</li>
+</ul>
+</li>
+<li><p>联通: 道路(曲线)连接</p>
+</li>
+<li><p>tip<br>$\emptyset$ 又开又闭</p>
+</li>
+</ul>
+<h2 id="多元函数"><a href="#多元函数" class="headerlink" title="多元函数"></a>多元函数</h2><blockquote>
+<p>概念<br> (二重)极限<br> 二次极限&#x2F;累次极限 %两种，先把y看出$\ne y_0$ 的常数</p>
+</blockquote>
+<ul>
+<li><p>极限的定义法证明<br>由特殊路径得A，把$|f(x,y)-A|$放大至$g(x-x_0,y-y_0)$&lt;$\epsilon$<br><em>ps:注意放大条件(分母)</em></p>
+</li>
+<li><p>特殊路径分析<br>令分母&#x3D;$kx^m$ 求m使<code>lim</code>与k有关<br>ps:注意m的存在性</p>
+</li>
+<li><p>极限不存在的判断<br>$(x,y)$沿不同路径逼近$(x_0,y_0)$时函数$f(x,y)$趋向于不同的值</p>
+</li>
+</ul>
+<h3 id="二重极限与二次极限"><a href="#二重极限与二次极限" class="headerlink" title="二重极限与二次极限"></a>二重极限与二次极限</h3><ul>
+<li>二次极限存在且首次极限存在时 二重极限与二次极限相等</li>
+</ul>
+<ul>
+<li><input disabled="" type="checkbox"> &#x3D;&#x3D;反例*4&#x3D;&#x3D;</li>
+</ul>
+<h3 id="二重极限的性质"><a href="#二重极限的性质" class="headerlink" title="二重极限的性质"></a>二重极限的性质</h3><p>有界性&#x2F;最值定理&#x2F;零点存在定理&#x2F;介值定理</p>
+<p>tip:零点存在定理：两点间任意路径存在零点</p>
+<ul>
+<li><p>[ ]<br>  <img src="/2022-02-16-15-29-58.png"><br>$\lim_{(x,y)\to (0,0)e^{}}$</p>
+</li>
+<li><p>[ ]<br><img src="/2022-02-16-15-36-55.png"></p>
+<h3 id="一阶全微分"><a href="#一阶全微分" class="headerlink" title="一阶全微分"></a>一阶全微分</h3><p>形式不变性</p>
+</li>
+</ul>
+<h3 id="隐函数的导数存在性"><a href="#隐函数的导数存在性" class="headerlink" title="隐函数的导数存在性"></a>隐函数的导数存在性</h3><p>Jacobi行列式<br><img src="/2022-03-11-08-16-36.png"></p>
+<hr>
+<h3 id="方向导数"><a href="#方向导数" class="headerlink" title="方向导数"></a>方向导数</h3><ul>
+<li>注意 课本定义为 <code>双向</code>;其它定义为<code>单项</code>(t&gt;0)<h3 id="梯度"><a href="#梯度" class="headerlink" title="梯度"></a>梯度</h3></li>
+</ul>
+<h3 id="几何应用"><a href="#几何应用" class="headerlink" title="几何应用"></a>几何应用</h3><h2 id=""><a href="#" class="headerlink" title=""></a><img src="/2022-03-11-08-33-12.png"></h2><h3 id="二元Taylor"><a href="#二元Taylor" class="headerlink" title="二元Taylor"></a>二元Taylor</h3><p>$f(x,y)$在$P_0(x_0,y_0)$的领域内有<code>n+1</code>阶连续偏导数</p>
+<p>$f(x_0+\Delta x,y_0+\Delta y)&#x3D;\sum_{k&#x3D;0}^n \frac{1}{k !}(\Delta x\frac{\partial x}+\Delta y\frac{\partial}{\partial y})^k f|_{(x_0,y_0)}+R_n$</p>
+<ul>
+<li><p>Lagrange余项 $R_n&#x3D;\frac{1}{(n+1)!}(\Delta x\frac{\partial x}+\Delta y\frac{\partial}{\partial y})^{n+1} f|_{(x_0+\theta \Delta x,y_0+ \theta \Delta y)}$</p>
+</li>
+<li><p>Peano余项 $R_n&#x3D;o(\rho^n)$ $\rho&#x3D;\sqrt{(\Delta x)^2+(\Delta y)^2}$</p>
+<blockquote>
+<p>只要求n阶连续偏导数</p>
+</blockquote>
+</li>
+</ul>
+<p>Lagrange中值定理 $f(x_0+\Delta x,y_0+\Delta y)-f(x_0,y_0)&#x3D;f_x(x_0+\theta \Delta x,y_0+ \theta \Delta y)\Delta x+f_y(x_0+\theta \Delta x,y_0+ \theta \Delta y)\Delta y$</p>
+<blockquote>
+<p>Lagrange取n&#x3D;0</p>
+</blockquote>
+<blockquote>
+<p>$\theta \in (0,1)$</p>
+</blockquote>
+<p><em>Maclaurin $x_0&#x3D;0,y_0&#x3D;0$</em></p>
+<h3 id="极值"><a href="#极值" class="headerlink" title="极值"></a>极值</h3><p>对于驻点($f_x&#x3D;0,f_y&#x3D;0$)<br>考虑<br>$A&#x3D;f_{xx};B&#x3D;f_{xy}&#x3D;f_{yx};C&#x3D;f_{yy}$<br>$H&#x3D;AC-B^2$</p>
+<blockquote>
+<p>Hessel行列式？？名字忘了</p>
+</blockquote>
+<ul>
+<li>H&gt;0 有极值<ul>
+<li>A&gt;0 极小值</li>
+<li>A&lt;0 极大值</li>
+</ul>
+</li>
+<li>H&lt;0 无极值</li>
+<li>H&#x3D;0 不知道(不能通过这个方法确定)</li>
+</ul>
+<h4 id="推广-f-x-1-x-2-cdots-x-n"><a href="#推广-f-x-1-x-2-cdots-x-n" class="headerlink" title="推广 $f(x_1,x_2 \cdots x_n)$"></a>推广 $f(x_1,x_2 \cdots x_n)$</h4><p>求出拐点 $f_0$ 处 H&#x3D;<br>$$<br>\begin{bmatrix}<br>f_{11} &amp; f_{12} &amp; \cdots &amp; f_{1n} \<br>f_{21} &amp; f_{22} &amp; \cdots &amp; f_{2n} \<br>\vdots &amp; \vdots &amp; \ddots &amp; \vdots \<br>f_{n1} &amp; f_{n2} &amp; \cdots &amp; f_{nn} \<br>\end{bmatrix}z<br>$$ </p>
+<blockquote>
+<p>两重导</p>
+</blockquote>
+<ul>
+<li>H正定：极小</li>
+<li>H负定：极大</li>
+</ul>
+<h3 id="最值"><a href="#最值" class="headerlink" title="最值"></a>最值</h3><p>驻点极值和边界和断点(线)</p>
+<ul>
+<li>不要忘了边界的边界！！</li>
+</ul>
+<h4 id="最小二乘法"><a href="#最小二乘法" class="headerlink" title="最小二乘法"></a>最小二乘法</h4><p>略</p>
+<h3 id="条件极值"><a href="#条件极值" class="headerlink" title="条件极值"></a>条件极值</h3><blockquote>
+<p>Lagrange乘数法 转化为无条件极值问题</p>
+</blockquote>
+<ul>
+<li>用条件换元  : 有些时候难以实现</li>
+<li>Lagrange 乘数法 : 隐函数</li>
+</ul>
+<p>$-\lambda_1&#x3D;\displaystyle\frac{f_z}{\phi_z^1}|_{(x_0,y_0,z_0)}$<br>（m个$\lambda$）</p>
+<p>$L(x,y,z,\lambda)&#x3D;f(x,y,z)+\lambda\phi(x,y,z)$</p>
+<p>所有偏导数为0</p>
+<p><strong>$\displaystyle\frac{f_x}{\phi_x}&#x3D;\displaystyle\frac{f_y}{\phi_y}&#x3D;\cdots$</strong><br>代入约束</p>
+<blockquote>
+<p>$\lambda$:Lagrange 乘数(乘子)</p>
+</blockquote>
+<h4 id="必要条件"><a href="#必要条件" class="headerlink" title="必要条件"></a>必要条件</h4><p>用L算$\Delta f$<br>定义<br>$$<br>H&#x3D;<br>\begin{bmatrix}<br>f_{11} &amp; f_{12} &amp; \cdots &amp; f_{1n} \<br>f_{21} &amp; f_{22} &amp; \cdots &amp; f_{2n} \<br>\vdots &amp; \vdots &amp; \ddots &amp; \vdots \<br>f_{n1} &amp; f_{n2} &amp; \cdots &amp; f_{nn} \<br>\end{bmatrix}<br>$$ </p>
+<blockquote>
+<p>Hesse矩阵</p>
+</blockquote>
+<ul>
+<li>正定 极小值</li>
+<li>负定 极大值</li>
+<li>不定 no<br>$H(p_0)$</li>
+</ul>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({ tex2jax: {inlineMath: [['$', '$']]}, messageStyle: "none" });
+</script>
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2022/03/19/higher%20mathematics/%E5%90%91%E9%87%8F%E4%B8%8E%E7%A9%BA%E9%97%B4%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95/" rel="prev" title="">
+      <i class="fa fa-chevron-left"></i> 
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2022/03/19/higher%20mathematics/%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/" rel="next" title="">
+       <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E5%BE%AE%E5%88%86%E5%AD%A6"><span class="nav-number">1.</span> <span class="nav-text">#多元函数的微分学</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0"><span class="nav-number">2.</span> <span class="nav-text">多元函数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%8C%E9%87%8D%E6%9E%81%E9%99%90%E4%B8%8E%E4%BA%8C%E6%AC%A1%E6%9E%81%E9%99%90"><span class="nav-number">2.1.</span> <span class="nav-text">二重极限与二次极限</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%8C%E9%87%8D%E6%9E%81%E9%99%90%E7%9A%84%E6%80%A7%E8%B4%A8"><span class="nav-number">2.2.</span> <span class="nav-text">二重极限的性质</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%80%E9%98%B6%E5%85%A8%E5%BE%AE%E5%88%86"><span class="nav-number">2.3.</span> <span class="nav-text">一阶全微分</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%9A%90%E5%87%BD%E6%95%B0%E7%9A%84%E5%AF%BC%E6%95%B0%E5%AD%98%E5%9C%A8%E6%80%A7"><span class="nav-number">2.4.</span> <span class="nav-text">隐函数的导数存在性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%B9%E5%90%91%E5%AF%BC%E6%95%B0"><span class="nav-number">2.5.</span> <span class="nav-text">方向导数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A2%AF%E5%BA%A6"><span class="nav-number">2.6.</span> <span class="nav-text">梯度</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%87%A0%E4%BD%95%E5%BA%94%E7%94%A8"><span class="nav-number">2.7.</span> <span class="nav-text">几何应用</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link"><span class="nav-number">3.</span> <span class="nav-text"></span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%8C%E5%85%83Taylor"><span class="nav-number">3.1.</span> <span class="nav-text">二元Taylor</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9E%81%E5%80%BC"><span class="nav-number">3.2.</span> <span class="nav-text">极值</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%8E%A8%E5%B9%BF-f-x-1-x-2-cdots-x-n"><span class="nav-number">3.2.1.</span> <span class="nav-text">推广 $f(x_1,x_2 \cdots x_n)$</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%80%E5%80%BC"><span class="nav-number">3.3.</span> <span class="nav-text">最值</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9C%80%E5%B0%8F%E4%BA%8C%E4%B9%98%E6%B3%95"><span class="nav-number">3.3.1.</span> <span class="nav-text">最小二乘法</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9D%A1%E4%BB%B6%E6%9E%81%E5%80%BC"><span class="nav-number">3.4.</span> <span class="nav-text">条件极值</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%BF%85%E8%A6%81%E6%9D%A1%E4%BB%B6"><span class="nav-number">3.4.1.</span> <span class="nav-text">必要条件</span></a></li></ol></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Konjaccc</p>
+  <div class="site-description" itemprop="description">QwQ</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">24</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Konjaccc</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
