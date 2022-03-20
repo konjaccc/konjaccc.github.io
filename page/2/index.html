@@ -317,16 +317,16 @@ a_1 & a_2 & \cdots & a_n \\
 <li>性质<br>  $(A_1A_2\cdots A_n)^{T}=A_n^T \cdots A_2^T<em>A_1^T$<br>  对称矩阵$A^T=A$;反对称矩阵$A^T=-A$   //判定常用
   </em>tips:$A=(A+A^T)/2+(A-A^T)/2$*</li>
 </ul>
-<h3 id="迹"><a href="#迹" class="headerlink" title="迹"></a>迹</h3><p>  $tr(A)=\sum<em>{i=1}^{n} a</em>{ii}$</p>
+<h3 id="迹"><a href="#迹" class="headerlink" title="迹"></a>迹</h3><p>  $tr(A)=\sum_{i=1}^{n} a_{ii}$</p>
 <ul>
 <li>性质 tr(AB)=tr(BA)</li>
 </ul>
 <hr>
 <h2 id="行列式"><a href="#行列式" class="headerlink" title="行列式"></a>行列式</h2><pre><code>|ai,j|n |A| detA
-</code></pre><p><strong>$D=\sum<em>{j_1j_2\cdots j_n}(-1)^{\zeta(i_1i_2\cdots i_n)+\zeta(j_1j_2\cdots j_n)}a</em>{i<em>1j_1}a</em>{i<em>2j_2}\cdots a</em>{i_nj_n}$</strong><br><em>$\zeta$表示逆序数对</em></p>
+</code></pre><p><strong>$D=\sum_{j_1j_2\cdots j_n}(-1)^{\zeta(i_1i_2\cdots i_n)+\zeta(j_1j_2\cdots j_n)}a_{i_1j_1}a_{i_2j_2}\cdots a_{i_nj_n}$</strong><br><em>$\zeta$表示逆序数对</em></p>
 <ul>
-<li>$M<em>{i,j}$:元素$a</em>{i,j}$的余子式：划掉i行j列后的行列式</li>
-<li>$A<em>{i,j}$:代数余子式：=$(-1)^{i+j}M</em>{i,j}$<br><strong>$|A|=\sum<em>{k=1}^n a</em>{1,k}A_{1,k}$</strong>  //任意行列均可<br>$|A_n^*|=|A|^{n-1}$</li>
+<li>$M_{i,j}$:元素$a_{i,j}$的余子式：划掉i行j列后的行列式</li>
+<li>$A_{i,j}$:代数余子式：=$(-1)^{i+j}M_{i,j}$<br><strong>$|A|=\sum_{k=1}^n a_{1,k}A_{1,k}$</strong>  //任意行列均可<br>$|A_n^*|=|A|^{n-1}$</li>
 </ul>
 <h4 id="性质"><a href="#性质" class="headerlink" title="性质"></a>性质</h4><ul>
 <li>$|A|=|A^T|$</li>
@@ -349,9 +349,9 @@ x_1^{n-1} & x_2^{n-1} & \cdots & x_n^{n-1} \\
 0 & x_2(x_2-x_1) & \cdots & x_n(x_n-x_1) \\
 \vdots & \vdots & \ddots & \vdots \\
 0 & x_2^{n-2}(x_2-x_1) & \cdots & x_n^{n-1}(x_n-x_1) \\
-\end{bmatrix}</script><strong>$D<em>n=(x_2-x_1)\cdots(x_n-x_1)D</em>{n-1}=\cdots=\prod_{1\le j&lt;i\le n}(x_i-x_j)$</strong></li>
+\end{bmatrix}</script><strong>$D_n=(x_2-x_1)\cdots(x_n-x_1)D_{n-1}=\cdots=\prod_{1\le j&lt;i\le n}(x_i-x_j)$</strong></li>
 </ul>
-<h4 id="拉普拉斯定理"><a href="#拉普拉斯定理" class="headerlink" title="拉普拉斯定理"></a>拉普拉斯定理</h4><p>D(n,n):在D中任意取k行，由这k行元素所组成的全体k阶子式记作$M<em>1,M_2\cdots M_t$ $t=\mathbb{C}_n^k $<br>$D=\sum</em>{i=1}^tM_iA_i$  <em>A为对应的代数余子式</em></p>
+<h4 id="拉普拉斯定理"><a href="#拉普拉斯定理" class="headerlink" title="拉普拉斯定理"></a>拉普拉斯定理</h4><p>D(n,n):在D中任意取k行，由这k行元素所组成的全体k阶子式记作$M_1,M_2\cdots M_t$ $t=\mathbb{C}_n^k $<br>$D=\sum_{i=1}^tM_iA_i$  <em>A为对应的代数余子式</em></p>
 <hr>
 <h2 id="可逆矩阵"><a href="#可逆矩阵" class="headerlink" title="可逆矩阵"></a>可逆矩阵</h2><pre><code>AB=BA=E B=A^-1
 </code></pre><ul>
@@ -370,7 +370,7 @@ x_1^{n-1} & x_2^{n-1} & \cdots & x_n^{n-1} \\
 <ul>
 <li>性质:可逆:逆变换易求</li>
 <li>定理:$A_{mn} 存在R_iR_i-1…R_1A为阶梯矩阵;存在R_iR_i-1…R_1AC_1C_2…C_j为标准矩阵$</li>
-<li>推论:$A_{mn} 存在P_mAQ_n为标准矩阵;PQ可逆;r=r(A)$<br>推论:矩阵乘以一个可逆阵，秩不变<h4 id="初等变换法求逆矩阵："><a href="#初等变换法求逆矩阵：" class="headerlink" title="初等变换法求逆矩阵："></a>初等变换法求逆矩阵：</h4>A可逆 $存在R<em>iR_i-1…R_1A=E A=R_1^{-1}…R</em>{i-1}^{-1}$  充要<br>★求逆矩阵的初等变换法: 构造分块矩阵$[A E]使R_1R_2…R_s[A,E]=[E A^-1]$<br>或者竖着拼进行初等列变换<br>可由此求方程组的解 [A|B] 初等行变换 $[E|A^{-1}B]$</li>
+<li>推论:$A_{mn} 存在P_mAQ_n为标准矩阵;PQ可逆;r=r(A)$<br>推论:矩阵乘以一个可逆阵，秩不变<h4 id="初等变换法求逆矩阵："><a href="#初等变换法求逆矩阵：" class="headerlink" title="初等变换法求逆矩阵："></a>初等变换法求逆矩阵：</h4>A可逆 $存在R_iR_i-1…R_1A=E A=R_1^{-1}…R_{i-1}^{-1}$  充要<br>★求逆矩阵的初等变换法: 构造分块矩阵$[A E]使R_1R_2…R_s[A,E]=[E A^-1]$<br>或者竖着拼进行初等列变换<br>可由此求方程组的解 [A|B] 初等行变换 $[E|A^{-1}B]$</li>
 </ul>
 <hr>
 <h2 id="秩"><a href="#秩" class="headerlink" title="秩"></a>秩</h2><pre><code>r：存在一个r阶子式行列式不为零，且所有r+1阶子式行列式全为零
@@ -875,7 +875,7 @@ x_1^{n-1} & x_2^{n-1} & \cdots & x_n^{n-1} \\
 
       
           <h2 id="定积分"><a href="#定积分" class="headerlink" title="定积分"></a>定积分</h2><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><p>分划 $\to$ 近似和 $\to$ 取极限</p>
-<p><strong>$\lambda=max_{1\le i \le n}{\Delta x_i}$</strong><br><strong>$A=lim<em>{\lambda \to 0}\sum</em>{i=1}^{n}f(\varepsilon_i)\Delta x_i$</strong> $\int_a^{b}f(x)dx$<br>有极限：<strong>黎曼可积</strong> :$\in R[a,b]$</p>
+<p><strong>$\lambda=max_{1\le i \le n}{\Delta x_i}$</strong><br><strong>$A=lim_{\lambda \to 0}\sum_{i=1}^{n}f(\varepsilon_i)\Delta x_i$</strong> $\int_a^{b}f(x)dx$<br>有极限：<strong>黎曼可积</strong> :$\in R[a,b]$</p>
 <ul>
 <li>上下限，积分区间，被积函数，积分变量 略</li>
 </ul>
@@ -1183,9 +1183,9 @@ a_2x+b_2y+c_2=0 \\
 <li>注意 课本定义为 <code>双向</code>;其它定义为<code>单项</code>(t&gt;0)<h3 id="梯度"><a href="#梯度" class="headerlink" title="梯度"></a>梯度</h3></li>
 </ul>
 <h3 id="几何应用"><a href="#几何应用" class="headerlink" title="几何应用"></a>几何应用</h3><h2 id><a href="#" class="headerlink" title></a><img src="/2022/03/19/higher%20mathematics/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E5%BE%AE%E5%88%86%E5%AD%A6/2022-03-11-08-33-12.png" alt></h2><h3 id="二元Taylor"><a href="#二元Taylor" class="headerlink" title="二元Taylor"></a>二元Taylor</h3><p>$f(x,y)$在$P_0(x_0,y_0)$的领域内有<code>n+1</code>阶连续偏导数</p>
-<p>$f(x<em>0+\Delta x,y_0+\Delta y)=\sum</em>{k=0}^n \frac{1}{k !}(\Delta x\frac{\partial x}+\Delta y\frac{\partial}{\partial y})^k f|_{(x_0,y_0)}+R_n$</p>
+<p>$f(x_0+\Delta x,y_0+\Delta y)=\sum_{k=0}^n \frac{1}{k !}(\Delta x\frac{\partial x}+\Delta y\frac{\partial}{\partial y})^k f|_{(x_0,y_0)}+R_n$</p>
 <ul>
-<li><p>Lagrange余项 $R<em>n=\frac{1}{(n+1)!}(\Delta x\frac{\partial x}+\Delta y\frac{\partial}{\partial y})^{n+1} f|</em>{(x_0+\theta \Delta x,y_0+ \theta \Delta y)}$</p>
+<li><p>Lagrange余项 $R_n=\frac{1}{(n+1)!}(\Delta x\frac{\partial x}+\Delta y\frac{\partial}{\partial y})^{n+1} f|_{(x_0+\theta \Delta x,y_0+ \theta \Delta y)}$</p>
 </li>
 <li><p>Peano余项 $R_n=o(\rho^n)$ $\rho=\sqrt{(\Delta x)^2+(\Delta y)^2}$</p>
 <blockquote>
@@ -1199,7 +1199,7 @@ a_2x+b_2y+c_2=0 \\
 <p>$\theta \in (0,1)$</p>
 </blockquote>
 <p><em>Maclaurin $x_0=0,y_0=0$</em></p>
-<h3 id="极值"><a href="#极值" class="headerlink" title="极值"></a>极值</h3><p>对于驻点($f<em>x=0,f_y=0$)<br>考虑<br>$A=f</em>{xx};B=f<em>{xy}=f</em>{yx};C=f_{yy}$<br>$H=AC-B^2$</p>
+<h3 id="极值"><a href="#极值" class="headerlink" title="极值"></a>极值</h3><p>对于驻点($f_x=0,f_y=0$)<br>考虑<br>$A=f_{xx};B=f_{xy}=f_{yx};C=f_{yy}$<br>$H=AC-B^2$</p>
 <blockquote>
 <p>Hessel行列式？？名字忘了</p>
 </blockquote>
@@ -1238,7 +1238,7 @@ f_{n1} & f_{n2} & \cdots & f_{nn} \\
 <li>用条件换元  : 有些时候难以实现</li>
 <li>Lagrange 乘数法 : 隐函数</li>
 </ul>
-<p>$-\lambda<em>1=\displaystyle\frac{f_z}{\phi_z^1}|</em>{(x_0,y_0,z_0)}$<br>（m个$\lambda$）</p>
+<p>$-\lambda_1=\displaystyle\frac{f_z}{\phi_z^1}|_{(x_0,y_0,z_0)}$<br>（m个$\lambda$）</p>
 <p>$L(x,y,z,\lambda)=f(x,y,z)+\lambda\phi(x,y,z)$</p>
 <p>所有偏导数为0</p>
 <p><strong>$\displaystyle\frac{f_x}{\phi_x}=\displaystyle\frac{f_y}{\phi_y}=\cdots$</strong><br>代入约束</p>
