@@ -20,20 +20,21 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="多元函数的微分学  概念 内点&#x2F;外点&#x2F;边界点&#x2F;孤立界点 开集&#x2F;闭集 开区域(区域)&#x2F;闭区域 $E^0$ 内核 聚点(内点+边界点):$\forall \epsilon$ $\bigcup^0(p_0,\epsilon)\bigcap E\ne \emptyset$ [导集 E’]   闭集的判断  差集为开集 聚点all in E 边界点all in E   联通: 道路(曲线)连接  tip$\">
+  <meta name="description" content="概念 内点($E^0$ 内核)&#x2F;外点&#x2F;边界点&#x2F;孤立界点 开集&#x2F;闭集 开区域(区域)&#x2F;闭区域 聚点(内点+边界点):$\forall \epsilon$ $\bigcup^0(p_0,\epsilon)\bigcap E\ne \emptyset$ [导集 E’]   闭集的判断  差集为开集 聚点all in E 边界点all in E   联通: 道路(曲线)连接  tip$\emptyset">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Konjaccc の blogs">
+<meta property="og:title" content="多元函数的微分学">
 <meta property="og:url" content="http://example.com/2022/03/19/higher%20mathematics/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E5%BE%AE%E5%88%86%E5%AD%A6/index.html">
 <meta property="og:site_name" content="Konjaccc の blogs">
-<meta property="og:description" content="多元函数的微分学  概念 内点&#x2F;外点&#x2F;边界点&#x2F;孤立界点 开集&#x2F;闭集 开区域(区域)&#x2F;闭区域 $E^0$ 内核 聚点(内点+边界点):$\forall \epsilon$ $\bigcup^0(p_0,\epsilon)\bigcap E\ne \emptyset$ [导集 E’]   闭集的判断  差集为开集 聚点all in E 边界点all in E   联通: 道路(曲线)连接  tip$\">
+<meta property="og:description" content="概念 内点($E^0$ 内核)&#x2F;外点&#x2F;边界点&#x2F;孤立界点 开集&#x2F;闭集 开区域(区域)&#x2F;闭区域 聚点(内点+边界点):$\forall \epsilon$ $\bigcup^0(p_0,\epsilon)\bigcap E\ne \emptyset$ [导集 E’]   闭集的判断  差集为开集 聚点all in E 边界点all in E   联通: 道路(曲线)连接  tip$\emptyset">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/2022/03/19/higher%20mathematics/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E5%BE%AE%E5%88%86%E5%AD%A6/2022-02-16-15-29-58.png">
 <meta property="og:image" content="http://example.com/2022/03/19/higher%20mathematics/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E5%BE%AE%E5%88%86%E5%AD%A6/2022-02-16-15-36-55.png">
 <meta property="og:image" content="http://example.com/2022/03/19/higher%20mathematics/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E5%BE%AE%E5%88%86%E5%AD%A6/2022-03-11-08-16-36.png">
 <meta property="og:image" content="http://example.com/2022/03/19/higher%20mathematics/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E5%BE%AE%E5%88%86%E5%AD%A6/2022-03-11-08-33-12.png">
 <meta property="article:published_time" content="2022-03-19T02:58:33.445Z">
-<meta property="article:modified_time" content="2022-03-19T13:33:31.531Z">
+<meta property="article:modified_time" content="2022-03-20T11:01:31.514Z">
 <meta property="article:author" content="Konjaccc">
+<meta property="article:tag" content="notes">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/2022/03/19/higher%20mathematics/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E5%BE%AE%E5%88%86%E5%AD%A6/2022-02-16-15-29-58.png">
 
@@ -50,7 +51,7 @@
   };
 </script>
 
-  <title> | Konjaccc の blogs</title>
+  <title>多元函数的微分学 | Konjaccc の blogs</title>
   
 
 
@@ -190,7 +191,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          
+          多元函数的微分学
         </h1>
 
         <div class="post-meta">
@@ -199,9 +200,24 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2022-03-19 10:58:33 / 修改时间：21:33:31" itemprop="dateCreated datePublished" datetime="2022-03-19T10:58:33+08:00">2022-03-19</time>
+              <time title="创建时间：2022-03-19 10:58:33" itemprop="dateCreated datePublished" datetime="2022-03-19T10:58:33+08:00">2022-03-19</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-03-20 19:01:31" itemprop="dateModified" datetime="2022-03-20T19:01:31+08:00">2022-03-20</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/higher-mathematics/" itemprop="url" rel="index"><span itemprop="name">higher mathematics</span></a>
+                </span>
             </span>
 
           
@@ -215,9 +231,8 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="多元函数的微分学"><a href="#多元函数的微分学" class="headerlink" title="多元函数的微分学"></a>多元函数的微分学</h1><hr>
-<blockquote>
-<p>概念<br> 内点/外点/边界点/孤立界点<br> 开集/闭集<br> 开区域(区域)/闭区域<br> $E^0$ 内核<br> 聚点(内点+边界点):$\forall \epsilon$ $\bigcup^0(p_0,\epsilon)\bigcap E\ne \emptyset$ [导集 E’]</p>
+        <blockquote>
+<p>概念<br> 内点($E^0$ 内核)/外点/边界点/孤立界点<br> 开集/闭集<br> 开区域(区域)/闭区域<br> 聚点(内点+边界点):$\forall \epsilon$ $\bigcup^0(p_0,\epsilon)\bigcap E\ne \emptyset$ [导集 E’]</p>
 </blockquote>
 <ul>
 <li><p>闭集的判断</p>
@@ -249,7 +264,7 @@
 <ul>
 <li>[ ] ==反例*4==</li>
 </ul>
-<h3 id="二重极限的性质"><a href="#二重极限的性质" class="headerlink" title="二重极限的性质"></a>二重极限的性质</h3><p>有界性/最值定理/零点存在定理/介值定理</p>
+<h3 id="二元函数的连续性"><a href="#二元函数的连续性" class="headerlink" title="二元函数的连续性"></a>二元函数的连续性</h3><p>有界性/最值定理/零点存在定理/介值定理</p>
 <p>tip:零点存在定理：两点间任意路径存在零点</p>
 <ul>
 <li><p>[ ]<br><img src="/2022/03/19/higher%20mathematics/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E5%BE%AE%E5%88%86%E5%AD%A6/2022-02-16-15-29-58.png" alt><br>$\lim_{(x,y)\to (0,0)e^{}}$</p>
@@ -257,12 +272,38 @@
 <li><p>[ ]<br><img src="/2022/03/19/higher%20mathematics/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E5%BE%AE%E5%88%86%E5%AD%A6/2022-02-16-15-36-55.png" alt></p>
 </li>
 </ul>
+<h2 id="求导"><a href="#求导" class="headerlink" title="求导"></a>求导</h2><h3 id="偏导"><a href="#偏导" class="headerlink" title="偏导"></a>偏导</h3><p>当$f(x,y)$的两个二阶混合偏导数在点$(x,y)$处连续 ： $f_{xy}(x,y)=f_{yx}(x,y)$</p>
+<p>全导数：略</p>
 <h3 id="一阶全微分"><a href="#一阶全微分" class="headerlink" title="一阶全微分"></a>一阶全微分</h3><p>形式不变性</p>
-<h3 id="隐函数的导数存在性"><a href="#隐函数的导数存在性" class="headerlink" title="隐函数的导数存在性"></a>隐函数的导数存在性</h3><p>Jacobi行列式<br><img src="/2022/03/19/higher%20mathematics/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E5%BE%AE%E5%88%86%E5%AD%A6/2022-03-11-08-16-36.png" alt></p>
+<h3 id="一些关系"><a href="#一些关系" class="headerlink" title="一些关系"></a>一些关系</h3><p>偏导数均连续 ➡ 可微 ➡ 连续+可偏导</p>
+<h3 id="隐函数存在定理"><a href="#隐函数存在定理" class="headerlink" title="隐函数存在定理"></a>隐函数存在定理</h3><p>$F(x_0,y_0)=0$ $F_y(x_0,y_0)\ne 0$<br>$\to$ 确定唯一函数，且$\displaystyle\frac{dy}{dx}=-\displaystyle\frac{F_x(x,y)}{F_y(x,y)}$</p>
+<p><em>充分非必要</em></p>
+<h3 id="隐函数求导"><a href="#隐函数求导" class="headerlink" title="隐函数求导"></a>隐函数求导</h3><ul>
+<li>求隐函数的导数<ul>
+<li>两边同时对x求偏导</li>
+<li>全微分 把$z(x,y)$看作独立变量</li>
+<li>公式 把$z(x,y)$看作独立变量</li>
+</ul>
+</li>
+<li>方程组表示的隐函数<ul>
+<li>Jacobi行列式</li>
+</ul>
+</li>
+</ul>
+<h4 id="Jacobi行列式"><a href="#Jacobi行列式" class="headerlink" title="Jacobi行列式"></a>Jacobi行列式</h4><p>记</p>
+<script type="math/tex; mode=display">
+\displaystyle\frac{\partial(F,G)}{\partial(u,v)}=
+\begin{vmatrix}
+F_u & F_v \\
+G_u & G_v \\
+\end{vmatrix}</script><p>$u_x=-\displaystyle\frac{\displaystyle\frac{\partial(F,G)}{\partial(x,v)}}{\displaystyle\frac{\partial(F,G)}{\partial(u,v)}}$ $v_x=-\displaystyle\frac{\displaystyle\frac{\partial(F,G)}{\partial(u,x)}}{\displaystyle\frac{\partial(F,G)}{\partial(u,v)}}$ y同理</p>
+<p>充分条件 $F|_{P_0}=0,G|_{P_0}=0,J=\displaystyle\frac{\partial(F,G)}{\partial(u,v)}|_{p_0}\ne 0$<br><img src="/2022/03/19/higher%20mathematics/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E5%BE%AE%E5%88%86%E5%AD%A6/2022-03-11-08-16-36.png" alt></p>
 <hr>
 <h3 id="方向导数"><a href="#方向导数" class="headerlink" title="方向导数"></a>方向导数</h3><ul>
-<li>注意 课本定义为 <code>双向</code>;其它定义为<code>单项</code>(t&gt;0)<h3 id="梯度"><a href="#梯度" class="headerlink" title="梯度"></a>梯度</h3></li>
+<li>注意 课本定义为 <code>双向</code>;其它定义为<code>单项</code>(t&gt;0)</li>
 </ul>
+<p>$f_x cos \alpha+f_y cos \beta$</p>
+<h3 id="梯度"><a href="#梯度" class="headerlink" title="梯度"></a>梯度</h3><p>$\nabla=(\frac{\partial}{\partial x},\frac{\partial}{\partial y})$ 向量微分算子/Hamilton算子</p>
 <h3 id="几何应用"><a href="#几何应用" class="headerlink" title="几何应用"></a>几何应用</h3><h2 id><a href="#" class="headerlink" title></a><img src="/2022/03/19/higher%20mathematics/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E5%BE%AE%E5%88%86%E5%AD%A6/2022-03-11-08-33-12.png" alt></h2><h3 id="二元Taylor"><a href="#二元Taylor" class="headerlink" title="二元Taylor"></a>二元Taylor</h3><p>$f(x,y)$在$P_0(x_0,y_0)$的领域内有<code>n+1</code>阶连续偏导数</p>
 <p>$f(x_0+\Delta x,y_0+\Delta y)=\sum_{k=0}^n \frac{1}{k !}(\Delta x\frac{\partial x}+\Delta y\frac{\partial}{\partial y})^k f|_{(x_0,y_0)}+R_n$</p>
 <ul>
@@ -353,6 +394,9 @@ f_{n1} & f_{n2} & \cdots & f_{nn} \\
     
 
       <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/notes/" rel="tag"># notes</a>
+          </div>
 
         
 
@@ -425,7 +469,7 @@ f_{n1} & f_{n2} & \cdots & f_{nn} \\
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E5%BE%AE%E5%88%86%E5%AD%A6"><span class="nav-number">1.</span> <span class="nav-text">多元函数的微分学</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0"><span class="nav-number">1.1.</span> <span class="nav-text">多元函数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%8C%E9%87%8D%E6%9E%81%E9%99%90%E4%B8%8E%E4%BA%8C%E6%AC%A1%E6%9E%81%E9%99%90"><span class="nav-number">1.1.1.</span> <span class="nav-text">二重极限与二次极限</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%8C%E9%87%8D%E6%9E%81%E9%99%90%E7%9A%84%E6%80%A7%E8%B4%A8"><span class="nav-number">1.1.2.</span> <span class="nav-text">二重极限的性质</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%80%E9%98%B6%E5%85%A8%E5%BE%AE%E5%88%86"><span class="nav-number">1.1.3.</span> <span class="nav-text">一阶全微分</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%9A%90%E5%87%BD%E6%95%B0%E7%9A%84%E5%AF%BC%E6%95%B0%E5%AD%98%E5%9C%A8%E6%80%A7"><span class="nav-number">1.1.4.</span> <span class="nav-text">隐函数的导数存在性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%B9%E5%90%91%E5%AF%BC%E6%95%B0"><span class="nav-number">1.1.5.</span> <span class="nav-text">方向导数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A2%AF%E5%BA%A6"><span class="nav-number">1.1.6.</span> <span class="nav-text">梯度</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%87%A0%E4%BD%95%E5%BA%94%E7%94%A8"><span class="nav-number">1.1.7.</span> <span class="nav-text">几何应用</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link"><span class="nav-number">1.2.</span> <span class="nav-text"></span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%8C%E5%85%83Taylor"><span class="nav-number">1.2.1.</span> <span class="nav-text">二元Taylor</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9E%81%E5%80%BC"><span class="nav-number">1.2.2.</span> <span class="nav-text">极值</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%8E%A8%E5%B9%BF-f-x-1-x-2-cdots-x-n"><span class="nav-number">1.2.2.1.</span> <span class="nav-text">推广 $f(x_1,x_2 \cdots x_n)$</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%80%E5%80%BC"><span class="nav-number">1.2.3.</span> <span class="nav-text">最值</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9C%80%E5%B0%8F%E4%BA%8C%E4%B9%98%E6%B3%95"><span class="nav-number">1.2.3.1.</span> <span class="nav-text">最小二乘法</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9D%A1%E4%BB%B6%E6%9E%81%E5%80%BC"><span class="nav-number">1.2.4.</span> <span class="nav-text">条件极值</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%BF%85%E8%A6%81%E6%9D%A1%E4%BB%B6"><span class="nav-number">1.2.4.1.</span> <span class="nav-text">必要条件</span></a></li></ol></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0"><span class="nav-number">1.</span> <span class="nav-text">多元函数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%8C%E9%87%8D%E6%9E%81%E9%99%90%E4%B8%8E%E4%BA%8C%E6%AC%A1%E6%9E%81%E9%99%90"><span class="nav-number">1.1.</span> <span class="nav-text">二重极限与二次极限</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%8C%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E8%BF%9E%E7%BB%AD%E6%80%A7"><span class="nav-number">1.2.</span> <span class="nav-text">二元函数的连续性</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B1%82%E5%AF%BC"><span class="nav-number">2.</span> <span class="nav-text">求导</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%81%8F%E5%AF%BC"><span class="nav-number">2.1.</span> <span class="nav-text">偏导</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%80%E9%98%B6%E5%85%A8%E5%BE%AE%E5%88%86"><span class="nav-number">2.2.</span> <span class="nav-text">一阶全微分</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%80%E4%BA%9B%E5%85%B3%E7%B3%BB"><span class="nav-number">2.3.</span> <span class="nav-text">一些关系</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%9A%90%E5%87%BD%E6%95%B0%E5%AD%98%E5%9C%A8%E5%AE%9A%E7%90%86"><span class="nav-number">2.4.</span> <span class="nav-text">隐函数存在定理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%9A%90%E5%87%BD%E6%95%B0%E6%B1%82%E5%AF%BC"><span class="nav-number">2.5.</span> <span class="nav-text">隐函数求导</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Jacobi%E8%A1%8C%E5%88%97%E5%BC%8F"><span class="nav-number">2.5.1.</span> <span class="nav-text">Jacobi行列式</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%B9%E5%90%91%E5%AF%BC%E6%95%B0"><span class="nav-number">2.6.</span> <span class="nav-text">方向导数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A2%AF%E5%BA%A6"><span class="nav-number">2.7.</span> <span class="nav-text">梯度</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%87%A0%E4%BD%95%E5%BA%94%E7%94%A8"><span class="nav-number">2.8.</span> <span class="nav-text">几何应用</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link"><span class="nav-number">3.</span> <span class="nav-text"></span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%8C%E5%85%83Taylor"><span class="nav-number">3.1.</span> <span class="nav-text">二元Taylor</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9E%81%E5%80%BC"><span class="nav-number">3.2.</span> <span class="nav-text">极值</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%8E%A8%E5%B9%BF-f-x-1-x-2-cdots-x-n"><span class="nav-number">3.2.1.</span> <span class="nav-text">推广 $f(x_1,x_2 \cdots x_n)$</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%80%E5%80%BC"><span class="nav-number">3.3.</span> <span class="nav-text">最值</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9C%80%E5%B0%8F%E4%BA%8C%E4%B9%98%E6%B3%95"><span class="nav-number">3.3.1.</span> <span class="nav-text">最小二乘法</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9D%A1%E4%BB%B6%E6%9E%81%E5%80%BC"><span class="nav-number">3.4.</span> <span class="nav-text">条件极值</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%BF%85%E8%A6%81%E6%9D%A1%E4%BB%B6"><span class="nav-number">3.4.1.</span> <span class="nav-text">必要条件</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -538,6 +582,59 @@ f_{n1} & f_{n2} & \cdots & f_{nn} \\
   
 
   
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
 
   
 
