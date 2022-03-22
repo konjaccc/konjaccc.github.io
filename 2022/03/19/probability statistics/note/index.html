@@ -30,7 +30,7 @@
 <meta property="og:image" content="http://example.com/2022/03/19/probability%20statistics/note/5894415021af3aed6f6f5d3c2ed8532.jpg">
 <meta property="og:image" content="http://example.com/2022/03/19/probability%20statistics/note/ade67786f263ba1e247b2b2e7c1a8d4.png">
 <meta property="article:published_time" content="2022-03-19T02:58:34.077Z">
-<meta property="article:modified_time" content="2022-03-20T03:11:49.391Z">
+<meta property="article:modified_time" content="2022-03-22T03:42:32.143Z">
 <meta property="article:author" content="Konjaccc">
 <meta property="article:tag" content="notes">
 <meta name="twitter:card" content="summary">
@@ -206,7 +206,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-03-20 11:11:49" itemprop="dateModified" datetime="2022-03-20T11:11:49+08:00">2022-03-20</time>
+                <time title="修改时间：2022-03-22 11:42:32" itemprop="dateModified" datetime="2022-03-22T11:42:32+08:00">2022-03-22</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -317,10 +317,36 @@ F(x)=
 </li>
 </ul>
 <h2 id="随机变量函数"><a href="#随机变量函数" class="headerlink" title="随机变量函数"></a>随机变量函数</h2><p>$f_Y(y)=f_X(g^{-1}(x))|g^{-1}(x)’|$<br>多段单调就多段加起来<br><img src="/2022/03/19/probability%20statistics/note/5894415021af3aed6f6f5d3c2ed8532.jpg" alt><br><img src="/2022/03/19/probability%20statistics/note/ade67786f263ba1e247b2b2e7c1a8d4.png" alt></p>
+<h2 id="二维离散型随机变量"><a href="#二维离散型随机变量" class="headerlink" title="二维离散型随机变量"></a>二维离散型随机变量</h2><blockquote>
+<p>非负 规范</p>
+</blockquote>
+<h3 id="关于x-y的边缘分布律"><a href="#关于x-y的边缘分布律" class="headerlink" title="关于x/y的边缘分布律"></a>关于x/y的边缘分布律</h3><p>不可通过边缘分布律确定联合分布律</p>
+<h2 id="二维连续性随机变量"><a href="#二维连续性随机变量" class="headerlink" title="二维连续性随机变量"></a>二维连续性随机变量</h2><blockquote>
+<p>存在可积</p>
+</blockquote>
+<p>边缘密度函数 略</p>
+<h3 id="二维均匀分布"><a href="#二维均匀分布" class="headerlink" title="二维均匀分布"></a>二维均匀分布</h3><script type="math/tex; mode=display">
+f(x)=
+  \left\{\begin{matrix} 
+  \displaystyle\frac{1}{S_D},(x,y)\in G, \\
+  0,others, \\ 
+\end{matrix}\right.</script><h3 id="二维正态分布"><a href="#二维正态分布" class="headerlink" title="二维正态分布"></a>二维正态分布</h3><script type="math/tex; mode=display">
+f(x)=...</script><script type="math/tex; mode=display">
+(X,Y)\sim N(\mu_1,\sigma_1^2;\mu_2,\sigma_2^2;\rho)</script><script type="math/tex; mode=display">
+x \sim N(\mu_1,\sigma_1^2)</script><script type="math/tex; mode=display">
+x \sim N(\mu_2,\sigma_2^2)</script><blockquote>
+<p>边缘分布律与$\rho$无关</p>
+</blockquote>
+<ul>
+<li>[ ] 例3.1.6</li>
+</ul>
+<h2 id="条件分布"><a href="#条件分布" class="headerlink" title="条件分布"></a>条件分布</h2><blockquote>
+<p>乘法公式 全概率公式</p>
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({ tex2jax: {inlineMath: [['$', '$']]}, messageStyle: "none" });
-</script>
+</script></blockquote>
+
     </div>
 
     
@@ -403,7 +429,7 @@ F(x)=
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A6%BB%E6%95%A3%E5%9E%8B%E9%9A%8F%E6%9C%BA%E5%8F%98%E9%87%8F"><span class="nav-number">1.</span> <span class="nav-text">离散型随机变量</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#0-1%E5%88%86%E5%B8%83"><span class="nav-number">1.1.</span> <span class="nav-text">0-1分布</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%8C%E9%A1%B9%E5%88%86%E5%B8%83-Bernoulli%E6%A6%82%E5%9E%8B"><span class="nav-number">1.2.</span> <span class="nav-text">二项分布(Bernoulli概型)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%B4%9F%E4%BA%8C%E9%A1%B9%E5%88%86%E5%B8%83-Pascal%E5%88%86%E5%B8%83"><span class="nav-number">1.3.</span> <span class="nav-text">负二项分布(Pascal分布)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%87%A0%E4%BD%95%E5%88%86%E5%B8%83"><span class="nav-number">1.3.1.</span> <span class="nav-text">几何分布</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B3%8A%E6%9D%BE%E5%88%86%E5%B8%83-Poisson"><span class="nav-number">1.4.</span> <span class="nav-text">泊松分布(Poisson)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Poisson-%E5%AE%9A%E7%90%86"><span class="nav-number">1.4.1.</span> <span class="nav-text">Poisson 定理</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%8E%A8%E5%B9%BF"><span class="nav-number">1.4.2.</span> <span class="nav-text">推广</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%B6%85%E5%87%A0%E4%BD%95%E5%88%86%E5%B8%83"><span class="nav-number">1.5.</span> <span class="nav-text">超几何分布</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BF%9E%E7%BB%AD%E5%9E%8B%E9%9A%8F%E6%9C%BA%E5%8F%98%E9%87%8F"><span class="nav-number">2.</span> <span class="nav-text">连续型随机变量</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A6%82%E7%8E%87%E5%AF%86%E5%BA%A6"><span class="nav-number">2.1.</span> <span class="nav-text">概率密度</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9D%87%E5%8C%80%E5%88%86%E5%B8%83"><span class="nav-number">2.2.</span> <span class="nav-text">均匀分布</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8C%87%E6%95%B0%E5%88%86%E5%B8%83"><span class="nav-number">2.3.</span> <span class="nav-text">指数分布</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AD%A3%E6%80%81%E5%88%86%E5%B8%83-Gauss-%E5%88%86%E5%B8%83"><span class="nav-number">2.4.</span> <span class="nav-text">正态分布(Gauss 分布)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%A0%87%E5%87%86%E6%AD%A3%E6%80%81%E5%88%86%E5%B8%83"><span class="nav-number">2.4.1.</span> <span class="nav-text">标准正态分布</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B6%E5%AE%83"><span class="nav-number">3.</span> <span class="nav-text">其它</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%9A%8F%E6%9C%BA%E5%8F%98%E9%87%8F%E5%87%BD%E6%95%B0"><span class="nav-number">4.</span> <span class="nav-text">随机变量函数</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A6%BB%E6%95%A3%E5%9E%8B%E9%9A%8F%E6%9C%BA%E5%8F%98%E9%87%8F"><span class="nav-number">1.</span> <span class="nav-text">离散型随机变量</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#0-1%E5%88%86%E5%B8%83"><span class="nav-number">1.1.</span> <span class="nav-text">0-1分布</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%8C%E9%A1%B9%E5%88%86%E5%B8%83-Bernoulli%E6%A6%82%E5%9E%8B"><span class="nav-number">1.2.</span> <span class="nav-text">二项分布(Bernoulli概型)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%B4%9F%E4%BA%8C%E9%A1%B9%E5%88%86%E5%B8%83-Pascal%E5%88%86%E5%B8%83"><span class="nav-number">1.3.</span> <span class="nav-text">负二项分布(Pascal分布)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%87%A0%E4%BD%95%E5%88%86%E5%B8%83"><span class="nav-number">1.3.1.</span> <span class="nav-text">几何分布</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B3%8A%E6%9D%BE%E5%88%86%E5%B8%83-Poisson"><span class="nav-number">1.4.</span> <span class="nav-text">泊松分布(Poisson)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Poisson-%E5%AE%9A%E7%90%86"><span class="nav-number">1.4.1.</span> <span class="nav-text">Poisson 定理</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%8E%A8%E5%B9%BF"><span class="nav-number">1.4.2.</span> <span class="nav-text">推广</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%B6%85%E5%87%A0%E4%BD%95%E5%88%86%E5%B8%83"><span class="nav-number">1.5.</span> <span class="nav-text">超几何分布</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BF%9E%E7%BB%AD%E5%9E%8B%E9%9A%8F%E6%9C%BA%E5%8F%98%E9%87%8F"><span class="nav-number">2.</span> <span class="nav-text">连续型随机变量</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A6%82%E7%8E%87%E5%AF%86%E5%BA%A6"><span class="nav-number">2.1.</span> <span class="nav-text">概率密度</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9D%87%E5%8C%80%E5%88%86%E5%B8%83"><span class="nav-number">2.2.</span> <span class="nav-text">均匀分布</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8C%87%E6%95%B0%E5%88%86%E5%B8%83"><span class="nav-number">2.3.</span> <span class="nav-text">指数分布</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AD%A3%E6%80%81%E5%88%86%E5%B8%83-Gauss-%E5%88%86%E5%B8%83"><span class="nav-number">2.4.</span> <span class="nav-text">正态分布(Gauss 分布)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%A0%87%E5%87%86%E6%AD%A3%E6%80%81%E5%88%86%E5%B8%83"><span class="nav-number">2.4.1.</span> <span class="nav-text">标准正态分布</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B6%E5%AE%83"><span class="nav-number">3.</span> <span class="nav-text">其它</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%9A%8F%E6%9C%BA%E5%8F%98%E9%87%8F%E5%87%BD%E6%95%B0"><span class="nav-number">4.</span> <span class="nav-text">随机变量函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E7%BB%B4%E7%A6%BB%E6%95%A3%E5%9E%8B%E9%9A%8F%E6%9C%BA%E5%8F%98%E9%87%8F"><span class="nav-number">5.</span> <span class="nav-text">二维离散型随机变量</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B3%E4%BA%8Ex-y%E7%9A%84%E8%BE%B9%E7%BC%98%E5%88%86%E5%B8%83%E5%BE%8B"><span class="nav-number">5.1.</span> <span class="nav-text">关于x&#x2F;y的边缘分布律</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E7%BB%B4%E8%BF%9E%E7%BB%AD%E6%80%A7%E9%9A%8F%E6%9C%BA%E5%8F%98%E9%87%8F"><span class="nav-number">6.</span> <span class="nav-text">二维连续性随机变量</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%8C%E7%BB%B4%E5%9D%87%E5%8C%80%E5%88%86%E5%B8%83"><span class="nav-number">6.1.</span> <span class="nav-text">二维均匀分布</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%8C%E7%BB%B4%E6%AD%A3%E6%80%81%E5%88%86%E5%B8%83"><span class="nav-number">6.2.</span> <span class="nav-text">二维正态分布</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9D%A1%E4%BB%B6%E5%88%86%E5%B8%83"><span class="nav-number">7.</span> <span class="nav-text">条件分布</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
