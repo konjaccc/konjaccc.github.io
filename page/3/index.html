@@ -169,6 +169,411 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/03/19/higher%20mathematics/%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Konjaccc">
+      <meta itemprop="description" content="QwQ">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Konjaccc の blogs">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/03/19/higher%20mathematics/%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/" class="post-title-link" itemprop="url">微分方程</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2022-03-19 10:58:33 / 修改时间：14:17:28" itemprop="dateCreated datePublished" datetime="2022-03-19T10:58:33+08:00">2022-03-19</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/higher-mathematics/" itemprop="url" rel="index"><span itemprop="name">higher mathematics</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>$dx^2$<br><em>概念：</em><br><em>微分方程：连接自变量，未知函数，导数</em><br><em>常微分方程：未知函数是一元函数</em><br><em>阶；解；通解；特解；定解；定解问题/泛定问题；柯西(初值)问题；积分曲线(族)</em><br><em>齐次：无常数项； 线性：都1次； 半线性：导数一次，函数多次</em></p>
+<h2 id="一阶微分方程"><a href="#一阶微分方程" class="headerlink" title="一阶微分方程"></a>一阶微分方程</h2><p><strong>$F(x,y,y’)=0$</strong></p>
+<p><strong>$y’=f(x,y)$</strong></p>
+<p><strong>$P(x,y)dx+Q(x,y)dy=0$</strong></p>
+<h3 id="可分离变量方程"><a href="#可分离变量方程" class="headerlink" title="可分离变量方程"></a>可分离变量方程</h3><ul>
+<li><p><strong>$\frac{dy}{dx}=\varphi(x)\psi(y)$</strong></p>
+<p>转化为$\frac{1}{\psi(y)}dy=\varphi(x)dx$<br>积分 $\int \frac{1}{\psi(y)}dy=\int \varphi(x)dx + C$<br><em>tip:注意$\psi(y)=0$的情况也可能是解(<strong>奇解</strong>)</em><br><em>tip:$\varphi \psi$需连续</em><br><em>tip:注意 变上限积分中可能有<strong>隐含</strong>的定解条件</em></p>
+</li>
+</ul>
+<h3 id="齐次微分方程和其他化为可分离变量形式的方程"><a href="#齐次微分方程和其他化为可分离变量形式的方程" class="headerlink" title="齐次微分方程和其他化为可分离变量形式的方程"></a>齐次微分方程和其他化为可分离变量形式的方程</h3><p><em>ps:此齐次非彼齐次</em></p>
+<ul>
+<li><p><strong>$y’=g(\frac{y}{x})$</strong><br>令y=xu 求导 y‘=u+xu’ 代入 得到可分离变量方程<br><strong>$\displaystyle\frac{du}{g(u)-u}=\displaystyle\frac{dx}{x}$</strong><br>求解然后代回去</p>
+</li>
+<li><p><strong>$y’=f(ax+by+c)$</strong><br>令u=ax+by+c 求导 $\displaystyle\frac{du}{dx}=a+by’=bf(u)+a$</p>
+</li>
+</ul>
+<ul>
+<li>[x] 例6.7</li>
+</ul>
+<ul>
+<li><strong>$y’=f(\displaystyle\frac{a_1x+b_1y+c_1}{a_2x+b_2y+c_2})$</strong><ul>
+<li>$c_1=c_2=0$<br>齐次：右边同除x</li>
+<li>$\frac{a_1}{a_2}=\frac{b_1}{b_2}$<br>令$u=a_1x+b_1y$</li>
+<li>$\frac{a_1}{a_2}\ne \frac{b_1}{b_2}$<br><script type="math/tex">\begin{cases}
+a_1x+b_1y+c_1=0 \\
+a_2x+b_2y+c_2=0 \\
+\end{cases}</script>   求出其解($x_0,y_0$)<br>换元 $X=x-x_0,Y=y-y_0$ 转化为齐次</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="一阶线性微分方程"><a href="#一阶线性微分方程" class="headerlink" title="一阶线性微分方程"></a>一阶线性微分方程</h3><p><strong>$y’+P(x)y=Q(x)$</strong><br><em>PQ连续；Q(x): 非齐次项/自由项</em></p>
+<h4 id="常数变易法"><a href="#常数变易法" class="headerlink" title="常数变易法"></a><strong>常数变易法</strong></h4><p>$Q(x)=0$: 可分离变量方程<br>$Q(x)\ne 0$:==假设解的形式$y=C(x)e^{-\int P(x)dx}$==<br>  代入原方程，得$\displaystyle\frac{dC}{dx}=Q(x)e^{\int P(x)dx}$<br>  解出C 并代入假设式子，得<br>  <strong>一阶线性方程的通解公式$y=e^{-\int P(x)dx}(\int Q(x)e^{\int P(x)dx}dx+C)$</strong><br>  <em>注意这里的通解是一个特解与齐次方程的通解之和</em></p>
+<h4 id="积分因子法"><a href="#积分因子法" class="headerlink" title="积分因子法"></a><strong>积分因子法</strong></h4><p>  <strong>积分因子：$e^{\int P(x)dx}$</strong><br>  $Q(x)\ne 0$:两边同乘积分因子 化简得$(e^{\int P(x)dx}y)’=e^{\int P(x)dx}Q(x)$<br>  两边积分可得通解</p>
+<ul>
+<li><p>伯努利方程<br>$y’+P(x)y=Q(x)y^{a}$ ($a\ne 0,1$)<br>令$p=y^{1-a}$ 构造一阶线性</p>
+</li>
+<li><p>一阶微分方程的其他解法</p>
+</li>
+<li>求出齐次方程的一个特解u(x) 令y=uv 求导代入 （刚好有一项能消掉）</li>
+<li>全微分方程/积分因子 构造导数</li>
+</ul>
+<h2 id><a href="#" class="headerlink" title></a><img src="/2022/03/19/higher%20mathematics/%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/2021-12-11-11-10-31.png" alt></h2><h2 id="一些可降解的高阶微分方程"><a href="#一些可降解的高阶微分方程" class="headerlink" title="一些可降解的高阶微分方程"></a>一些可降解的高阶微分方程</h2><p>$y^{(n)}=f(x)$ 逐次积分<br>$y’’=f(x,y’)$ 令$p(x)=y’$<br>$y’’=f(y,y’)$</p>
+<blockquote>
+<p>令$y’=p(y)$ <em>注意！！！！</em><br>$y’’=\frac{dp}{dy}\cdot\frac{dy}{dx}=p\cdot\frac{dp}{dy}$<br>代入 解出p是以y为自变量的一阶方程</p>
+</blockquote>
+<hr>
+<h2 id="线性微分方程解的结构"><a href="#线性微分方程解的结构" class="headerlink" title="线性微分方程解的结构"></a>线性微分方程解的结构</h2><p>  $y^{(n)}+p_1(x)y^{(n-1)}+\cdots+p_n(x)y=f(x)$<br><em>叠加原理</em> <em>基本解组(线性无关)</em><br>$y=C_1y_1+C_2y_2$</p>
+<h3 id="刘维尔-Liouville-公式"><a href="#刘维尔-Liouville-公式" class="headerlink" title="刘维尔(Liouville)公式"></a>刘维尔(Liouville)公式</h3><p>设$y_1$是方程(HL)的非零解，则 <strong>$y_2(x)=y_1 \int\displaystyle\frac{1}{y_1^{2}}e^{-\int p(x)dx}dx$</strong></p>
+<blockquote>
+<p>常数变易法 令 $y_2=c(x)y_1(x)$ 求导代入(消0) 得出c的可分离变量方程</p>
+</blockquote>
+<ul>
+<li><p>线性非齐次方程(NHL)<br>$y=y^*(x)+C_1y_1(x)+C_2y_2(x)$</p>
+</li>
+<li><p>求特解$y^<em>$<br>常数变易法：令$y^</em>=c_1(x)y_1(x)+c_2(x)y_2(x)$<br>为了简便计算 不妨令<strong>$c_1’(x)y_1+c_2’(x)y_2=0$</strong><br>求导代入并于上式联立</p>
+</li>
+</ul>
+<h2 id="常系数线性微分方程"><a href="#常系数线性微分方程" class="headerlink" title="常系数线性微分方程"></a>常系数线性微分方程</h2><h3 id="常系数线性齐次方程"><a href="#常系数线性齐次方程" class="headerlink" title="常系数线性齐次方程"></a>常系数线性齐次方程</h3><p>  y’’+py’+qy=0  //以二阶为例</p>
+<blockquote>
+<p>令$y=e^{rx}$<br>$r^2+pr+q=0$  //特征方程<br>$r_1$,$r_2$ 特征根<br>无根视重数为0</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>根的重数</th>
+<th>解</th>
+<th>通解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2</td>
+<td>$e^{r_1x}$,$e^{r_2x}$</td>
+<td>$y=C_1e^{r_1x}+C_2e^{r_2x}$</td>
+</tr>
+<tr>
+<td>1</td>
+<td>$e^{rx}$ (用刘维尔求得另一根$xe^{rx}$)</td>
+<td>$y=C_1e^{rx}+C_2xe^{rx}$</td>
+</tr>
+<tr>
+<td>0($\alpha ± i\beta$)</td>
+<td>$e^{ax}(cos\beta x ± i sin \beta x)$</td>
+<td>$y=C_1e^{\alpha x}cos \beta x+C_2e^{ax}sin \beta x$</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>欧拉公式</li>
+<li><img src="/2022/03/19/higher%20mathematics/%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/2021-12-15-16-34-37.png" alt></li>
+</ul>
+</blockquote>
+<h3 id="常系数线性非齐次方程"><a href="#常系数线性非齐次方程" class="headerlink" title="常系数线性非齐次方程"></a>常系数线性非齐次方程</h3><p>y’’+py’+qy=f(x)</p>
+<ul>
+<li><p>$f(x)=g_m(x)e^{\lambda x}$<br>令$y=x^kF_m(x)$ //k为$\lambda$作为特征方程解的重数 $F_m(x)为一个m次多项式$</p>
+</li>
+<li><p>$f(x)=[P(x)cos \beta x +Q(x)sin \beta x]e^{\alpha x}$<br>分开求，共轭相消<br>$y^*=x^k[A(x)cos \beta x+B(x) sin \beta x]e^{\alpha x}$</p>
+</li>
+</ul>
+<h3 id="欧拉方程"><a href="#欧拉方程" class="headerlink" title="欧拉方程"></a>欧拉方程</h3><p>以二阶为例$x^2y’’+pxy’+qy=0$</p>
+<ul>
+<li>M1：设$y=x^\lambda \to (\lambda-1)\lambda+p\lambda+q=0$</li>
+<li>M2：设$x=e^t \to y’=\displaystyle\frac{1}{x}\cdot\displaystyle\frac{dy}{dt}$ $y’’=\displaystyle\frac{1}{x^2}(\displaystyle\frac{d^2y}{dt^2}-\displaystyle\frac{dy}{dt})$<br>引进$D=\displaystyle\frac{d}{dt}$ $\to$ $[D(D-1)+pD+q]y=0$<br>最后带回x，对于x&lt;0的情况最后判断或代$-e^t$</li>
+</ul>
+<p>非齐次求特解也是根据常数项设$x=e^t$</p>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({ tex2jax: {inlineMath: [['$', '$']]}, messageStyle: "none" });
+</script>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/03/19/higher%20mathematics/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E5%BE%AE%E5%88%86%E5%AD%A6/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Konjaccc">
+      <meta itemprop="description" content="QwQ">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Konjaccc の blogs">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/03/19/higher%20mathematics/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E5%BE%AE%E5%88%86%E5%AD%A6/" class="post-title-link" itemprop="url">多元函数的微分学</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-03-19 10:58:33" itemprop="dateCreated datePublished" datetime="2022-03-19T10:58:33+08:00">2022-03-19</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-03-20 19:01:31" itemprop="dateModified" datetime="2022-03-20T19:01:31+08:00">2022-03-20</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/higher-mathematics/" itemprop="url" rel="index"><span itemprop="name">higher mathematics</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <blockquote>
+<p>概念<br> 内点($E^0$ 内核)/外点/边界点/孤立界点<br> 开集/闭集<br> 开区域(区域)/闭区域<br> 聚点(内点+边界点):$\forall \epsilon$ $\bigcup^0(p_0,\epsilon)\bigcap E\ne \emptyset$ [导集 E’]</p>
+</blockquote>
+<ul>
+<li><p>闭集的判断</p>
+<ul>
+<li>差集为开集</li>
+<li>聚点all in E</li>
+<li>边界点all in E</li>
+</ul>
+</li>
+<li><p>联通: 道路(曲线)连接</p>
+</li>
+<li><p>tip<br>$\emptyset$ 又开又闭</p>
+</li>
+</ul>
+<h2 id="多元函数"><a href="#多元函数" class="headerlink" title="多元函数"></a>多元函数</h2><blockquote>
+<p>概念<br> (二重)极限<br> 二次极限/累次极限 %两种，先把y看出$\ne y_0$ 的常数</p>
+</blockquote>
+<ul>
+<li><p>极限的定义法证明<br>由特殊路径得A，把$|f(x,y)-A|$放大至$g(x-x_0,y-y_0)$&lt;$\epsilon$<br><em>ps:注意放大条件(分母)</em></p>
+</li>
+<li><p>特殊路径分析<br>令分母=$kx^m$ 求m使<code>lim</code>与k有关<br>ps:注意m的存在性</p>
+</li>
+<li><p>极限不存在的判断<br>$(x,y)$沿不同路径逼近$(x_0,y_0)$时函数$f(x,y)$趋向于不同的值</p>
+</li>
+</ul>
+<h3 id="二重极限与二次极限"><a href="#二重极限与二次极限" class="headerlink" title="二重极限与二次极限"></a>二重极限与二次极限</h3><ul>
+<li>二次极限存在且首次极限存在时 二重极限与二次极限相等</li>
+</ul>
+<ul>
+<li>[ ] ==反例*4==</li>
+</ul>
+<h3 id="二元函数的连续性"><a href="#二元函数的连续性" class="headerlink" title="二元函数的连续性"></a>二元函数的连续性</h3><p>有界性/最值定理/零点存在定理/介值定理</p>
+<p>tip:零点存在定理：两点间任意路径存在零点</p>
+<ul>
+<li><p>[ ]<br><img src="/2022/03/19/higher%20mathematics/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E5%BE%AE%E5%88%86%E5%AD%A6/2022-02-16-15-29-58.png" alt><br>$\lim_{(x,y)\to (0,0)e^{}}$</p>
+</li>
+<li><p>[ ]<br><img src="/2022/03/19/higher%20mathematics/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E5%BE%AE%E5%88%86%E5%AD%A6/2022-02-16-15-36-55.png" alt></p>
+</li>
+</ul>
+<h2 id="求导"><a href="#求导" class="headerlink" title="求导"></a>求导</h2><h3 id="偏导"><a href="#偏导" class="headerlink" title="偏导"></a>偏导</h3><p>当$f(x,y)$的两个二阶混合偏导数在点$(x,y)$处连续 ： $f_{xy}(x,y)=f_{yx}(x,y)$</p>
+<p>全导数：略</p>
+<h3 id="一阶全微分"><a href="#一阶全微分" class="headerlink" title="一阶全微分"></a>一阶全微分</h3><p>形式不变性</p>
+<h3 id="一些关系"><a href="#一些关系" class="headerlink" title="一些关系"></a>一些关系</h3><p>偏导数均连续 ➡ 可微 ➡ 连续+可偏导</p>
+<h3 id="隐函数存在定理"><a href="#隐函数存在定理" class="headerlink" title="隐函数存在定理"></a>隐函数存在定理</h3><p>$F(x_0,y_0)=0$ $F_y(x_0,y_0)\ne 0$<br>$\to$ 确定唯一函数，且$\displaystyle\frac{dy}{dx}=-\displaystyle\frac{F_x(x,y)}{F_y(x,y)}$</p>
+<p><em>充分非必要</em></p>
+<h3 id="隐函数求导"><a href="#隐函数求导" class="headerlink" title="隐函数求导"></a>隐函数求导</h3><ul>
+<li>求隐函数的导数<ul>
+<li>两边同时对x求偏导</li>
+<li>全微分 把$z(x,y)$看作独立变量</li>
+<li>公式 把$z(x,y)$看作独立变量</li>
+</ul>
+</li>
+<li>方程组表示的隐函数<ul>
+<li>Jacobi行列式</li>
+</ul>
+</li>
+</ul>
+<h4 id="Jacobi行列式"><a href="#Jacobi行列式" class="headerlink" title="Jacobi行列式"></a>Jacobi行列式</h4><p>记</p>
+<script type="math/tex; mode=display">
+\displaystyle\frac{\partial(F,G)}{\partial(u,v)}=
+\begin{vmatrix}
+F_u & F_v \\
+G_u & G_v \\
+\end{vmatrix}</script><p>$u_x=-\displaystyle\frac{\displaystyle\frac{\partial(F,G)}{\partial(x,v)}}{\displaystyle\frac{\partial(F,G)}{\partial(u,v)}}$ $v_x=-\displaystyle\frac{\displaystyle\frac{\partial(F,G)}{\partial(u,x)}}{\displaystyle\frac{\partial(F,G)}{\partial(u,v)}}$ y同理</p>
+<p>充分条件 $F|_{P_0}=0,G|_{P_0}=0,J=\displaystyle\frac{\partial(F,G)}{\partial(u,v)}|_{p_0}\ne 0$<br><img src="/2022/03/19/higher%20mathematics/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E5%BE%AE%E5%88%86%E5%AD%A6/2022-03-11-08-16-36.png" alt></p>
+<hr>
+<h3 id="方向导数"><a href="#方向导数" class="headerlink" title="方向导数"></a>方向导数</h3><ul>
+<li>注意 课本定义为 <code>双向</code>;其它定义为<code>单项</code>(t&gt;0)</li>
+</ul>
+<p>$f_x cos \alpha+f_y cos \beta$</p>
+<h3 id="梯度"><a href="#梯度" class="headerlink" title="梯度"></a>梯度</h3><p>$\nabla=(\frac{\partial}{\partial x},\frac{\partial}{\partial y})$ 向量微分算子/Hamilton算子</p>
+<h3 id="几何应用"><a href="#几何应用" class="headerlink" title="几何应用"></a>几何应用</h3><h2 id><a href="#" class="headerlink" title></a><img src="/2022/03/19/higher%20mathematics/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E5%BE%AE%E5%88%86%E5%AD%A6/2022-03-11-08-33-12.png" alt></h2><h3 id="二元Taylor"><a href="#二元Taylor" class="headerlink" title="二元Taylor"></a>二元Taylor</h3><p>$f(x,y)$在$P_0(x_0,y_0)$的领域内有<code>n+1</code>阶连续偏导数</p>
+<p>$f(x_0+\Delta x,y_0+\Delta y)=\sum_{k=0}^n \frac{1}{k !}(\Delta x\frac{\partial x}+\Delta y\frac{\partial}{\partial y})^k f|_{(x_0,y_0)}+R_n$</p>
+<ul>
+<li><p>Lagrange余项 $R_n=\frac{1}{(n+1)!}(\Delta x\frac{\partial x}+\Delta y\frac{\partial}{\partial y})^{n+1} f|_{(x_0+\theta \Delta x,y_0+ \theta \Delta y)}$</p>
+</li>
+<li><p>Peano余项 $R_n=o(\rho^n)$ $\rho=\sqrt{(\Delta x)^2+(\Delta y)^2}$</p>
+<blockquote>
+<p>只要求n阶连续偏导数</p>
+</blockquote>
+</li>
+</ul>
+<p>Lagrange中值定理 $f(x_0+\Delta x,y_0+\Delta y)-f(x_0,y_0)=f_x(x_0+\theta \Delta x,y_0+ \theta \Delta y)\Delta x+f_y(x_0+\theta \Delta x,y_0+ \theta \Delta y)\Delta y$</p>
+<blockquote>
+<p>Lagrange取n=0</p>
+<p>$\theta \in (0,1)$</p>
+</blockquote>
+<p><em>Maclaurin $x_0=0,y_0=0$</em></p>
+<h3 id="极值"><a href="#极值" class="headerlink" title="极值"></a>极值</h3><p>对于驻点($f_x=0,f_y=0$)<br>考虑<br>$A=f_{xx};B=f_{xy}=f_{yx};C=f_{yy}$<br>$H=AC-B^2$</p>
+<blockquote>
+<p>Hessel行列式？？名字忘了</p>
+</blockquote>
+<ul>
+<li>H&gt;0 有极值<ul>
+<li>A&gt;0 极小值</li>
+<li>A&lt;0 极大值</li>
+</ul>
+</li>
+<li>H&lt;0 无极值</li>
+<li>H=0 不知道(不能通过这个方法确定)</li>
+</ul>
+<h4 id="推广-f-x-1-x-2-cdots-x-n"><a href="#推广-f-x-1-x-2-cdots-x-n" class="headerlink" title="推广 $f(x_1,x_2 \cdots x_n)$"></a>推广 $f(x_1,x_2 \cdots x_n)$</h4><p>求出拐点 $f_0$ 处 H=</p>
+<script type="math/tex; mode=display">
+\begin{bmatrix}
+f_{11} & f_{12} & \cdots & f_{1n} \\
+f_{21} & f_{22} & \cdots & f_{2n} \\
+\vdots & \vdots & \ddots & \vdots \\
+f_{n1} & f_{n2} & \cdots & f_{nn} \\
+\end{bmatrix}z</script><blockquote>
+<p>两重导</p>
+<ul>
+<li>H正定：极小</li>
+<li>H负定：极大</li>
+</ul>
+</blockquote>
+<h3 id="最值"><a href="#最值" class="headerlink" title="最值"></a>最值</h3><p>驻点极值和边界和断点(线)</p>
+<ul>
+<li>不要忘了边界的边界！！</li>
+</ul>
+<h4 id="最小二乘法"><a href="#最小二乘法" class="headerlink" title="最小二乘法"></a>最小二乘法</h4><p>略</p>
+<h3 id="条件极值"><a href="#条件极值" class="headerlink" title="条件极值"></a>条件极值</h3><blockquote>
+<p>Lagrange乘数法 转化为无条件极值问题</p>
+</blockquote>
+<ul>
+<li>用条件换元  : 有些时候难以实现</li>
+<li>Lagrange 乘数法 : 隐函数</li>
+</ul>
+<p>$-\lambda_1=\displaystyle\frac{f_z}{\phi_z^1}|_{(x_0,y_0,z_0)}$<br>（m个$\lambda$）</p>
+<p>$L(x,y,z,\lambda)=f(x,y,z)+\lambda\phi(x,y,z)$</p>
+<p>所有偏导数为0</p>
+<p><strong>$\displaystyle\frac{f_x}{\phi_x}=\displaystyle\frac{f_y}{\phi_y}=\cdots$</strong><br>代入约束</p>
+<blockquote>
+<p>$\lambda$:Lagrange 乘数(乘子)</p>
+</blockquote>
+<h4 id="必要条件"><a href="#必要条件" class="headerlink" title="必要条件"></a>必要条件</h4><p>用L算$\Delta f$<br>定义</p>
+<script type="math/tex; mode=display">
+H=
+\begin{bmatrix}
+f_{11} & f_{12} & \cdots & f_{1n} \\
+f_{21} & f_{22} & \cdots & f_{2n} \\
+\vdots & \vdots & \ddots & \vdots \\
+f_{n1} & f_{n2} & \cdots & f_{nn} \\
+\end{bmatrix}</script><blockquote>
+<p>Hesse矩阵</p>
+</blockquote>
+<ul>
+<li>正定 极小值</li>
+<li>负定 极大值</li>
+<li>不定 no<br>$H(p_0)$</li>
+</ul>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({ tex2jax: {inlineMath: [['$', '$']]}, messageStyle: "none" });
+</script>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/2022/03/19/higher%20mathematics/%E5%90%91%E9%87%8F%E4%B8%8E%E7%A9%BA%E9%97%B4%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -884,20 +1289,20 @@ v_1 & v_2 & v_3 \\
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">26</span>
+          <span class="site-state-item-count">28</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-count">5</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-count">5</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
