@@ -192,10 +192,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2022-03-28 22:44:00 / 修改时间：22:54:04" itemprop="dateCreated datePublished" datetime="2022-03-28T22:44:00+08:00">2022-03-28</time>
+              <time title="创建时间：2022-03-28 22:44:00" itemprop="dateCreated datePublished" datetime="2022-03-28T22:44:00+08:00">2022-03-28</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-03-29 23:35:34" itemprop="dateModified" datetime="2022-03-29T23:35:34+08:00">2022-03-29</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -218,7 +224,8 @@
 
       
           <h1 id="abstract"><a href="#abstract" class="headerlink" title="abstract"></a>abstract</h1><p>用Regression预测covid-19</p>
-<h1 id="改进方向"><a href="#改进方向" class="headerlink" title="改进方向"></a>改进方向</h1><h2 id="Loss函数由MSE改为RMSE"><a href="#Loss函数由MSE改为RMSE" class="headerlink" title="Loss函数由MSE改为RMSE"></a>Loss函数由MSE改为RMSE</h2><h2 id="L2正则-防止过拟合"><a href="#L2正则-防止过拟合" class="headerlink" title="L2正则:防止过拟合"></a>L2正则:防止过拟合</h2>
+<h1 id="改进方向"><a href="#改进方向" class="headerlink" title="改进方向"></a>改进方向</h1><h2 id="Loss函数由MSE改为RMSE"><a href="#Loss函数由MSE改为RMSE" class="headerlink" title="Loss函数由MSE改为RMSE"></a>Loss函数由MSE改为RMSE</h2><h2 id="L2正则-防止过拟合"><a href="#L2正则-防止过拟合" class="headerlink" title="L2正则:防止过拟合"></a>L2正则:防止过拟合</h2><p>加上正则化的式子</p>
+<h2 id="特征选择"><a href="#特征选择" class="headerlink" title="特征选择"></a>特征选择</h2><h2 id="调参数"><a href="#调参数" class="headerlink" title="调参数"></a>调参数</h2>
       
     </div>
 
@@ -683,7 +690,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-03-24 13:09:35" itemprop="dateModified" datetime="2022-03-24T13:09:35+08:00">2022-03-24</time>
+                <time title="修改时间：2022-03-29 19:03:14" itemprop="dateModified" datetime="2022-03-29T19:03:14+08:00">2022-03-29</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -826,7 +833,23 @@ x \sim N(\mu_2,\sigma_2^2)</script><blockquote>
 </blockquote>
 <h2 id="独立性"><a href="#独立性" class="headerlink" title="独立性"></a>独立性</h2><p>$F(X,Y)=F_X(x)F_Y(y)$</p>
 <h3 id="独立性定理"><a href="#独立性定理" class="headerlink" title="独立性定理"></a>独立性定理</h3><p>$f(x,y)=r(x)g(x)$<br><em>meishenmejiazhi</em></p>
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<h3 id="n维随机变量"><a href="#n维随机变量" class="headerlink" title="n维随机变量"></a>n维随机变量</h3><p>略</p>
+<h3 id="多维随机变量函数的分布"><a href="#多维随机变量函数的分布" class="headerlink" title="多维随机变量函数的分布"></a>多维随机变量函数的分布</h3><p>离散卷积公式<br>$P(X+Y=r)=\Sigma_{i=0}^r P(X=i)P(Y=r-i)$</p>
+<blockquote>
+<p>Poisson分布，二项分布的可加性</p>
+</blockquote>
+<h4 id="和"><a href="#和" class="headerlink" title="和"></a>和</h4><p>随机变量的线性函数的分布</p>
+<p>$Z=aX+bY+c$</p>
+<p>$f_z(z)=\displaystyle\frac{1}{|b|}\int_{-\infty}^{+\infty}f(t,\displaystyle\frac{z-at-c}{b})dt=\displaystyle\frac{1}{|a|}\int_{-\infty}^{+\infty}f(t,\displaystyle\frac{z-bt-c}{a})dt$</p>
+<h4 id="商"><a href="#商" class="headerlink" title="商"></a>商</h4><p>$Z=\displaystyle\frac{X}{Y}$</p>
+<p>$f_z(z)=\int_{-\infty}^{+\infty}f(yz,y)|y|dy$</p>
+<h4 id="平方和"><a href="#平方和" class="headerlink" title="平方和"></a>平方和</h4><p>$Z=X_1^2+X_2^2+\cdots+X_n^2$</p>
+<script type="math/tex; mode=display">
+f_z(z)=  \left\{
+  \begin{matrix} 
+  0,z<0, \\
+  \frac12 \int_0^{2\pi}f(\sqrt{z}cos \theta,\sqrt{z}sin \theta )d\theta,z\ge 0. \\ 
+\end{matrix}\right.</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({ tex2jax: {inlineMath: [['$', '$']]}, messageStyle: "none" });
 </script>
@@ -879,7 +902,7 @@ x \sim N(\mu_2,\sigma_2^2)</script><blockquote>
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-03-24 11:35:22" itemprop="dateModified" datetime="2022-03-24T11:35:22+08:00">2022-03-24</time>
+                <time title="修改时间：2022-03-29 19:03:18" itemprop="dateModified" datetime="2022-03-29T19:03:18+08:00">2022-03-29</time>
               </span>
 
           
@@ -894,7 +917,15 @@ x \sim N(\mu_2,\sigma_2^2)</script><blockquote>
 
       
           <p>$\Delta r=|r_2|-|r_1| &lt;|\Delta r|$<br><img src="/2022/03/19/Physics/note/2022-02-23-19-40-53.png" alt></p>
-<p><img src="/2022/03/19/Physics/note/2022-02-23-22-27-33.png" alt><br><img src="/2022/03/19/Physics/note/2022-03-24-11-35-15.png" alt><br><img src="/2022/03/19/Physics/note/2022-03-24-10-58-23.png" alt></p>
+<p><img src="/2022/03/19/Physics/note/2022-02-23-22-27-33.png" alt><br><img src="/2022/03/19/Physics/note/2022-03-24-11-35-15.png" alt><br><img src="/2022/03/19/Physics/note/2022-03-24-10-58-23.png" alt><br><img src="/2022/03/19/Physics/note/2022-03-29-08-35-07.png" alt><br><img src="/2022/03/19/Physics/note/2022-03-29-08-39-47.png" alt></p>
+<h2 id><a href="#" class="headerlink" title></a><img src="/2022/03/19/Physics/note/2022-03-29-09-43-00.png" alt></h2><p><img src="/2022/03/19/Physics/note/2022-03-29-08-07-17.png" alt></p>
+<blockquote>
+<p>法二！！！</p>
+</blockquote>
+<p><img src="/2022/03/19/Physics/note/2022-03-29-08-21-30.png" alt></p>
+<blockquote>
+<p>选取合适的参照(z轴)角动量守恒</p>
+</blockquote>
 
       
     </div>
