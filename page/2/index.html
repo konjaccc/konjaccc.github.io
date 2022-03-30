@@ -1071,7 +1071,7 @@ x_1^{n-1} & x_2^{n-1} & \cdots & x_n^{n-1} \\
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-03-28 22:31:23" itemprop="dateModified" datetime="2022-03-28T22:31:23+08:00">2022-03-28</time>
+                <time title="修改时间：2022-03-30 18:17:57" itemprop="dateModified" datetime="2022-03-30T18:17:57+08:00">2022-03-30</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -1104,7 +1104,7 @@ x_1^{n-1} & x_2^{n-1} & \cdots & x_n^{n-1} \\
 </blockquote>
 <ul>
 <li>变量替换<br>$\iint_Df(x,y)dxdy=\iint_{D’}f(x(u,v),y(u,v))|\displaystyle\frac{\partial(x,y)}{\partial(u,v)}|dudv$<br><code>D&#39;</code>定限很重要！！</li>
-<li>极坐标<br>  $\iint_Df(x,y)dxdy=\iint_{D’}f(\theta,r)|r|d\theta dr$</li>
+<li>极坐标<br>  $\iint_Df(x,y)dxdy=\iint_{D’}f(r cos\theta,r sin\theta)|r|d\theta dr$</li>
 </ul>
 <p><img src="/2022/03/19/higher%20mathematics/%E9%87%8D%E7%A7%AF%E5%88%86/2022-03-28-08-17-23.png" alt></p>
 <blockquote>
@@ -1114,11 +1114,17 @@ x_1^{n-1} & x_2^{n-1} & \cdots & x_n^{n-1} \\
 <li><p>柱线法/坐标面投影法<br>$\iiint_Df(x,y,z)dV=\int_a^bdx\int_{y_1(x)}^{y_2(x)}dy\int_{z_1(x,y)}^{z_2(x,y)}dz$</p>
 </li>
 <li><p>截面法<br>$\int_{h_1}^{h_2}F(z)dz=\int_{h_1}^{h_2}dz\iint_{D_z}f(x,y,z)dxdy$</p>
+</li>
+</ul>
+<h3 id="对称性-变量代换-略"><a href="#对称性-变量代换-略" class="headerlink" title="对称性 变量代换 略"></a><em>对称性 变量代换 略</em></h3><h4 id="柱面坐标系"><a href="#柱面坐标系" class="headerlink" title="柱面坐标系"></a>柱面坐标系</h4><p>$(r,\theta,z)$<br>  $\iint_Df(x,y,z)dxdy=\iint_{D’}f(r cos\theta,r sin\theta,z)|r|d\theta dr dz$</p>
+<blockquote>
+<p>两项平方和</p>
+<h4 id="球面坐标系"><a href="#球面坐标系" class="headerlink" title="球面坐标系"></a>球面坐标系</h4><p>$(\rho,\phi,\theta)$<br>  $\iint_Df(x,y,z)dxdy=\iint_{D’}f(\rho sin\phi cos\theta,\rho sin \phi sin\theta,\rho cos \phi)\rho^2 sin \phi d \rho d \phi d\theta $</p>
+<p>三项平方和<br>注意 $\phi$ 是与z轴夹角</p>
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 <script type="text/x-mathjax-config">
-MathJax.Hub.Config({ tex2jax: {inlineMath: [['$', '$']]}, messageStyle: "none" });
-</script></li>
-</ul>
+  MathJax.Hub.Config({ tex2jax: {inlineMath: [['$', '$']]}, messageStyle: "none" });
+</script></blockquote>
 
       
     </div>
