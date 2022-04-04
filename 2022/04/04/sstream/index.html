@@ -20,17 +20,19 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="QwQ">
-<meta property="og:type" content="website">
+  <meta name="description" content="stringstream 载入流 1.int读入当前指针所指的数字后并自动跳过后面的tab \n \0如&#x3D;&#x3D;1 3&#x3D;&#x3D; 一开始指向1 读完1后指向3 2.char也会跳过空格等，但是无法跳过&#x2F;读到eof,只能让它强行读下一个&#x3D;&#x3D;a b c&#x3D;&#x3D; 读完a指b 读完b指c 读完c还是c 再读一次指向eof  此条没查到 是我猜的，暂时未与实践矛盾  3.string读入当前位置开始至缓冲结束 类似 .s">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Konjaccc の blogs">
-<meta property="og:url" content="http://example.com/archives/2022/page/2/index.html">
+<meta property="og:url" content="http://example.com/2022/04/04/sstream/index.html">
 <meta property="og:site_name" content="Konjaccc の blogs">
-<meta property="og:description" content="QwQ">
+<meta property="og:description" content="stringstream 载入流 1.int读入当前指针所指的数字后并自动跳过后面的tab \n \0如&#x3D;&#x3D;1 3&#x3D;&#x3D; 一开始指向1 读完1后指向3 2.char也会跳过空格等，但是无法跳过&#x2F;读到eof,只能让它强行读下一个&#x3D;&#x3D;a b c&#x3D;&#x3D; 读完a指b 读完b指c 读完c还是c 再读一次指向eof  此条没查到 是我猜的，暂时未与实践矛盾  3.string读入当前位置开始至缓冲结束 类似 .s">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-04-04T04:49:41.860Z">
+<meta property="article:modified_time" content="2022-04-04T05:02:34.815Z">
 <meta property="article:author" content="Konjaccc">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/archives/2022/page/2/">
+<link rel="canonical" href="http://example.com/2022/04/04/sstream/">
 
 
 <script id="page-configurations">
@@ -38,12 +40,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>归档 | Konjaccc の blogs</title>
+  <title> | Konjaccc の blogs</title>
   
 
 
@@ -163,234 +165,84 @@
         <div class="content-wrap">
           
 
-          <div class="content archive">
+          <div class="content post posts-expand">
             
 
+    
   
   
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <span class="collection-header">嗯..! 目前共计 30 篇日志。 继续努力。</span>
-      </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/04/04/sstream/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Konjaccc">
+      <meta itemprop="description" content="QwQ">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Konjaccc の blogs">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2022-04-04 12:49:41 / 修改时间：13:02:34" itemprop="dateCreated datePublished" datetime="2022-04-04T12:49:41+08:00">2022-04-04</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <span class="collection-header">2022</span>
-    </div>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2022-03-19T10:58:34+08:00"
-              content="2022-03-19">
-          03-19
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/03/19/Physics/note/" itemprop="url">
-            <span itemprop="name">未命名</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2022-03-19T10:58:34+08:00"
-              content="2022-03-19">
-          03-19
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/03/19/Machine%20Learning/PyTorch/" itemprop="url">
-            <span itemprop="name">未命名</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2022-03-19T10:58:33+08:00"
-              content="2022-03-19">
-          03-19
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/03/19/Linear%20Algebra/%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84%E4%B8%8E%E7%9F%A9%E9%98%B5/" itemprop="url">
-            <span itemprop="name">线性方程组与矩阵</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2022-03-19T10:58:33+08:00"
-              content="2022-03-19">
-          03-19
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/03/19/Linear%20Algebra/%E7%9F%A9%E9%98%B5%E7%9A%84%E7%9B%B8%E4%BC%BC%E5%AF%B9%E8%A7%92%E5%8C%96/" itemprop="url">
-            <span itemprop="name">矩阵的相似对角化</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2022-03-19T10:58:33+08:00"
-              content="2022-03-19">
-          03-19
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/03/19/Linear%20Algebra/%E5%BA%94%E8%AF%95/" itemprop="url">
-            <span itemprop="name">应试技巧</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2022-03-19T10:58:33+08:00"
-              content="2022-03-19">
-          03-19
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/03/19/Linear%20Algebra/%E7%9F%A9%E9%98%B5/" itemprop="url">
-            <span itemprop="name">矩阵</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2022-03-19T10:58:33+08:00"
-              content="2022-03-19">
-          03-19
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/03/19/Linear%20Algebra/%E5%AE%9E%E4%BA%8C%E6%AC%A1%E5%9E%8B/" itemprop="url">
-            <span itemprop="name">实二次型</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2022-03-19T10:58:33+08:00"
-              content="2022-03-19">
-          03-19
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/03/19/JAVA/lib/" itemprop="url">
-            <span itemprop="name">未命名</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2022-03-19T10:58:33+08:00"
-              content="2022-03-19">
-          03-19
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/03/19/JAVA/Basic%20Grammar_JAVA/" itemprop="url">
-            <span itemprop="name">未命名</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2022-03-19T10:58:33+08:00"
-              content="2022-03-19">
-          03-19
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/03/19/Linear%20Algebra/n%E7%BB%B4%E5%90%91%E9%87%8F%E4%B8%8E%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84%E8%A7%A3%E7%9A%84%E7%BB%93%E6%9E%84/" itemprop="url">
-            <span itemprop="name">n维向量与线性方程组解的结构</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
+        <h1 id="stringstream-载入流"><a href="#stringstream-载入流" class="headerlink" title="stringstream 载入流"></a>stringstream 载入流</h1><hr>
+<h2 id="1-int"><a href="#1-int" class="headerlink" title="1.int"></a>1.int</h2><p>读入当前指针所指的数字后并自动跳过后面的<code>tab</code> <code>\n</code> <code>\0</code><br>如==1 3== 一开始指向1 读完1后指向3</p>
+<h2 id="2-char"><a href="#2-char" class="headerlink" title="2.char"></a>2.char</h2><p>也会跳过空格等，但是无法跳过/读到<code>eof</code>,只能让它强行读下一个<br>==a b c== 读完a指b 读完b指c 读完c还是c 再读一次指向eof</p>
+<ul>
+<li>此条没查到 是我猜的，暂时未与实践矛盾</li>
+</ul>
+<h2 id="3-string"><a href="#3-string" class="headerlink" title="3.string"></a>3.string</h2><p>读入当前位置开始至缓冲结束 类似 <code>.str()</code><br>移动到下一个开始处<br>==abc cba== 读完abc后指向c</p>
 
     </div>
-  </div>
-  
-  
-  
 
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2022/04/01/Physics/formulas/" rel="prev" title="physics_formulas">
+      <i class="fa fa-chevron-left"></i> physics_formulas
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
   
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/archives/2022/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/archives/2022/">1</a><span class="page-number current">2</span><a class="page-number" href="/archives/2022/page/3/">3</a><a class="extend next" rel="next" href="/archives/2022/page/3/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
-  </nav>
+  
+  
 
 
 
@@ -442,6 +294,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#stringstream-%E8%BD%BD%E5%85%A5%E6%B5%81"><span class="nav-number">1.</span> <span class="nav-text">stringstream 载入流</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-int"><span class="nav-number">1.1.</span> <span class="nav-text">1.int</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-char"><span class="nav-number">1.2.</span> <span class="nav-text">2.char</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-string"><span class="nav-number">1.3.</span> <span class="nav-text">3.string</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
