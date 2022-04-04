@@ -22,14 +22,15 @@
 
   <meta name="description" content="stringstream 载入流 1.int读入当前指针所指的数字后并自动跳过后面的tab \n \0如&#x3D;&#x3D;1 3&#x3D;&#x3D; 一开始指向1 读完1后指向3 2.char也会跳过空格等，但是无法跳过&#x2F;读到eof,只能让它强行读下一个&#x3D;&#x3D;a b c&#x3D;&#x3D; 读完a指b 读完b指c 读完c还是c 再读一次指向eof  此条没查到 是我猜的，暂时未与实践矛盾  3.string读入当前位置开始至缓冲结束 类似 .s">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Konjaccc の blogs">
+<meta property="og:title" content="sstream载入流的小笔记">
 <meta property="og:url" content="http://example.com/2022/04/04/sstream/index.html">
 <meta property="og:site_name" content="Konjaccc の blogs">
 <meta property="og:description" content="stringstream 载入流 1.int读入当前指针所指的数字后并自动跳过后面的tab \n \0如&#x3D;&#x3D;1 3&#x3D;&#x3D; 一开始指向1 读完1后指向3 2.char也会跳过空格等，但是无法跳过&#x2F;读到eof,只能让它强行读下一个&#x3D;&#x3D;a b c&#x3D;&#x3D; 读完a指b 读完b指c 读完c还是c 再读一次指向eof  此条没查到 是我猜的，暂时未与实践矛盾  3.string读入当前位置开始至缓冲结束 类似 .s">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-04-04T04:49:41.860Z">
-<meta property="article:modified_time" content="2022-04-04T05:02:34.815Z">
+<meta property="article:modified_time" content="2022-04-04T13:59:12.007Z">
 <meta property="article:author" content="Konjaccc">
+<meta property="article:tag" content="notes">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="http://example.com/2022/04/04/sstream/">
@@ -45,7 +46,7 @@
   };
 </script>
 
-  <title> | Konjaccc の blogs</title>
+  <title>sstream载入流的小笔记 | Konjaccc の blogs</title>
   
 
 
@@ -185,7 +186,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          
+          sstream载入流的小笔记
         </h1>
 
         <div class="post-meta">
@@ -196,7 +197,16 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2022-04-04 12:49:41 / 修改时间：13:02:34" itemprop="dateCreated datePublished" datetime="2022-04-04T12:49:41+08:00">2022-04-04</time>
+              <time title="创建时间：2022-04-04 12:49:41 / 修改时间：21:59:12" itemprop="dateCreated datePublished" datetime="2022-04-04T12:49:41+08:00">2022-04-04</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/C/" itemprop="url" rel="index"><span itemprop="name">C++</span></a>
+                </span>
             </span>
 
           
@@ -225,6 +235,9 @@
     
 
       <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/notes/" rel="tag"># notes</a>
+          </div>
 
         
 
@@ -321,7 +334,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-count">5</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -407,6 +420,59 @@
   
 
   
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
 
   
 
