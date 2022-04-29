@@ -27,11 +27,13 @@
 <meta property="og:site_name" content="Konjaccc の blogs">
 <meta property="og:description" content="第一类积分&amp;第二类积分第一类：弧长的曲线积分 $\int_{\widehat{ab}}&#x3D;\int_{\widehat{ba}}$ 第一类曲线积分$\int_Cf(x,y)ds&#x3D;\int_{\alpha}^\beta f(x(t),y(t))\sqrt{x’^2(t)+y’^2(t)}dt$  单参数形式  第一类曲面积分 $z&#x3D;z(x,y)$$\iint_c f(x,y,z)ds&#x3D;\\in">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/2022/04/13/higher%20mathematics/%E6%9B%B2%E7%BA%BF%E7%A7%AF%E5%88%86%E5%92%8C%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86/2022-04-27-11-20-29.png">
 <meta property="article:published_time" content="2022-04-13T02:24:12.000Z">
-<meta property="article:modified_time" content="2022-04-18T03:41:54.703Z">
+<meta property="article:modified_time" content="2022-04-27T07:02:53.086Z">
 <meta property="article:author" content="Konjaccc">
 <meta property="article:tag" content="notes">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2022/04/13/higher%20mathematics/%E6%9B%B2%E7%BA%BF%E7%A7%AF%E5%88%86%E5%92%8C%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86/2022-04-27-11-20-29.png">
 
 <link rel="canonical" href="http://example.com/2022/04/13/higher%20mathematics/%E6%9B%B2%E7%BA%BF%E7%A7%AF%E5%88%86%E5%92%8C%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86/">
 
@@ -130,12 +132,12 @@
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">11</span></a>
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">12</span></a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">39</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">40</span></a>
 
   </li>
         <li class="menu-item menu-item-resources">
@@ -208,7 +210,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-04-18 11:41:54" itemprop="dateModified" datetime="2022-04-18T11:41:54+08:00">2022-04-18</time>
+                <time title="修改时间：2022-04-27 15:02:53" itemprop="dateModified" datetime="2022-04-27T15:02:53+08:00">2022-04-27</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -256,7 +258,34 @@
 </ul>
 </li>
 </ul>
-<h2 id="第二类曲线积分"><a href="#第二类曲线积分" class="headerlink" title="第二类曲线积分"></a>第二类曲线积分</h2><p><em>积分与路径无关</em>的条件。。。</p>
+<h2 id="第二类曲线积分"><a href="#第二类曲线积分" class="headerlink" title="第二类曲线积分"></a>第二类曲线积分</h2><p>用一个变量表示出曲线带进去即可</p>
+<h2 id="第二类曲面积分-通量积分"><a href="#第二类曲面积分-通量积分" class="headerlink" title="第二类曲面积分(通量积分)"></a>第二类曲面积分(通量积分)</h2><blockquote>
+<p>双侧曲面：法向量转一圈回来后不变</p>
+</blockquote>
+<p>$n^0=\displaystyle\frac{\pm 1}{\sqrt{1+z_x^2+z_y^2}}(-z_x,-z_y,1)$</p>
+<p>$\iint F(x,y,z) \cdot n^0 dS=\iint P(x,y,z)dydz+Q(x,y,z)dzdx+R(x,y,z)dxdy$</p>
+<blockquote>
+<p>慎用对称性</p>
+</blockquote>
+<ul>
+<li><p>$z=z(x,y)$<br>$\iint P(x,y,z)dydz+Q(x,y,z)dzdx+R(x,y,z)dxdy=\pm \iint (-Pz_x-Pz_y+R)dxdy$<br>代入即可，注意正负</p>
+</li>
+<li><p>$x=x(u,v),y=y(u,v),z=z(u,v)$<br>$\iint_{\sum} D\cdot dS=\pm\iint_D (PA+QB+RC) dudv$</p>
+<p>$r_u\times r_v=(A,B,C)$</p>
+<p>$\pm $与$(A,B,C)$和定侧想对应</p>
+</li>
+<li><p>三个坐标面分别投影计算<br>略</p>
+</li>
+</ul>
+<h1 id="Green-公式"><a href="#Green-公式" class="headerlink" title="Green 公式"></a>Green 公式</h1><blockquote>
+<p>单连通/复联通<br>连续偏导数！+闭曲线+正方向</p>
+</blockquote>
+<p>$\oint_{C^+}Pdx+Qdy=\iint_D(\displaystyle\frac{\partial Q}{\partial x}-\displaystyle\frac{\partial P}{\partial y})dxdy$</p>
+<blockquote>
+<p>挖 补 围</p>
+</blockquote>
+<h2 id="平面区域的面积公式"><a href="#平面区域的面积公式" class="headerlink" title="平面区域的面积公式"></a>平面区域的面积公式</h2><p>$A_D=\iint_D dxdy=-\oint_{C^+}ydx=\oint_{C^+}xdy=\frac1 2\oint_{C^+}xdy-ydx$</p>
+<h2 id="平面曲线积分与路径的无关性"><a href="#平面曲线积分与路径的无关性" class="headerlink" title="平面曲线积分与路径的无关性"></a>平面曲线积分与路径的无关性</h2><p><img src="/2022/04/13/higher%20mathematics/%E6%9B%B2%E7%BA%BF%E7%A7%AF%E5%88%86%E5%92%8C%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86/2022-04-27-11-20-29.png" alt></p>
 
     </div>
 
@@ -340,7 +369,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E7%B1%BB%E7%A7%AF%E5%88%86-amp-%E7%AC%AC%E4%BA%8C%E7%B1%BB%E7%A7%AF%E5%88%86"><span class="nav-number">1.</span> <span class="nav-text">第一类积分&amp;第二类积分</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E7%B1%BB%E6%9B%B2%E7%BA%BF%E7%A7%AF%E5%88%86"><span class="nav-number">2.</span> <span class="nav-text">第一类曲线积分</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E7%B1%BB%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86"><span class="nav-number">3.</span> <span class="nav-text">第一类曲面积分</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E7%B1%BB%E6%9B%B2%E7%BA%BF%E7%A7%AF%E5%88%86"><span class="nav-number">4.</span> <span class="nav-text">第二类曲线积分</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E7%B1%BB%E7%A7%AF%E5%88%86-amp-%E7%AC%AC%E4%BA%8C%E7%B1%BB%E7%A7%AF%E5%88%86"><span class="nav-number">1.</span> <span class="nav-text">第一类积分&amp;第二类积分</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E7%B1%BB%E6%9B%B2%E7%BA%BF%E7%A7%AF%E5%88%86"><span class="nav-number">2.</span> <span class="nav-text">第一类曲线积分</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E7%B1%BB%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86"><span class="nav-number">3.</span> <span class="nav-text">第一类曲面积分</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E7%B1%BB%E6%9B%B2%E7%BA%BF%E7%A7%AF%E5%88%86"><span class="nav-number">4.</span> <span class="nav-text">第二类曲线积分</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E7%B1%BB%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86-%E9%80%9A%E9%87%8F%E7%A7%AF%E5%88%86"><span class="nav-number">5.</span> <span class="nav-text">第二类曲面积分(通量积分)</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Green-%E5%85%AC%E5%BC%8F"><span class="nav-number"></span> <span class="nav-text">Green 公式</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B9%B3%E9%9D%A2%E5%8C%BA%E5%9F%9F%E7%9A%84%E9%9D%A2%E7%A7%AF%E5%85%AC%E5%BC%8F"><span class="nav-number">1.</span> <span class="nav-text">平面区域的面积公式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B9%B3%E9%9D%A2%E6%9B%B2%E7%BA%BF%E7%A7%AF%E5%88%86%E4%B8%8E%E8%B7%AF%E5%BE%84%E7%9A%84%E6%97%A0%E5%85%B3%E6%80%A7"><span class="nav-number">2.</span> <span class="nav-text">平面曲线积分与路径的无关性</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -356,14 +385,14 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">39</span>
+          <span class="site-state-item-count">40</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-count">12</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">

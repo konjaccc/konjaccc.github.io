@@ -20,17 +20,20 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="QwQ">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Konjaccc の blogs">
-<meta property="og:url" content="http://example.com/archives/2022/04/index.html">
+  <meta name="description" content="动态查找表二叉查找树&#x2F;二叉排序树左节点&lt;根&lt;右键点存储：指针 链式查找&#x2F;插入删除：两个子节点时：找到左节点的最大值或右节点的最小值作为替换，删掉那个节点tip: 注意插入和删除时的引用 AVL 树&#x2F;平衡树左右子树高度差不超过1LL&#x2F;RR: 单旋转 把该子树转成当前父节点 把子树中的中间子树移给它原来的爸爸 LR&#x2F;RL: 双旋转 先对不平衡的子树反单旋转 再对根节点单旋转">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数据结构">
+<meta property="og:url" content="http://example.com/2022/04/25/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/index.html">
 <meta property="og:site_name" content="Konjaccc の blogs">
-<meta property="og:description" content="QwQ">
+<meta property="og:description" content="动态查找表二叉查找树&#x2F;二叉排序树左节点&lt;根&lt;右键点存储：指针 链式查找&#x2F;插入删除：两个子节点时：找到左节点的最大值或右节点的最小值作为替换，删掉那个节点tip: 注意插入和删除时的引用 AVL 树&#x2F;平衡树左右子树高度差不超过1LL&#x2F;RR: 单旋转 把该子树转成当前父节点 把子树中的中间子树移给它原来的爸爸 LR&#x2F;RL: 双旋转 先对不平衡的子树反单旋转 再对根节点单旋转">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-04-25T02:15:32.000Z">
+<meta property="article:modified_time" content="2022-04-28T02:02:43.635Z">
 <meta property="article:author" content="Konjaccc">
+<meta property="article:tag" content="notes">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/archives/2022/04/">
+<link rel="canonical" href="http://example.com/2022/04/25/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">
 
 
 <script id="page-configurations">
@@ -38,12 +41,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>归档 | Konjaccc の blogs</title>
+  <title>数据结构 | Konjaccc の blogs</title>
   
 
 
@@ -168,235 +171,98 @@
         <div class="content-wrap">
           
 
-          <div class="content archive">
+          <div class="content post posts-expand">
             
 
+    
   
   
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        
-        <span class="collection-header">还行! 目前共计 40 篇日志。 继续努力。</span>
-      </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/04/25/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Konjaccc">
+      <meta itemprop="description" content="QwQ">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Konjaccc の blogs">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          数据结构
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-04-25 10:15:32" itemprop="dateCreated datePublished" datetime="2022-04-25T10:15:32+08:00">2022-04-25</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-04-28 10:02:43" itemprop="dateModified" datetime="2022-04-28T10:02:43+08:00">2022-04-28</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/programs/" itemprop="url" rel="index"><span itemprop="name">programs</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <span class="collection-header">2022</span>
-    </div>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2022-04-25T10:15:32+08:00"
-              content="2022-04-25">
-          04-25
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/04/25/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" itemprop="url">
-            <span itemprop="name">数据结构</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2022-04-21T14:01:14+08:00"
-              content="2022-04-21">
-          04-21
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/04/21/CAD/" itemprop="url">
-            <span itemprop="name">未命名</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2022-04-19T09:05:32+08:00"
-              content="2022-04-19">
-          04-19
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/04/19/%E7%9B%B8%E5%AF%B9%E8%AE%BA%E5%9F%BA%E7%A1%80/" itemprop="url">
-            <span itemprop="name">未命名</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2022-04-17T11:39:16+08:00"
-              content="2022-04-17">
-          04-17
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/04/17/graph/" itemprop="url">
-            <span itemprop="name">未命名</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2022-04-16T09:00:09+08:00"
-              content="2022-04-16">
-          04-16
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/04/16/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%8C%BB%E7%96%97%E5%BD%B1%E5%83%8F%E5%85%AC%E5%BC%80%E8%AF%BE/" itemprop="url">
-            <span itemprop="name">人工智能医疗影像公开课</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2022-04-13T10:24:12+08:00"
-              content="2022-04-13">
-          04-13
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/04/13/higher%20mathematics/%E6%9B%B2%E7%BA%BF%E7%A7%AF%E5%88%86%E5%92%8C%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86/" itemprop="url">
-            <span itemprop="name">曲线积分和曲面积分</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2022-04-10T16:28:02+08:00"
-              content="2022-04-10">
-          04-10
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/04/10/%E9%9F%A9%E8%AF%AD/" itemprop="url">
-            <span itemprop="name">韩语</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2022-04-07T13:24:20+08:00"
-              content="2022-04-07">
-          04-07
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/04/07/%E6%95%B0%E9%93%A3/" itemprop="url">
-            <span itemprop="name">数铣小知识</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2022-04-06T11:55:00+08:00"
-              content="2022-04-06">
-          04-06
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/04/06/higher%20mathematics/%E6%A6%82%E5%BF%B5%E8%BE%A8%E6%9E%90/" itemprop="url">
-            <span itemprop="name">高数概念辨析</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2022-04-05T21:06:02+08:00"
-              content="2022-04-05">
-          04-05
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/04/05/regression/" itemprop="url">
-            <span itemprop="name">regression</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
+        <h2 id="动态查找表"><a href="#动态查找表" class="headerlink" title="动态查找表"></a>动态查找表</h2><h3 id="二叉查找树-二叉排序树"><a href="#二叉查找树-二叉排序树" class="headerlink" title="二叉查找树/二叉排序树"></a>二叉查找树/二叉排序树</h3><p>左节点&lt;根&lt;右键点<br>存储：指针 链式<br>查找/插入<br>删除：两个子节点时：找到左节点的最大值或右节点的最小值作为替换，删掉那个节点<br>tip: 注意插入和删除时的引用</p>
+<h3 id="AVL-树-平衡树"><a href="#AVL-树-平衡树" class="headerlink" title="AVL 树/平衡树"></a>AVL 树/平衡树</h3><p>左右子树高度差不超过1<br>LL/RR: 单旋转 把该子树转成当前父节点 把子树中的中间子树移给它原来的爸爸</p>
+<p>LR/RL: 双旋转 先对不平衡的子树反单旋转 再对根节点单旋转</p>
 
     </div>
-  </div>
-  
-  
-  
 
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/notes/" rel="tag"># notes</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2022/04/21/CAD/" rel="prev" title="">
+      <i class="fa fa-chevron-left"></i> 
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
   
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/archives/2022/04/page/2/">2</a><a class="extend next" rel="next" href="/archives/2022/04/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
-  </nav>
+  
+  
 
 
 
@@ -448,6 +314,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8A%A8%E6%80%81%E6%9F%A5%E6%89%BE%E8%A1%A8"><span class="nav-number">1.</span> <span class="nav-text">动态查找表</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%8C%E5%8F%89%E6%9F%A5%E6%89%BE%E6%A0%91-%E4%BA%8C%E5%8F%89%E6%8E%92%E5%BA%8F%E6%A0%91"><span class="nav-number">1.1.</span> <span class="nav-text">二叉查找树&#x2F;二叉排序树</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#AVL-%E6%A0%91-%E5%B9%B3%E8%A1%A1%E6%A0%91"><span class="nav-number">1.2.</span> <span class="nav-text">AVL 树&#x2F;平衡树</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -562,6 +429,59 @@
   
 
   
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
 
   
 
