@@ -20,15 +20,15 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="动态查找表二叉查找树&#x2F;二叉排序树左节点&lt;根&lt;右键点存储：指针 链式查找&#x2F;插入删除：两个子节点时：找到左节点的最大值或右节点的最小值作为替换，删掉那个节点tip: 注意插入和删除时的引用 AVL 树&#x2F;平衡树左右子树高度差不超过1LL&#x2F;RR: 单旋转 把该子树转成当前父节点 把子树中的中间子树移给它原来的爸爸 LR&#x2F;RL: 双旋转 先对不平衡的子树反单旋转 再对根节点单旋转">
+  <meta name="description" content="动态查找表二叉查找树&#x2F;二叉排序树左节点&lt;根&lt;右键点存储：指针 链式查找&#x2F;插入删除：两个子节点时：找到左节点的最大值或右节点的最小值作为替换，删掉那个节点tip: 注意插入和删除时的引用 AVL 树&#x2F;平衡树左右子树高度差不超过1LL&#x2F;RR: 单旋转 把该子树转成当前父节点 把子树中的中间子树移给它原来的爸爸 LR&#x2F;RL: 双旋转 先对不平衡的子树反单旋转 再对根节点单旋转 排序插入排序直">
 <meta property="og:type" content="article">
 <meta property="og:title" content="数据结构">
 <meta property="og:url" content="http://example.com/2022/04/25/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/index.html">
 <meta property="og:site_name" content="Konjaccc の blogs">
-<meta property="og:description" content="动态查找表二叉查找树&#x2F;二叉排序树左节点&lt;根&lt;右键点存储：指针 链式查找&#x2F;插入删除：两个子节点时：找到左节点的最大值或右节点的最小值作为替换，删掉那个节点tip: 注意插入和删除时的引用 AVL 树&#x2F;平衡树左右子树高度差不超过1LL&#x2F;RR: 单旋转 把该子树转成当前父节点 把子树中的中间子树移给它原来的爸爸 LR&#x2F;RL: 双旋转 先对不平衡的子树反单旋转 再对根节点单旋转">
+<meta property="og:description" content="动态查找表二叉查找树&#x2F;二叉排序树左节点&lt;根&lt;右键点存储：指针 链式查找&#x2F;插入删除：两个子节点时：找到左节点的最大值或右节点的最小值作为替换，删掉那个节点tip: 注意插入和删除时的引用 AVL 树&#x2F;平衡树左右子树高度差不超过1LL&#x2F;RR: 单旋转 把该子树转成当前父节点 把子树中的中间子树移给它原来的爸爸 LR&#x2F;RL: 双旋转 先对不平衡的子树反单旋转 再对根节点单旋转 排序插入排序直">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-04-25T02:15:32.000Z">
-<meta property="article:modified_time" content="2022-04-28T02:02:43.635Z">
+<meta property="article:modified_time" content="2022-05-09T23:07:32.956Z">
 <meta property="article:author" content="Konjaccc">
 <meta property="article:tag" content="notes">
 <meta name="twitter:card" content="summary">
@@ -139,7 +139,7 @@
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">39</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">40</span></a>
 
   </li>
         <li class="menu-item menu-item-resources">
@@ -207,7 +207,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-04-28 10:02:43" itemprop="dateModified" datetime="2022-04-28T10:02:43+08:00">2022-04-28</time>
+                <time title="修改时间：2022-05-10 07:07:32" itemprop="dateModified" datetime="2022-05-10T07:07:32+08:00">2022-05-10</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -233,7 +233,15 @@
         <h2 id="动态查找表"><a href="#动态查找表" class="headerlink" title="动态查找表"></a>动态查找表</h2><h3 id="二叉查找树-二叉排序树"><a href="#二叉查找树-二叉排序树" class="headerlink" title="二叉查找树/二叉排序树"></a>二叉查找树/二叉排序树</h3><p>左节点&lt;根&lt;右键点<br>存储：指针 链式<br>查找/插入<br>删除：两个子节点时：找到左节点的最大值或右节点的最小值作为替换，删掉那个节点<br>tip: 注意插入和删除时的引用</p>
 <h3 id="AVL-树-平衡树"><a href="#AVL-树-平衡树" class="headerlink" title="AVL 树/平衡树"></a>AVL 树/平衡树</h3><p>左右子树高度差不超过1<br>LL/RR: 单旋转 把该子树转成当前父节点 把子树中的中间子树移给它原来的爸爸</p>
 <p>LR/RL: 双旋转 先对不平衡的子树反单旋转 再对根节点单旋转</p>
-
+<h2 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h2><h3 id="插入排序"><a href="#插入排序" class="headerlink" title="插入排序"></a>插入排序</h3><h4 id="直接插入排序"><a href="#直接插入排序" class="headerlink" title="直接插入排序"></a>直接插入排序</h4><h4 id="二分插入排序"><a href="#二分插入排序" class="headerlink" title="二分插入排序"></a>二分插入排序</h4><ul>
+<li>插入过程依旧O(n)</li>
+</ul>
+<h4 id="希尔排序"><a href="#希尔排序" class="headerlink" title="希尔排序"></a>希尔排序</h4><p>step 多轮插入 $h_1=1$</p>
+<p>希尔建议: N/2<br>O(N^2) O(N^{1.5}) O(N^{1.25})</p>
+<h3 id="选择排序"><a href="#选择排序" class="headerlink" title="选择排序"></a>选择排序</h3><p>略</p>
+<h3 id="堆排序"><a href="#堆排序" class="headerlink" title="堆排序"></a>堆排序</h3><p>O(NlogN)<br>出堆的放在数组最后</p>
+<h3 id="交换排序"><a href="#交换排序" class="headerlink" title="交换排序"></a>交换排序</h3><h4 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h4><p>跳出</p>
+<h4 id="快速排序"><a href="#快速排序" class="headerlink" title="快速排序"></a>快速排序</h4>
     </div>
 
     
@@ -254,7 +262,10 @@
     <a href="/2022/04/21/CAD/" rel="prev" title="">
       <i class="fa fa-chevron-left"></i> 
     </a></div>
-      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2022/05/09/higher%20mathematics/%E7%BA%A7%E6%95%B0/" rel="next" title="级数">
+      级数 <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
@@ -313,7 +324,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8A%A8%E6%80%81%E6%9F%A5%E6%89%BE%E8%A1%A8"><span class="nav-number">1.</span> <span class="nav-text">动态查找表</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%8C%E5%8F%89%E6%9F%A5%E6%89%BE%E6%A0%91-%E4%BA%8C%E5%8F%89%E6%8E%92%E5%BA%8F%E6%A0%91"><span class="nav-number">1.1.</span> <span class="nav-text">二叉查找树&#x2F;二叉排序树</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#AVL-%E6%A0%91-%E5%B9%B3%E8%A1%A1%E6%A0%91"><span class="nav-number">1.2.</span> <span class="nav-text">AVL 树&#x2F;平衡树</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8A%A8%E6%80%81%E6%9F%A5%E6%89%BE%E8%A1%A8"><span class="nav-number">1.</span> <span class="nav-text">动态查找表</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%8C%E5%8F%89%E6%9F%A5%E6%89%BE%E6%A0%91-%E4%BA%8C%E5%8F%89%E6%8E%92%E5%BA%8F%E6%A0%91"><span class="nav-number">1.1.</span> <span class="nav-text">二叉查找树&#x2F;二叉排序树</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#AVL-%E6%A0%91-%E5%B9%B3%E8%A1%A1%E6%A0%91"><span class="nav-number">1.2.</span> <span class="nav-text">AVL 树&#x2F;平衡树</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8E%92%E5%BA%8F"><span class="nav-number">2.</span> <span class="nav-text">排序</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F"><span class="nav-number">2.1.</span> <span class="nav-text">插入排序</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%9B%B4%E6%8E%A5%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F"><span class="nav-number">2.1.1.</span> <span class="nav-text">直接插入排序</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BA%8C%E5%88%86%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F"><span class="nav-number">2.1.2.</span> <span class="nav-text">二分插入排序</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B8%8C%E5%B0%94%E6%8E%92%E5%BA%8F"><span class="nav-number">2.1.3.</span> <span class="nav-text">希尔排序</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F"><span class="nav-number">2.2.</span> <span class="nav-text">选择排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A0%86%E6%8E%92%E5%BA%8F"><span class="nav-number">2.3.</span> <span class="nav-text">堆排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%A4%E6%8D%A2%E6%8E%92%E5%BA%8F"><span class="nav-number">2.4.</span> <span class="nav-text">交换排序</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F"><span class="nav-number">2.4.1.</span> <span class="nav-text">冒泡排序</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F"><span class="nav-number">2.4.2.</span> <span class="nav-text">快速排序</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -329,7 +340,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">39</span>
+          <span class="site-state-item-count">40</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>

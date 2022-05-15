@@ -136,7 +136,7 @@
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">39</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">40</span></a>
 
   </li>
         <li class="menu-item menu-item-resources">
@@ -169,6 +169,98 @@
 
           <div class="content index posts-expand">
             
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/04/05/regression/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Konjaccc">
+      <meta itemprop="description" content="QwQ">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Konjaccc の blogs">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/04/05/regression/" class="post-title-link" itemprop="url">regression</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-04-05 21:06:02" itemprop="dateCreated datePublished" datetime="2022-04-05T21:06:02+08:00">2022-04-05</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-04-12 21:59:53" itemprop="dateModified" datetime="2022-04-12T21:59:53+08:00">2022-04-12</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/machine-learning/" itemprop="url" rel="index"><span itemprop="name">machine learning</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="Regression-notes"><a href="#Regression-notes" class="headerlink" title="Regression notes"></a>Regression notes</h1><hr>
+<ul>
+<li>确定结构</li>
+<li>Loss 函数</li>
+<li>求解</li>
+</ul>
+<h2 id="regularization"><a href="#regularization" class="headerlink" title="regularization"></a>regularization</h2><p>$L=MSE+\lambda \sum (w_i)^2$</p>
+<blockquote>
+<p>更平滑</p>
+</blockquote>
+<h2 id="validation"><a href="#validation" class="headerlink" title="validation"></a>validation</h2><h1 id="Generative-model"><a href="#Generative-model" class="headerlink" title="Generative model"></a>Generative model</h1><p>贝叶斯公式 估测值<br>算P(x|C) 高斯分布</p>
+<blockquote>
+<p>由样本点推测出高斯分布 取x在该分布的几率<br>L最大似然函数</p>
+</blockquote>
+<p><img src="/2022/04/05/regression/2022-04-11-21-21-02.png" alt></p>
+<h2 id="Optimization"><a href="#Optimization" class="headerlink" title="Optimization"></a>Optimization</h2><p>taylor展开 Hessian矩阵的特征值 ($V^T Hv&gt;0$)(正定矩阵) 防止影响</p>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({ tex2jax: {inlineMath: [['$', '$']]}, messageStyle: "none" });
+</script>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
       
   
   
@@ -839,385 +931,6 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/03/19/probability%20statistics/note/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Konjaccc">
-      <meta itemprop="description" content="QwQ">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Konjaccc の blogs">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/03/19/probability%20statistics/note/" class="post-title-link" itemprop="url">概统小笔记</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2022-03-19 10:58:34" itemprop="dateCreated datePublished" datetime="2022-03-19T10:58:34+08:00">2022-03-19</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-04-26 22:02:02" itemprop="dateModified" datetime="2022-04-26T22:02:02+08:00">2022-04-26</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/probability-statistics/" itemprop="url" rel="index"><span itemprop="name">probability statistics</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="离散型随机变量"><a href="#离散型随机变量" class="headerlink" title="离散型随机变量"></a>离散型随机变量</h2><blockquote>
-<p>随机变量X有限个或可列无穷多个</p>
-<h3 id="0-1分布"><a href="#0-1分布" class="headerlink" title="0-1分布"></a>0-1分布</h3></blockquote>
-<p>$P(X=k)=p^k(1-p)^{1-k},k=0,1$</p>
-<h3 id="二项分布-Bernoulli概型"><a href="#二项分布-Bernoulli概型" class="headerlink" title="二项分布(Bernoulli概型)"></a>二项分布(Bernoulli概型)</h3><p><em>独立 重复 两个结果</em></p>
-<p>$P(X=k)=C_{n}^{k}p^k(1-p)^{1-k},k=0,1,\cdots ,n$</p>
-<ul>
-<li>$k&lt;(n+1)p$ : $\uparrow$</li>
-<li>$k&lt;(n+1)p$ : $\downarrow$</li>
-<li>max: $k=[(n+1)p]$<br>取整时 $(n+1)p-1$ 也取到max</li>
-</ul>
-<h3 id="负二项分布-Pascal分布"><a href="#负二项分布-Pascal分布" class="headerlink" title="负二项分布(Pascal分布)"></a>负二项分布(Pascal分布)</h3><ul>
-<li>[ ]<br>$P(X=k)=C_{k-1}^{r-1}p^r(1-p)^{k-r},k=r,r+1,\cdots ,$</li>
-</ul>
-<h4 id="几何分布"><a href="#几何分布" class="headerlink" title="几何分布"></a>几何分布</h4><p>r=1 时 $P(X=k)=(1-p)^{k-1}p$</p>
-<h3 id="泊松分布-Poisson"><a href="#泊松分布-Poisson" class="headerlink" title="泊松分布(Poisson)"></a>泊松分布(Poisson)</h3><p><em>无记忆性</em></p>
-<p>$X \sim B(n,\frac{\lambda}{n})$</p>
-<p>$\lim_{n \to \infty }P(X_n=k)=\lim_{n \to \infty}C_{n}^{k}(\frac{\lambda}{n})^k(1-\frac{\lambda}{n})^{n-k}=e^{-\lambda}\frac{\lambda^k}{k!},k=0,1,2,\cdots , n$</p>
-<h4 id="Poisson-定理"><a href="#Poisson-定理" class="headerlink" title="Poisson 定理"></a>Poisson 定理</h4><ul>
-<li>[ ] 推导</li>
-</ul>
-<p>$\lim_{n \to + \infty }np_n=\lambda &gt; 0$</p>
-<p>$\lim_{n \to + \infty }C_{n}^kp_n^k(1-p_n)^{n-k}=e^{-\lambda}\frac{\lambda^k}{k!},k=0,1,2,\cdots$<br>np&lt;10!!</p>
-<h4 id="推广"><a href="#推广" class="headerlink" title="推广"></a>推广</h4><p>条件不用$+\infty$</p>
-<h3 id="超几何分布"><a href="#超几何分布" class="headerlink" title="超几何分布"></a>超几何分布</h3><p><em>取东西不放回</em></p>
-<p>$P(X=k)=\displaystyle\frac{C_a^k C_b^{n-k}}{C_{a+b}^n}$</p>
-<p>当$(a+b)\to \infty$ 把不放回近似于放回 $P(X=k)=(\frac{a}{a+b})^k(\frac{b}{a+b})^{n-k}$</p>
-<hr>
-<h2 id="连续型随机变量"><a href="#连续型随机变量" class="headerlink" title="连续型随机变量"></a>连续型随机变量</h2><blockquote>
-<p>存在非负可积函数 其积分=F(分布函数) 概率密度函数</p>
-<p>连续型随机变量的分布函数连续</p>
-</blockquote>
-<h3 id="概率密度"><a href="#概率密度" class="headerlink" title="概率密度"></a>概率密度</h3><p>$f(x)=F’(x)$</p>
-<p>$P(x_0&lt;X\le x_0+\Delta x)\approx f(x_0)\Delta x$</p>
-<p>$P(X=a)=0$</p>
-<blockquote>
-<p>f不唯一 有限或可列点处值可突变</p>
-</blockquote>
-<h3 id="均匀分布"><a href="#均匀分布" class="headerlink" title="均匀分布"></a>均匀分布</h3><script type="math/tex; mode=display">
-f(x)=
-  \left\{\begin{matrix} 
-  \displaystyle\frac{1}{b-a},a<x<b, \\
-  0,others, \\ 
-\end{matrix}\right.</script><script type="math/tex; mode=display">
-X \sim U(a,b)</script><script type="math/tex; mode=display">
-F(x)=
-  \left\{\begin{matrix} 
-  0,x<a, \\
-  \displaystyle\frac{x-a}{b-a},a \le x <b, \\
-  1, x \ge b, \\
-\end{matrix}\right.</script><h3 id="指数分布"><a href="#指数分布" class="headerlink" title="指数分布"></a>指数分布</h3><script type="math/tex; mode=display">
-f(x)=
-  \left\{\begin{matrix} 
-  \lambda e ^{-\lambda x},x>0, \\
-  0,x \le 0, \\ 
-\end{matrix}\right.</script><script type="math/tex; mode=display">
-X \sim E(\lambda)</script><script type="math/tex; mode=display">
-F(x)=
-  \left\{\begin{matrix} 
-  1-e ^{-\lambda x},x>0, \\
-  0,x \le 0, \\ 
-\end{matrix}\right.</script><ul>
-<li>ps $N(t) \sim P(\lambda t) \to T\sim E(\lambda)$</li>
-</ul>
-<h3 id="正态分布-Gauss-分布"><a href="#正态分布-Gauss-分布" class="headerlink" title="正态分布(Gauss 分布)"></a>正态分布(Gauss 分布)</h3><p>$f(x)=\displaystyle\frac{1}{\sqrt{2\pi}\sigma}e^{-\displaystyle\frac{(x-\mu)^2}{2\sigma^2}}$</p>
-<p>$x \sim N(\mu,\sigma^2)$</p>
-<ul>
-<li>性质</li>
-<li>max: $x=\mu$ $f=\frac{1}{\sqrt{2\pi}\sigma}$</li>
-<li>$\mu$:位置 $\sigma$:形状</li>
-</ul>
-<h4 id="标准正态分布"><a href="#标准正态分布" class="headerlink" title="标准正态分布"></a>标准正态分布</h4><blockquote>
-<p>$\mu=0,\sigma=1$</p>
-</blockquote>
-<p>分布函数<br>$\Phi(x)=\frac{1}{\sqrt{2\pi}}\int_{-\infty}^{x}e^{-\frac{t^2}{2}}dt$</p>
-<blockquote>
-<p>查表</p>
-</blockquote>
-<ul>
-<li>线性变换  $Y=\frac{X-\mu}{\sigma}$ 把一般正态分布转化为标准正态分布</li>
-</ul>
-<h2 id="其它"><a href="#其它" class="headerlink" title="其它"></a>其它</h2><ul>
-<li><p>小概率原理</p>
-</li>
-<li><p>实际推断原理</p>
-</li>
-</ul>
-<h2 id="随机变量函数"><a href="#随机变量函数" class="headerlink" title="随机变量函数"></a>随机变量函数</h2><p>$f_Y(y)=f_X(g^{-1}(x))|g^{-1}(x)’|$<br>多段单调就多段加起来<br><img src="/2022/03/19/probability%20statistics/note/5894415021af3aed6f6f5d3c2ed8532.jpg" alt><br><img src="/2022/03/19/probability%20statistics/note/ade67786f263ba1e247b2b2e7c1a8d4.png" alt></p>
-<h2 id="二维离散型随机变量"><a href="#二维离散型随机变量" class="headerlink" title="二维离散型随机变量"></a>二维离散型随机变量</h2><blockquote>
-<p>非负 规范</p>
-</blockquote>
-<h3 id="关于x-y的边缘分布律"><a href="#关于x-y的边缘分布律" class="headerlink" title="关于x/y的边缘分布律"></a>关于x/y的边缘分布律</h3><p>不可通过边缘分布律确定联合分布律</p>
-<h2 id="二维连续性随机变量"><a href="#二维连续性随机变量" class="headerlink" title="二维连续性随机变量"></a>二维连续性随机变量</h2><blockquote>
-<p>存在可积</p>
-</blockquote>
-<p>边缘密度函数 略</p>
-<h3 id="二维均匀分布"><a href="#二维均匀分布" class="headerlink" title="二维均匀分布"></a>二维均匀分布</h3><script type="math/tex; mode=display">
-f(x)=
-  \left\{\begin{matrix} 
-  \displaystyle\frac{1}{S_D},(x,y)\in G, \\
-  0,others, \\ 
-\end{matrix}\right.</script><h3 id="二维正态分布"><a href="#二维正态分布" class="headerlink" title="二维正态分布"></a>二维正态分布</h3><script type="math/tex; mode=display">
-f(x)=...</script><script type="math/tex; mode=display">
-(X,Y)\sim N(\mu_1,\sigma_1^2;\mu_2,\sigma_2^2;\rho)</script><script type="math/tex; mode=display">
-x \sim N(\mu_1,\sigma_1^2)</script><script type="math/tex; mode=display">
-x \sim N(\mu_2,\sigma_2^2)</script><blockquote>
-<p>边缘分布律与$\rho$无关</p>
-</blockquote>
-<ul>
-<li>[ ] 例3.1.6</li>
-</ul>
-<h2 id="条件分布"><a href="#条件分布" class="headerlink" title="条件分布"></a>条件分布</h2><blockquote>
-<p>乘法公式 全概率公式<br>连续变量的条件分布用洛必达</p>
-</blockquote>
-<p>$f_{X|Y}(x|y)=(\displaystyle\frac{\int_{-\infty}^{x}f(u,y)du}{f_Y(y)})’=\displaystyle\frac{f(x,y)}{f_Y(y)}$</p>
-<blockquote>
-<p>积分中值定理</p>
-</blockquote>
-<h2 id="独立性"><a href="#独立性" class="headerlink" title="独立性"></a>独立性</h2><p>$F(X,Y)=F_X(x)F_Y(y)$</p>
-<h3 id="独立性定理"><a href="#独立性定理" class="headerlink" title="独立性定理"></a>独立性定理</h3><p>$f(x,y)=r(x)g(x)$<br><em>meishenmejiazhi</em></p>
-<h3 id="n维随机变量"><a href="#n维随机变量" class="headerlink" title="n维随机变量"></a>n维随机变量</h3><p>略</p>
-<h3 id="多维随机变量函数的分布"><a href="#多维随机变量函数的分布" class="headerlink" title="多维随机变量函数的分布"></a>多维随机变量函数的分布</h3><p>离散卷积公式<br>$P(X+Y=r)=\Sigma_{i=0}^r P(X=i)P(Y=r-i)$</p>
-<blockquote>
-<p>Poisson分布，二项分布的可加性</p>
-</blockquote>
-<h4 id="和"><a href="#和" class="headerlink" title="和"></a>和</h4><p>随机变量的线性函数的分布</p>
-<p>$Z=aX+bY+c$</p>
-<p>$f_z(z)=\displaystyle\frac{1}{|b|}\int_{-\infty}^{+\infty}f(t,\displaystyle\frac{z-at-c}{b})dt=\displaystyle\frac{1}{|a|}\int_{-\infty}^{+\infty}f(t,\displaystyle\frac{z-bt-c}{a})dt$</p>
-<h4 id="商"><a href="#商" class="headerlink" title="商"></a>商</h4><p>$Z=\displaystyle\frac{X}{Y}$</p>
-<p>$f_z(z)=\int_{-\infty}^{+\infty}f(yz,y)|y|dy$</p>
-<h4 id="平方和"><a href="#平方和" class="headerlink" title="平方和"></a>平方和</h4><p>$Z=X_1^2+X_2^2+\cdots+X_n^2$</p>
-<script type="math/tex; mode=display">
-f_z(z)=  \left\{
-  \begin{matrix} 
-  0,z<0, \\
-  \frac12 \int_0^{2\pi}f(\sqrt{z}cos \theta,\sqrt{z}sin \theta )d\theta,z\ge 0. \\ 
-\end{matrix}\right.</script><h4 id="极值"><a href="#极值" class="headerlink" title="极值"></a>极值</h4><p>$P(max(x,y)&lt;M)=\int_{-\infty}^m \int_{-\infty}^m f(x,y)=F_x(m)F_y(m)$</p>
-<p>$P(min(x,y)<M)=1-P(min(x,y)>M)=1-(1-f_x(m))(1-f_y(m))$</M)=1-P(min(x,y)></p>
-<h3 id="多维随机变量函数的联合分布"><a href="#多维随机变量函数的联合分布" class="headerlink" title="多维随机变量函数的联合分布"></a>多维随机变量函数的联合分布</h3><p>$u=u(x,y), v=v(x,y)$<br>$f_{(U,V)}(u,v)=f_{(X,Y)}(h(u,v),s(u,v))|J(u,v)|$</p>
-<blockquote>
-<p>h,s 反函数<br>$J=\displaystyle\frac{\partial(h,s)}{\partial(u,v)}$</p>
-</blockquote>
-<h1 id="数字特征"><a href="#数字特征" class="headerlink" title="数字特征"></a>数字特征</h1><h2 id="数学期望"><a href="#数学期望" class="headerlink" title="数学期望"></a>数学期望</h2><p>级数$\sum_{k=1}^{+\infty}x_kp_k$ 绝对收敛</p>
-<ul>
-<li><p>$x\sim P(\lambda)$<br>==$E(x)=\lambda \sum_{k=1}^{+\infty}\displaystyle\frac{\lambda^{k-1}}{(k-1)!}e^{-\lambda}=\lambda$==</p>
-</li>
-<li><p>$P(x=K)=pq^{k-1}$<br>$E(x)=\frac{1}{p}$</p>
-<blockquote>
-<p>化成积分后等比数列求和再求导 </p>
-</blockquote>
-</li>
-<li><p>$x \sim B(p)$<br>$E(X)=$<br>…忘了 之后补充..</p>
-</li>
-<li><p>$x \sim N(\mu,\sigma)$<br>$E=\mu$</p>
-<blockquote>
-<p>换成标准正态分布证明</p>
-</blockquote>
-</li>
-<li><p>$x \sim exp(\lambda)$<br>$E=\frac{1}{\lambda}$</p>
-<blockquote>
-<p>分部积分</p>
-</blockquote>
-</li>
-<li><p>$x \sim U(a,b)$<br>$E=\frac{a+b}2$</p>
-</li>
-</ul>
-<h2 id="性质见书"><a href="#性质见书" class="headerlink" title="性质见书"></a>性质见书</h2><p>$E(XY)=cov(X,Y)+(EX)(EY)$</p>
-<h2 id="方差"><a href="#方差" class="headerlink" title="方差"></a>方差</h2><h3 id="性质"><a href="#性质" class="headerlink" title="性质"></a>性质</h3><ul>
-<li>X,Y独立 $D(X+Y)=D(X)+D(Y)$</li>
-<li><p>$D(aX+bY)=a^2DX+2abCov(X,Y)+b^2DY$</p>
-<h3 id="常见"><a href="#常见" class="headerlink" title="常见"></a>常见</h3></li>
-<li><p>$x \sim B(n,p)$<br>$D_{x_i}=pq$<br>$D=npq$</p>
-</li>
-<li><p>$x\sim P(\lambda)$<br>==$E(x)=\lambda \sum_{k=1}^{+\infty}\displaystyle\frac{\lambda^{k-1}}{(k-1)!}e^{-\lambda}=\lambda$==<br><img src="/2022/03/19/probability%20statistics/note/2022-04-12-11-26-20.png" alt></p>
-</li>
-<li><p>$X \sim G(p)$<br>$E(x)=\frac{1}{p}$</p>
-<blockquote>
-<p>化成积分后等比数列求和再求导<br><img src="/2022/03/19/probability%20statistics/note/2022-04-12-11-32-52.png" alt></p>
-</blockquote>
-</li>
-<li><p>$x \sim N(\mu,\sigma^2)$<br>$D=\sigma$</p>
-<blockquote>
-<p>换成标准正态分布证明</p>
-</blockquote>
-</li>
-<li><p>$x \sim exp(\lambda)$<br>$E=\frac{1}{\lambda}$</p>
-<blockquote>
-<p>分部积分</p>
-</blockquote>
-</li>
-<li><p>$x \sim U(a,b)$<br>$E=\frac{a+b}2$</p>
-<h2 id="车贝谢夫不等式"><a href="#车贝谢夫不等式" class="headerlink" title="车贝谢夫不等式"></a>车贝谢夫不等式</h2><p>$\forall \xi&gt;0,P(|x-Ex|\le \xi)$</p>
-</li>
-</ul>
-<p><img src="/2022/03/19/probability%20statistics/note/2022-04-12-11-04-45.png" alt></p>
-<h2 id="协方差和相关系数"><a href="#协方差和相关系数" class="headerlink" title="协方差和相关系数"></a>协方差和相关系数</h2><p>$Cov(x,y)=E[(X-EX)(Y-EY)]=E(xy)-(EX)(EY)$</p>
-<p>$\rho_{X,Y}=\displaystyle\frac{cov(X,Y)}{\sqrt{D(X)}\sqrt{D{Y}}}$</p>
-<blockquote>
-<p>相关系数</p>
-</blockquote>
-<p>=0时xy互不相关</p>
-<p><em>tip:不相关不一定独立$(x,x^2)$,独立一定不相关</em></p>
-<h3 id="协方差的性质"><a href="#协方差的性质" class="headerlink" title="协方差的性质"></a>协方差的性质</h3><p>$Cov(X,aY+bZ)=aCov(x,y)+bCov(x,z)$</p>
-<p>$Cov(X,Y) \le \sqrt{DX}\sqrt{DY},Y=aX+b(=)$ </p>
-<blockquote>
-<p>Cauchy-Schwarz 证明$D(Y-aX)&gt;= 0$ 根的性质…..</p>
-</blockquote>
-<p>$Cov(x,y)=\frac{D(X+Y)-DX-DY}{2}$</p>
-<h3 id="随机变量的性质"><a href="#随机变量的性质" class="headerlink" title="随机变量的性质"></a>随机变量的性质</h3><p>完全正/负相关 1/-1<br> 线性均方误差 $min_{a,b}g(a,b)=min_{a,b}E((Y-aX-b)^2)$<br>$a=\displaystyle\frac{cov(X,Y)}{D(X)}=\rho \sqrt{\frac{DY}{DX}}$<br>$b=EY-aEX$</p>
-<h4 id="tip-二维正态分布"><a href="#tip-二维正态分布" class="headerlink" title="tip:二维正态分布"></a>tip:二维正态分布</h4><ul>
-<li>熟悉$(\mu_1,\sigma_1^2,\mu_2,\sigma_2^2,\rho)$的含义</li>
-<li>二维正态分布中  独立==不相关</li>
-</ul>
-<h2 id="k阶矩"><a href="#k阶矩" class="headerlink" title="k阶矩"></a>k阶矩</h2><ul>
-<li>原点矩</li>
-<li>中心矩</li>
-<li>二维：混合矩</li>
-<li>标准正态分布 $EX^4=3$</li>
-<li>协方差矩阵</li>
-<li>半正定</li>
-<li>$D(t_1,X_1+T_2+X_2+…+t_nX_n)=(t_1,t_2,…,t_n)C(t_1,t_2,…,t_n)^T$</li>
-</ul>
-<h3 id="多维正态随机变量的概率分布"><a href="#多维正态随机变量的概率分布" class="headerlink" title="多维正态随机变量的概率分布"></a>多维正态随机变量的概率分布</h3><p>$f(x_1,x_2,\cdots,x_n)=\frac1{(2\pi)^{n/2}|C|^{1/2}}e^{-\frac12(x-\mu)^TC^{-1}(x-\mu)}$</p>
-<p>$(x_1,x_2,\cdots,x_n) \sim N(\mu,C)$</p>
-<blockquote>
-<p>均值向量 协方差矩阵</p>
-</blockquote>
-<h2 id="预备知识"><a href="#预备知识" class="headerlink" title="预备知识"></a>预备知识</h2><h3 id="Chebyshev不等式"><a href="#Chebyshev不等式" class="headerlink" title="Chebyshev不等式"></a>Chebyshev不等式</h3><p>$P(|X-\mu|\ge \epsilon)\le \displaystyle\frac{\sigma^2}{\epsilon^2}$</p>
-<blockquote>
-<p>证明：代入积分的式子后 放缩</p>
-</blockquote>
-<ul>
-<li>优点：可用于分布不明确</li>
-<li>缺点：稍有误差，最好区域关于期望对称</li>
-</ul>
-<h3 id="依概率收敛"><a href="#依概率收敛" class="headerlink" title="依概率收敛"></a>依概率收敛</h3><p>$\lim_{n \to +\infty}P(|Y_n-X|\ge \epsilon)=0,or,\lim_{n \to +\infty}P(|Y_n-X|&lt; \epsilon)=1$<br>$Y_n\to^{P}_{n\to +\infty}X$</p>
-<blockquote>
-<p>教材P149</p>
-</blockquote>
-<h2 id="大数定律"><a href="#大数定律" class="headerlink" title="大数定律"></a>大数定律</h2><blockquote>
-<p><em>完蛋蛋，我好像要糊掉了嘤嘤嘤 = _ =</em></p>
-</blockquote>
-<h3 id="Bernoulli大数定律"><a href="#Bernoulli大数定律" class="headerlink" title="Bernoulli大数定律"></a>Bernoulli大数定律</h3><blockquote>
-<p>独立，已知频率</p>
-</blockquote>
-<p>$lim_{n\to +\infty}P(|\frac{n_A}n-p|\ge \epsilon=0)$</p>
-<p>$n\to +\infty,$ 概率 $\to$ 频率</p>
-<blockquote>
-<p>可用Chebyshev证明</p>
-</blockquote>
-<h3 id="Chebyshev大数定律"><a href="#Chebyshev大数定律" class="headerlink" title="Chebyshev大数定律"></a>Chebyshev大数定律</h3><blockquote>
-<p>两两不相关 方差有共同上界<br>两两不相关也可以换成$\frac 1 {n^2}D(\sum_{k-1}^n X_k)\to^{x \to+\infty}0$ (Chebyshev)</p>
-</blockquote>
-<ul>
-<li>[ ] ==<em>为什么一定要共同上界呢？</em>==</li>
-</ul>
-<p>$lim_{n\to +\infty}P(|\frac 1 n \sum_{i=1}^n X_i-\frac 1 n \sum_{i=1}^n E(X_i)|\ge \epsilon=0)$</p>
-<p>$n\to +\infty,$ 样本均值 $\to$ 真实期望</p>
-<ul>
-<li>一般用此定义该序列服从大数定律</li>
-</ul>
-<h3 id="Khintchine大数定律"><a href="#Khintchine大数定律" class="headerlink" title="Khintchine大数定律"></a>Khintchine大数定律</h3><blockquote>
-<p>独立同分布</p>
-</blockquote>
-<ul>
-<li>[ ] ==<em>为什么一定要共同上界呢？</em>==</li>
-</ul>
-<p>$lim_{n\to +\infty}P(|\frac 1 n \sum_{i=1}^n X_i-\mu|\ge \epsilon=0)$</p>
-<p>$n\to +\infty,$ 算术平均值 $\to$ 期望（常数）</p>
-<h2 id="中心极限定理"><a href="#中心极限定理" class="headerlink" title="中心极限定理"></a>中心极限定理</h2><blockquote>
-<p>独立同分布</p>
-</blockquote>
-<p>$lim_{n\to\infty}P(\displaystyle\frac{\Sigma_{k=1}^n x_i-n\mu}{\sqrt{n}\sigma}\le x)=\Phi(x)$</p>
-<p>$\Phi(x)=\displaystyle\frac{1}{\sqrt{2\pi}}\int_{-\infty}^{x}e^{-\frac{t^2}{2}}dt$</p>
-<h3 id="De-Moivre-Laplace-中心极限定理"><a href="#De-Moivre-Laplace-中心极限定理" class="headerlink" title="De Moivre-Laplace 中心极限定理"></a>De Moivre-Laplace 中心极限定理</h3><p>$lim_{n\to +\infty}P(\displaystyle\frac{Y_n-np}{\sqrt{np(1-p)}}\le x)=\frac {1}{\sqrt{2\pi}}\int_{-\infty}^x e^{-\frac{t^2}2}dt$</p>
-<h1 id="统计"><a href="#统计" class="headerlink" title="统计"></a>统计</h1><h2 id="常用统计量"><a href="#常用统计量" class="headerlink" title="常用统计量"></a>常用统计量</h2><ul>
-<li>$\bar{X}$</li>
-<li><p>$S^2=\frac{1}{n-1}\sum_{i=1}^n(X_i-\bar{X})^2$</p>
-<ul>
-<li>n-1的理解： 自由度-1，列个式子可得</li>
-<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/Hearthougan/article/details/77859173">https://blog.csdn.net/Hearthougan/article/details/77859173</a></li>
-</ul>
-</li>
-<li><p>$S$</p>
-</li>
-<li>$M_k=\frac 1 n \sum_{i=1}^n X_i^k$ 样本k阶原点矩</li>
-<li>$(CM)_k=\frac 1 n \sum_{i=1}^n (X_i-\bar(X))^k$ 样本k阶中心矩</li>
-<li>$X_{(1)},X_{(2)},\cdots,X_{(n)}$ 顺序统计量</li>
-<li>$D_n=X_{(n)}-X_{(1)}$ 极差<h3 id="性质-1"><a href="#性质-1" class="headerlink" title="性质"></a>性质</h3></li>
-<li>$(CM)_2=M_2-\bar{X}^2$</li>
-<li>$S^2=\frac n {n-1}(CM)_2$</li>
-<li>$E(\bar{X})=EX$</li>
-<li>$D(\bar{X})=\displaystyle\frac{DX}{n}$</li>
-<li>$E(S^2)=DX$</li>
-</ul>
-<h3 id="经验分布函数"><a href="#经验分布函数" class="headerlink" title="经验分布函数"></a>经验分布函数</h3><p>$F_n(x)=\displaystyle\frac{N_n(x)}{n}$<br>依概率收敛于频率</p>
-<h3 id="直方图"><a href="#直方图" class="headerlink" title="直方图"></a>直方图</h3><p>将[a,b]分成8-15个小区间<br>每个小区间包含若干个样本值<br><img src="/2022/03/19/probability%20statistics/note/2022-04-26-11-13-31.png" alt></p>
-<h2 id="常用抽样分布"><a href="#常用抽样分布" class="headerlink" title="常用抽样分布"></a>常用抽样分布</h2><h3 id="X-2-分布"><a href="#X-2-分布" class="headerlink" title="$X^2$分布"></a>$X^2$分布</h3><ul>
-<li>定义<br>$X_i$相互独立且$\sim N(0,1)$,$\sum_{i=1}^{n}X_i^2 \sim X^2(n)$</li>
-<li>性质<br>$EX^2(n)=n$<br>$DX^2(n)=D\sum_{i=1}^n X_i^2=\sum_{i=1}^n D(X_i^2)=\sum_{i=1}^n(E(X_i^4)-E^2(X_i^2))=2n$<br>可加性<br>$n\to +\infty, X^2\sim N(n,2n)$</li>
-<li>概率密度<br>不要求，自己翻书</li>
-</ul>
-<h3 id="上侧α分位数"><a href="#上侧α分位数" class="headerlink" title="上侧α分位数"></a>上侧α分位数</h3><p>$P(X^2(n)\ge X_{\alpha}^2(n))=\alpha$</p>
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({ tex2jax: {inlineMath: [['$', '$']]}, messageStyle: "none" });
-</script>
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -1289,7 +1002,7 @@ f_z(z)=  \left\{
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">39</span>
+          <span class="site-state-item-count">40</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
