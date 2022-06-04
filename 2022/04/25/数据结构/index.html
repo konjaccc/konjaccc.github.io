@@ -20,15 +20,15 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="动态查找表二叉查找树&#x2F;二叉排序树左节点&lt;根&lt;右键点存储：指针 链式查找&#x2F;插入删除：两个子节点时：找到左节点的最大值或右节点的最小值作为替换，删掉那个节点tip: 注意插入和删除时的引用 AVL 树&#x2F;平衡树左右子树高度差不超过1LL&#x2F;RR: 单旋转 把该子树转成当前父节点 把子树中的中间子树移给它原来的爸爸 LR&#x2F;RL: 双旋转 先对不平衡的子树反单旋转 再对根节点单旋转 排序插入排序直">
+  <meta name="description" content="集合线性树动态查找表二叉查找树&#x2F;二叉排序树左节点&lt;根&lt;右键点存储：指针 链式查找&#x2F;插入删除：两个子节点时：找到左节点的最大值或右节点的最小值作为替换，删掉那个节点tip: 注意插入和删除时的引用 AVL 树&#x2F;平衡树左右子树高度差不超过1LL&#x2F;RR: 单旋转 把该子树转成当前父节点 把子树中的中间子树移给它原来的爸爸 LR&#x2F;RL: 双旋转 先对不平衡的子树反单旋转 再对根节点单旋转 排序">
 <meta property="og:type" content="article">
 <meta property="og:title" content="数据结构">
 <meta property="og:url" content="http://example.com/2022/04/25/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/index.html">
 <meta property="og:site_name" content="Konjaccc の blogs">
-<meta property="og:description" content="动态查找表二叉查找树&#x2F;二叉排序树左节点&lt;根&lt;右键点存储：指针 链式查找&#x2F;插入删除：两个子节点时：找到左节点的最大值或右节点的最小值作为替换，删掉那个节点tip: 注意插入和删除时的引用 AVL 树&#x2F;平衡树左右子树高度差不超过1LL&#x2F;RR: 单旋转 把该子树转成当前父节点 把子树中的中间子树移给它原来的爸爸 LR&#x2F;RL: 双旋转 先对不平衡的子树反单旋转 再对根节点单旋转 排序插入排序直">
+<meta property="og:description" content="集合线性树动态查找表二叉查找树&#x2F;二叉排序树左节点&lt;根&lt;右键点存储：指针 链式查找&#x2F;插入删除：两个子节点时：找到左节点的最大值或右节点的最小值作为替换，删掉那个节点tip: 注意插入和删除时的引用 AVL 树&#x2F;平衡树左右子树高度差不超过1LL&#x2F;RR: 单旋转 把该子树转成当前父节点 把子树中的中间子树移给它原来的爸爸 LR&#x2F;RL: 双旋转 先对不平衡的子树反单旋转 再对根节点单旋转 排序">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-04-25T02:15:32.000Z">
-<meta property="article:modified_time" content="2022-05-09T23:07:32.956Z">
+<meta property="article:modified_time" content="2022-06-04T00:32:20.894Z">
 <meta property="article:author" content="Konjaccc">
 <meta property="article:tag" content="notes">
 <meta name="twitter:card" content="summary">
@@ -207,7 +207,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-05-10 07:07:32" itemprop="dateModified" datetime="2022-05-10T07:07:32+08:00">2022-05-10</time>
+                <time title="修改时间：2022-06-04 08:32:20" itemprop="dateModified" datetime="2022-06-04T08:32:20+08:00">2022-06-04</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -230,7 +230,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="动态查找表"><a href="#动态查找表" class="headerlink" title="动态查找表"></a>动态查找表</h2><h3 id="二叉查找树-二叉排序树"><a href="#二叉查找树-二叉排序树" class="headerlink" title="二叉查找树/二叉排序树"></a>二叉查找树/二叉排序树</h3><p>左节点&lt;根&lt;右键点<br>存储：指针 链式<br>查找/插入<br>删除：两个子节点时：找到左节点的最大值或右节点的最小值作为替换，删掉那个节点<br>tip: 注意插入和删除时的引用</p>
+        <h2 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h2><h2 id="线性"><a href="#线性" class="headerlink" title="线性"></a>线性</h2><h2 id="树"><a href="#树" class="headerlink" title="树"></a>树</h2><h2 id="动态查找表"><a href="#动态查找表" class="headerlink" title="动态查找表"></a>动态查找表</h2><h3 id="二叉查找树-二叉排序树"><a href="#二叉查找树-二叉排序树" class="headerlink" title="二叉查找树/二叉排序树"></a>二叉查找树/二叉排序树</h3><p>左节点&lt;根&lt;右键点<br>存储：指针 链式<br>查找/插入<br>删除：两个子节点时：找到左节点的最大值或右节点的最小值作为替换，删掉那个节点<br>tip: 注意插入和删除时的引用</p>
 <h3 id="AVL-树-平衡树"><a href="#AVL-树-平衡树" class="headerlink" title="AVL 树/平衡树"></a>AVL 树/平衡树</h3><p>左右子树高度差不超过1<br>LL/RR: 单旋转 把该子树转成当前父节点 把子树中的中间子树移给它原来的爸爸</p>
 <p>LR/RL: 双旋转 先对不平衡的子树反单旋转 再对根节点单旋转</p>
 <h2 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h2><h3 id="插入排序"><a href="#插入排序" class="headerlink" title="插入排序"></a>插入排序</h3><h4 id="直接插入排序"><a href="#直接插入排序" class="headerlink" title="直接插入排序"></a>直接插入排序</h4><h4 id="二分插入排序"><a href="#二分插入排序" class="headerlink" title="二分插入排序"></a>二分插入排序</h4><ul>
@@ -241,7 +241,65 @@
 <h3 id="选择排序"><a href="#选择排序" class="headerlink" title="选择排序"></a>选择排序</h3><p>略</p>
 <h3 id="堆排序"><a href="#堆排序" class="headerlink" title="堆排序"></a>堆排序</h3><p>O(NlogN)<br>出堆的放在数组最后</p>
 <h3 id="交换排序"><a href="#交换排序" class="headerlink" title="交换排序"></a>交换排序</h3><h4 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h4><p>跳出</p>
-<h4 id="快速排序"><a href="#快速排序" class="headerlink" title="快速排序"></a>快速排序</h4>
+<h4 id="快速排序"><a href="#快速排序" class="headerlink" title="快速排序"></a>快速排序</h4><h2 id="外部查找"><a href="#外部查找" class="headerlink" title="外部查找"></a>外部查找</h2><blockquote>
+<p>磁带: 保存</p>
+<p>磁盘: 磁道 柱面 扇区</p>
+</blockquote>
+<h3 id="B树"><a href="#B树" class="headerlink" title="B树"></a>B树</h3><p>根节点儿子数: 0, 2 ~ m<br>内部结点: $[m/2]\le s \le m$<br>结点:$(n,A_0,(K_1, R_1),A_1,\cdots,A_n)$</p>
+<h4 id="查找"><a href="#查找" class="headerlink" title="查找"></a>查找</h4><p>lue</p>
+<h4 id="插入"><a href="#插入" class="headerlink" title="插入"></a>插入</h4><ul>
+<li>未满 直接插</li>
+<li><p>已满 插完分裂，父节点s+1，继续往上判断<br>  也可以寄养</p>
+<h4 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h4></li>
+<li><p>非底层 找右子树最左/左子树最右代替</p>
+</li>
+<li>底层 若删完$s&lt;[M/2]-1$ 问邻居节点借/合并</li>
+</ul>
+<h3 id="B-树"><a href="#B-树" class="headerlink" title="B+树"></a>B+树</h3><p>数据存于叶子节点 其它层为索引<br>m阶<br>l: 数据块大小$[[l/2],l]$<br>最坏访问$log_{M/2}N+1$</p>
+<h4 id="查找-1"><a href="#查找-1" class="headerlink" title="查找"></a>查找</h4><h4 id="插入-1"><a href="#插入-1" class="headerlink" title="插入"></a>插入</h4><ul>
+<li>未满 直接插</li>
+<li>已满 插完分裂，父节点s+1，继续往上判断<br>  也可以寄养</li>
+</ul>
+<h4 id="删除-1"><a href="#删除-1" class="headerlink" title="删除"></a>删除</h4><p>同B树 领养/合并</p>
+<h2 id="外部排序"><a href="#外部排序" class="headerlink" title="外部排序"></a>外部排序</h2><h3 id="归并排序"><a href="#归并排序" class="headerlink" title="归并排序"></a>归并排序</h3><ul>
+<li><p>置换选择<br>适用于较有序的数据，分成不同排序段</p>
+</li>
+<li><p>多阶段归并 斐波那契数列分解</p>
+</li>
+</ul>
+<h2 id="图"><a href="#图" class="headerlink" title="图"></a>图</h2><h3 id="存储"><a href="#存储" class="headerlink" title="存储"></a>存储</h3><p>邻接矩阵 邻接表</p>
+<h3 id="遍历"><a href="#遍历" class="headerlink" title="遍历"></a>遍历</h3><p>DFS BFS<br>O(|E|+|V|)<br>O(|V|^2)<br>欧拉路径(回路)<br>欧拉回路计算方法: 拼接路径<br>clone函数<br>外部函数<br>内部函数</p>
+<h3 id="有向图的连通性"><a href="#有向图的连通性" class="headerlink" title="有向图的连通性"></a>有向图的连通性</h3><p>dfs一遍后用后序标号<br>把每个树的最大标号逆向后开始dfs</p>
+<h3 id="拓扑排序"><a href="#拓扑排序" class="headerlink" title="拓扑排序"></a>拓扑排序</h3><p>不停输出入度为0的点，更新减边<br>AOV</p>
+<h3 id="关键路径-关键活动"><a href="#关键路径-关键活动" class="headerlink" title="关键路径 关键活动"></a>关键路径 关键活动</h3><p>两个拓扑<br>AOE</p>
+<h1 id="树-1"><a href="#树-1" class="headerlink" title="树"></a>树</h1><ul>
+<li>[ ] 空集也是树</li>
+<li>[ ] 根不是内部节点</li>
+<li>[ ] 度 直接后继节点数</li>
+<li>[ ] 根的层次是1</li>
+<li>[ ] 树的高度 最大层次</li>
+<li>[ ] 节点高度 以其为根的子树高度</li>
+<li>[ ] 满二叉树 完全二叉树</li>
+<li>[ ] 包裹函数</li>
+<li>[ ] 二叉树前中后序的非递归实现</li>
+<li>[ ] 算术表达式转树</li>
+<li>[ ] 哈夫曼树 不等长编码</li>
+<li>[ ] 孩子兄弟链表示法</li>
+<li><p>[ ] 森林表示法 把树转成二叉树 把Bi作为Bi-1根节点的右子树</p>
+<h1 id="优先级队列"><a href="#优先级队列" class="headerlink" title="优先级队列"></a>优先级队列</h1></li>
+<li><p>[ ] 二叉堆 完全二叉树</p>
+</li>
+<li>[ ] buildHeap 先全读入然后对非叶子节点percolateDown O(N)</li>
+<li>[ ] D堆 插入比删除多得多的时候 / 减少内外存交换</li>
+<li>[ ] 多服务台排队系统的模拟 取出到达后加上服务时间作为结束时间重新插入优先队列，取出结束时间时使用中服务台— 等待队列(普通队列)</li>
+<li>[ ] 合并两个最小化堆的时间复杂度O(logn) 二项堆?? 插入O(1)</li>
+</ul>
+<h1 id="图-1"><a href="#图-1" class="headerlink" title="图"></a>图</h1><ul>
+<li>[ ] 欧拉回路</li>
+<li>[ ] 连通性 dfs 后序编号 逆向dfs</li>
+<li>[ ] AOE 先找出拓扑排序，正反都走一下</li>
+</ul>
+
     </div>
 
     
@@ -324,7 +382,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8A%A8%E6%80%81%E6%9F%A5%E6%89%BE%E8%A1%A8"><span class="nav-number">1.</span> <span class="nav-text">动态查找表</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%8C%E5%8F%89%E6%9F%A5%E6%89%BE%E6%A0%91-%E4%BA%8C%E5%8F%89%E6%8E%92%E5%BA%8F%E6%A0%91"><span class="nav-number">1.1.</span> <span class="nav-text">二叉查找树&#x2F;二叉排序树</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#AVL-%E6%A0%91-%E5%B9%B3%E8%A1%A1%E6%A0%91"><span class="nav-number">1.2.</span> <span class="nav-text">AVL 树&#x2F;平衡树</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8E%92%E5%BA%8F"><span class="nav-number">2.</span> <span class="nav-text">排序</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F"><span class="nav-number">2.1.</span> <span class="nav-text">插入排序</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%9B%B4%E6%8E%A5%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F"><span class="nav-number">2.1.1.</span> <span class="nav-text">直接插入排序</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BA%8C%E5%88%86%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F"><span class="nav-number">2.1.2.</span> <span class="nav-text">二分插入排序</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B8%8C%E5%B0%94%E6%8E%92%E5%BA%8F"><span class="nav-number">2.1.3.</span> <span class="nav-text">希尔排序</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F"><span class="nav-number">2.2.</span> <span class="nav-text">选择排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A0%86%E6%8E%92%E5%BA%8F"><span class="nav-number">2.3.</span> <span class="nav-text">堆排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%A4%E6%8D%A2%E6%8E%92%E5%BA%8F"><span class="nav-number">2.4.</span> <span class="nav-text">交换排序</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F"><span class="nav-number">2.4.1.</span> <span class="nav-text">冒泡排序</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F"><span class="nav-number">2.4.2.</span> <span class="nav-text">快速排序</span></a></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%9B%86%E5%90%88"><span class="nav-number">1.</span> <span class="nav-text">集合</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BA%BF%E6%80%A7"><span class="nav-number">2.</span> <span class="nav-text">线性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A0%91"><span class="nav-number">3.</span> <span class="nav-text">树</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8A%A8%E6%80%81%E6%9F%A5%E6%89%BE%E8%A1%A8"><span class="nav-number">4.</span> <span class="nav-text">动态查找表</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%8C%E5%8F%89%E6%9F%A5%E6%89%BE%E6%A0%91-%E4%BA%8C%E5%8F%89%E6%8E%92%E5%BA%8F%E6%A0%91"><span class="nav-number">4.1.</span> <span class="nav-text">二叉查找树&#x2F;二叉排序树</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#AVL-%E6%A0%91-%E5%B9%B3%E8%A1%A1%E6%A0%91"><span class="nav-number">4.2.</span> <span class="nav-text">AVL 树&#x2F;平衡树</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8E%92%E5%BA%8F"><span class="nav-number">5.</span> <span class="nav-text">排序</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F"><span class="nav-number">5.1.</span> <span class="nav-text">插入排序</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%9B%B4%E6%8E%A5%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F"><span class="nav-number">5.1.1.</span> <span class="nav-text">直接插入排序</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BA%8C%E5%88%86%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F"><span class="nav-number">5.1.2.</span> <span class="nav-text">二分插入排序</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B8%8C%E5%B0%94%E6%8E%92%E5%BA%8F"><span class="nav-number">5.1.3.</span> <span class="nav-text">希尔排序</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F"><span class="nav-number">5.2.</span> <span class="nav-text">选择排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A0%86%E6%8E%92%E5%BA%8F"><span class="nav-number">5.3.</span> <span class="nav-text">堆排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%A4%E6%8D%A2%E6%8E%92%E5%BA%8F"><span class="nav-number">5.4.</span> <span class="nav-text">交换排序</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F"><span class="nav-number">5.4.1.</span> <span class="nav-text">冒泡排序</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F"><span class="nav-number">5.4.2.</span> <span class="nav-text">快速排序</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%96%E9%83%A8%E6%9F%A5%E6%89%BE"><span class="nav-number">6.</span> <span class="nav-text">外部查找</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#B%E6%A0%91"><span class="nav-number">6.1.</span> <span class="nav-text">B树</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9F%A5%E6%89%BE"><span class="nav-number">6.1.1.</span> <span class="nav-text">查找</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%8F%92%E5%85%A5"><span class="nav-number">6.1.2.</span> <span class="nav-text">插入</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%88%A0%E9%99%A4"><span class="nav-number">6.1.3.</span> <span class="nav-text">删除</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#B-%E6%A0%91"><span class="nav-number">6.2.</span> <span class="nav-text">B+树</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9F%A5%E6%89%BE-1"><span class="nav-number">6.2.1.</span> <span class="nav-text">查找</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%8F%92%E5%85%A5-1"><span class="nav-number">6.2.2.</span> <span class="nav-text">插入</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%88%A0%E9%99%A4-1"><span class="nav-number">6.2.3.</span> <span class="nav-text">删除</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%96%E9%83%A8%E6%8E%92%E5%BA%8F"><span class="nav-number">7.</span> <span class="nav-text">外部排序</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F"><span class="nav-number">7.1.</span> <span class="nav-text">归并排序</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%BE"><span class="nav-number">8.</span> <span class="nav-text">图</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AD%98%E5%82%A8"><span class="nav-number">8.1.</span> <span class="nav-text">存储</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%81%8D%E5%8E%86"><span class="nav-number">8.2.</span> <span class="nav-text">遍历</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%89%E5%90%91%E5%9B%BE%E7%9A%84%E8%BF%9E%E9%80%9A%E6%80%A7"><span class="nav-number">8.3.</span> <span class="nav-text">有向图的连通性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8B%93%E6%89%91%E6%8E%92%E5%BA%8F"><span class="nav-number">8.4.</span> <span class="nav-text">拓扑排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B3%E9%94%AE%E8%B7%AF%E5%BE%84-%E5%85%B3%E9%94%AE%E6%B4%BB%E5%8A%A8"><span class="nav-number">8.5.</span> <span class="nav-text">关键路径 关键活动</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%A0%91-1"><span class="nav-number"></span> <span class="nav-text">树</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BC%98%E5%85%88%E7%BA%A7%E9%98%9F%E5%88%97"><span class="nav-number"></span> <span class="nav-text">优先级队列</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%9B%BE-1"><span class="nav-number"></span> <span class="nav-text">图</span></a></div>
       </div>
       <!--/noindex-->
 
