@@ -1838,6 +1838,7 @@ x_1^{n-1} & x_2^{n-1} & \cdots & x_n^{n-1} \\
   if (typeof MathJax === 'undefined') {
     window.MathJax = {
       loader: {
+          load: ['[tex]/mhchem'],
         source: {
           '[tex]/amsCd': '[tex]/amscd',
           '[tex]/AMScd': '[tex]/amscd'
@@ -1845,6 +1846,7 @@ x_1^{n-1} & x_2^{n-1} & \cdots & x_n^{n-1} \\
       },
       tex: {
         inlineMath: {'[+]': [['$', '$']]},
+          packages: {'[+]': ['mhchem']},
         tags: 'ams'
       },
       options: {

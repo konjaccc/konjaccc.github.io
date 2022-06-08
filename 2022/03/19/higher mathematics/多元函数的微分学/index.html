@@ -596,6 +596,7 @@ f_{n1} & f_{n2} & \cdots & f_{nn} \\
   if (typeof MathJax === 'undefined') {
     window.MathJax = {
       loader: {
+          load: ['[tex]/mhchem'],
         source: {
           '[tex]/amsCd': '[tex]/amscd',
           '[tex]/AMScd': '[tex]/amscd'
@@ -603,6 +604,7 @@ f_{n1} & f_{n2} & \cdots & f_{nn} \\
       },
       tex: {
         inlineMath: {'[+]': [['$', '$']]},
+          packages: {'[+]': ['mhchem']},
         tags: 'ams'
       },
       options: {
