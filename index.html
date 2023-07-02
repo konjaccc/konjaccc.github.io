@@ -204,7 +204,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-07-02 13:35:16" itemprop="dateModified" datetime="2023-07-02T13:35:16+08:00">2023-07-02</time>
+                <time title="修改时间：2023-07-02 16:44:20" itemprop="dateModified" datetime="2023-07-02T16:44:20+08:00">2023-07-02</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -239,10 +239,38 @@
 <li>with queries on the location level</li>
 <li>not the same division</li>
 </ul>
+<blockquote>
+<p>partition: uniform grid-cell partition</p>
+</blockquote>
+<h3 id="1-constructing-cell-embeddings"><a href="#1-constructing-cell-embeddings" class="headerlink" title="1.constructing cell embeddings"></a>1.constructing cell embeddings</h3><p>partition and query for embeddings of each cell</p>
+<h3 id="2-searching-for-similar-cells"><a href="#2-searching-for-similar-cells" class="headerlink" title="2.searching for similar cells"></a>2.searching for similar cells</h3><p>k most similar cells(cosine similarity)/(Euclidean distance/Pearson correlation coefficient/Hamming distance)<br>$s_i=\displaystyle\frac{e_i \cdot e}{||e_i||\cdot ||e||}$ $for i=1,2,\dots,|V|$</p>
+<h3 id="3-constructing-dense-passing-areas"><a href="#3-constructing-dense-passing-areas" class="headerlink" title="3.constructing dense passing areas"></a>3.constructing dense passing areas</h3><p>density clustering(DBSCAN)-&gt; average as the center</p>
 <h2 id="the-learning-based-attack"><a href="#the-learning-based-attack" class="headerlink" title="the learning-based attack"></a>the learning-based attack</h2><blockquote>
 <p>revert whole shape of trajectory</p>
 </blockquote>
-<h3 id="location-inference-attack"><a href="#location-inference-attack" class="headerlink" title="location inference attack"></a>location inference attack</h3><h3 id="embedding-inversion-attack"><a href="#embedding-inversion-attack" class="headerlink" title="embedding inversion attack"></a>embedding inversion attack</h3>
+<ul>
+<li>with queries of the embedding model on trajectory level</li>
+</ul>
+<h3 id="location-inference-attack"><a href="#location-inference-attack" class="headerlink" title="location inference attack"></a>location inference attack</h3><blockquote>
+<p>whether pass by the ROIs<br>ROI: DBSCAN cluster -&gt; set radius r</p>
+</blockquote>
+<p>multi-label classification problem: trajectory T for each ROI</p>
+<p>minimize the cross-entropy loss $L_{MLC}=-\sum_{R \in R}y_R log(\hat{y}_R)+(1-y_R)log(1-\hat{y}_R)$</p>
+<blockquote>
+<p>partition: data-driven: cluster trajectory location in auxiliary dataset -&gt; potential ROIs</p>
+</blockquote>
+<h3 id="embedding-inversion-attack"><a href="#embedding-inversion-attack" class="headerlink" title="embedding inversion attack"></a>embedding inversion attack</h3><blockquote>
+<p>partition: uniform grid-cell partition</p>
+<ul>
+<li>assume constant length of trajectories</li>
+</ul>
+</blockquote>
+<p>RNN -&gt; embedding inversion</p>
+<p><em>tired, finish the details one day…</em></p>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({ tex2jax: {inlineMath: [['$', '$']]}, messageStyle: "none" });
+</script>
       
     </div>
 
