@@ -20,20 +20,20 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="第一类无方向性 第一类曲线积分$\int_Cf(x,y)ds&#x3D;\int_{\alpha}^\beta f(x(t),y(t))\sqrt{x’^2(t)+y’^2(t)}dt$  单参数形式  第一类曲面积分 $z&#x3D;z(x,y)$$\iint_c f(x,y,z)ds&#x3D;\iint_{D_{xy}}f(x,y,z(x,y))\sqrt{1+z_x^2+z_y^2}dxdy$  $x&#x3D;x(u,v)$">
+  <meta name="description" content="第一类无方向性 第一类曲线积分$\intCf(x,y)ds&#x3D;\int{\alpha}^\beta f(x(t),y(t))\sqrt{x’^2(t)+y’^2(t)}dt$  单参数形式  第一类曲面积分 $z&#x3D;z(x,y)$$\iintc f(x,y,z)ds&#x3D;\iint{D_{xy}}f(x,y,z(x,y))\sqrt{1+z_x^2+z_y^2}dxdy$  $x&#x3D;x(u,v)$  $\i">
 <meta property="og:type" content="article">
 <meta property="og:title" content="曲线积分和曲面积分">
 <meta property="og:url" content="http://example.com/2022/04/13/higher%20mathematics/%E6%9B%B2%E7%BA%BF%E7%A7%AF%E5%88%86%E5%92%8C%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86/index.html">
 <meta property="og:site_name" content="Konjaccc の blogs">
-<meta property="og:description" content="第一类无方向性 第一类曲线积分$\int_Cf(x,y)ds&#x3D;\int_{\alpha}^\beta f(x(t),y(t))\sqrt{x’^2(t)+y’^2(t)}dt$  单参数形式  第一类曲面积分 $z&#x3D;z(x,y)$$\iint_c f(x,y,z)ds&#x3D;\iint_{D_{xy}}f(x,y,z(x,y))\sqrt{1+z_x^2+z_y^2}dxdy$  $x&#x3D;x(u,v)$">
+<meta property="og:description" content="第一类无方向性 第一类曲线积分$\intCf(x,y)ds&#x3D;\int{\alpha}^\beta f(x(t),y(t))\sqrt{x’^2(t)+y’^2(t)}dt$  单参数形式  第一类曲面积分 $z&#x3D;z(x,y)$$\iintc f(x,y,z)ds&#x3D;\iint{D_{xy}}f(x,y,z(x,y))\sqrt{1+z_x^2+z_y^2}dxdy$  $x&#x3D;x(u,v)$  $\i">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/2022/04/13/higher%20mathematics/%E6%9B%B2%E7%BA%BF%E7%A7%AF%E5%88%86%E5%92%8C%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86/2022-04-27-11-20-29.png">
+<meta property="og:image" content="http://example.com/.com//2022-04-27-11-20-29.png">
 <meta property="article:published_time" content="2022-04-13T02:24:12.000Z">
 <meta property="article:modified_time" content="2022-06-08T03:09:07.118Z">
 <meta property="article:author" content="Konjaccc">
 <meta property="article:tag" content="notes">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/2022/04/13/higher%20mathematics/%E6%9B%B2%E7%BA%BF%E7%A7%AF%E5%88%86%E5%92%8C%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86/2022-04-27-11-20-29.png">
+<meta name="twitter:image" content="http://example.com/.com//2022-04-27-11-20-29.png">
 
 <link rel="canonical" href="http://example.com/2022/04/13/higher%20mathematics/%E6%9B%B2%E7%BA%BF%E7%A7%AF%E5%88%86%E5%92%8C%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86/">
 
@@ -79,11 +79,7 @@
   </style>
 </noscript>
 
-<!-- hexo injector head_end start -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
-<!-- hexo injector head_end end --></head>
+</head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
   <div class="container use-motion">
@@ -136,12 +132,12 @@
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">14</span></a>
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">15</span></a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">43</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">57</span></a>
 
   </li>
         <li class="menu-item menu-item-resources">
@@ -233,20 +229,20 @@
 
       
         <h1 id="第一类"><a href="#第一类" class="headerlink" title="第一类"></a>第一类</h1><p>无方向性</p>
-<h2 id="第一类曲线积分"><a href="#第一类曲线积分" class="headerlink" title="第一类曲线积分"></a>第一类曲线积分</h2><p>$\int_Cf(x,y)ds=\int_{\alpha}^\beta f(x(t),y(t))\sqrt{x’^2(t)+y’^2(t)}dt$</p>
+<h2 id="第一类曲线积分"><a href="#第一类曲线积分" class="headerlink" title="第一类曲线积分"></a>第一类曲线积分</h2><p>$\int<em>Cf(x,y)ds=\int</em>{\alpha}^\beta f(x(t),y(t))\sqrt{x’^2(t)+y’^2(t)}dt$</p>
 <blockquote>
 <p>单参数形式</p>
 </blockquote>
 <h2 id="第一类曲面积分"><a href="#第一类曲面积分" class="headerlink" title="第一类曲面积分"></a>第一类曲面积分</h2><ul>
-<li><p>$z=z(x,y)$<br>$\iint_c f(x,y,z)ds=\iint_{D_{xy}}f(x,y,z(x,y))\sqrt{1+z_x^2+z_y^2}dxdy$</p>
+<li><p>$z=z(x,y)$<br>$\iint<em>c f(x,y,z)ds=\iint</em>{D_{xy}}f(x,y,z(x,y))\sqrt{1+z_x^2+z_y^2}dxdy$</p>
 </li>
 <li><p>$x=x(u,v)$</p>
 <ul>
-<li>$\iint_c f(x,y,z)ds=\iint_{D_{uv}}f(x(u,v),y(u,v),z(u,v))\sqrt{EG-F^2}dudv$<blockquote>
+<li>$\iint<em>c f(x,y,z)ds=\iint</em>{D_{uv}}f(x(u,v),y(u,v),z(u,v))\sqrt{EG-F^2}dudv$<blockquote>
 <p>$E=r_u \cdot r_u…$</p>
 </blockquote>
 </li>
-<li>$\iint_c f(x,y,z)ds=\iint_{D_{uv}}f(x(u,v),y(u,v),z(u,v))\sqrt{A^2+B^2+C^2}dudv$<blockquote>
+<li>$\iint<em>c f(x,y,z)ds=\iint</em>{D_{uv}}f(x(u,v),y(u,v),z(u,v))\sqrt{A^2+B^2+C^2}dudv$<blockquote>
 <p>$A=\frac{\partial(y,z)}{\partial(u,v)},…(x,y,z)轮换$</p>
 </blockquote>
 </li>
@@ -283,8 +279,8 @@
 <blockquote>
 <p>挖 补 围</p>
 </blockquote>
-<h2 id="平面区域的面积公式"><a href="#平面区域的面积公式" class="headerlink" title="平面区域的面积公式"></a>平面区域的面积公式</h2><p>$A_D=\iint_D dxdy=-\oint_{C^+}ydx=\oint_{C^+}xdy=\frac1 2\oint_{C^+}xdy-ydx$</p>
-<h2 id="平面曲线积分与路径的无关性"><a href="#平面曲线积分与路径的无关性" class="headerlink" title="平面曲线积分与路径的无关性"></a>平面曲线积分与路径的无关性</h2><p><img src="/2022/04/13/higher%20mathematics/%E6%9B%B2%E7%BA%BF%E7%A7%AF%E5%88%86%E5%92%8C%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86/2022-04-27-11-20-29.png" alt></p>
+<h2 id="平面区域的面积公式"><a href="#平面区域的面积公式" class="headerlink" title="平面区域的面积公式"></a>平面区域的面积公式</h2><p>$A<em>D=\iint_D dxdy=-\oint</em>{C^+}ydx=\oint<em>{C^+}xdy=\frac1 2\oint</em>{C^+}xdy-ydx$</p>
+<h2 id="平面曲线积分与路径的无关性"><a href="#平面曲线积分与路径的无关性" class="headerlink" title="平面曲线积分与路径的无关性"></a>平面曲线积分与路径的无关性</h2><p><img src="/.com//2022-04-27-11-20-29.png" alt></p>
 <h2 id="全微分求积"><a href="#全微分求积" class="headerlink" title="全微分求积"></a>全微分求积</h2><blockquote>
 <p>先验证$Q_x=P_y$</p>
 </blockquote>
@@ -298,15 +294,15 @@
 <blockquote>
 <p>积分因子</p>
 </blockquote>
-<h2 id="Gauss-公式"><a href="#Gauss-公式" class="headerlink" title="Gauss 公式"></a>Gauss 公式</h2><p>$\oiint_{S+}Pdydz+Qdzdx+Rdxdy=\iiint_{\Omega}=(\displaystyle\frac{\partial P}{\partial x}+\displaystyle\frac{\partial Q}{\partial y})+\displaystyle\frac{\partial R}{\partial z}dV$</p>
+<h2 id="Gauss-公式"><a href="#Gauss-公式" class="headerlink" title="Gauss 公式"></a>Gauss 公式</h2><p>$\oiint<em>{S+}Pdydz+Qdzdx+Rdxdy=\iiint</em>{\Omega}=(\displaystyle\frac{\partial P}{\partial x}+\displaystyle\frac{\partial Q}{\partial y})+\displaystyle\frac{\partial R}{\partial z}dV$</p>
 <h3 id="体积计算公式"><a href="#体积计算公式" class="headerlink" title="体积计算公式"></a>体积计算公式</h3><p>$V=\frac 1 3 \oiint_{S+}xdydz+ydzdx+zdxdy$</p>
 <h3 id="散度"><a href="#散度" class="headerlink" title="散度"></a>散度</h3><p>$div F=\frac{\partial F}{\partial x}+ \frac{\partial F}{\partial y}+\frac{\partial F}{\partial z}$</p>
-<h3 id="Stokes-定理"><a href="#Stokes-定理" class="headerlink" title="Stokes 定理"></a>Stokes 定理</h3><p>$\oint_{\partial \Sigma+}Pdx+Qdy+Rdz=\iint_{\Sigma}(\displaystyle\frac{\partial R}{\partial y}-\displaystyle\frac{\partial Q}{\partial z})dydz+(\displaystyle\frac{\partial P}{\partial z}-\displaystyle\frac{\partial R}{\partial x})dzdx+(\displaystyle\frac{\partial Q}{\partial x}-\displaystyle\frac{\partial P}{\partial y})dxdy$</p>
+<h3 id="Stokes-定理"><a href="#Stokes-定理" class="headerlink" title="Stokes 定理"></a>Stokes 定理</h3><p>$\oint<em>{\partial \Sigma+}Pdx+Qdy+Rdz=\iint</em>{\Sigma}(\displaystyle\frac{\partial R}{\partial y}-\displaystyle\frac{\partial Q}{\partial z})dydz+(\displaystyle\frac{\partial P}{\partial z}-\displaystyle\frac{\partial R}{\partial x})dzdx+(\displaystyle\frac{\partial Q}{\partial x}-\displaystyle\frac{\partial P}{\partial y})dxdy$</p>
 <h3 id="旋度"><a href="#旋度" class="headerlink" title="旋度"></a>旋度</h3><blockquote>
 <p>rot/cult</p>
 </blockquote>
 <p>$(\displaystyle\frac{\partial R}{\partial y}-\displaystyle\frac{\partial Q}{\partial z},\displaystyle\frac{\partial P}{\partial z}-\displaystyle\frac{\partial R}{\partial x},<br>\displaystyle\frac{\partial Q}{\partial x}-\displaystyle\frac{\partial P}{\partial y})$</p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>$\int_{\partial \Sigma}u=\int_{\Sigma}du$</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>$\int<em>{\partial \Sigma}u=\int</em>{\Sigma}du$</p>
 
     </div>
 
@@ -406,14 +402,14 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">43</span>
+          <span class="site-state-item-count">57</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">14</span>
+        <span class="site-state-item-count">15</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
@@ -446,7 +442,7 @@
 <div class="copyright">
   
   &copy; 
-  <span itemprop="copyrightYear">2023</span>
+  <span itemprop="copyrightYear">2024</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
