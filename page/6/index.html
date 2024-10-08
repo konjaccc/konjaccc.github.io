@@ -132,7 +132,7 @@
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">57</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">59</span></a>
 
   </li>
         <li class="menu-item menu-item-resources">
@@ -165,6 +165,225 @@
 
           <div class="content index posts-expand">
             
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/03/19/higher%20mathematics/%E9%87%8D%E7%A7%AF%E5%88%86/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Konjaccc">
+      <meta itemprop="description" content="QwQ">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Konjaccc の blogs">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/03/19/higher%20mathematics/%E9%87%8D%E7%A7%AF%E5%88%86/" class="post-title-link" itemprop="url">重积分</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-03-19 10:58:33" itemprop="dateCreated datePublished" datetime="2022-03-19T10:58:33+08:00">2022-03-19</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2024-09-26 09:57:10" itemprop="dateModified" datetime="2024-09-26T09:57:10+08:00">2024-09-26</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/higher-mathematics/" itemprop="url" rel="index"><span itemprop="name">higher mathematics</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><img src="/.com//2022-05-30-09-15-50.png" alt></p>
+<h2 id="性质"><a href="#性质" class="headerlink" title="性质"></a>性质</h2><blockquote>
+<p>线性/可加/保序/</p>
+</blockquote>
+<h3 id="积分中值定理"><a href="#积分中值定理" class="headerlink" title="积分中值定理"></a>积分中值定理</h3><p>$\iint_Df(x,y)g(x,y)d\sigma=f(\epsilon,\eta)\iint_Dg(x,y)d\sigma$</p>
+<p><img src="/.com//2022-04-08-15-04-58.png" alt></p>
+<h2 id="计算"><a href="#计算" class="headerlink" title="计算"></a>计算</h2><p>转化成二次积分</p>
+<h3 id="技巧"><a href="#技巧" class="headerlink" title="技巧"></a>技巧</h3><blockquote>
+<p>积分换序/区域划分/对称性质(区域/奇偶/轮换)/变量替换/补</p>
+</blockquote>
+<ul>
+<li>变量替换<br>$\iint<em>Df(x,y)dxdy=\iint</em>{D’}f(x(u,v),y(u,v))|\displaystyle\frac{\partial(x,y)}{\partial(u,v)}|dudv$<br><code>D&#39;</code>定限很重要！！</li>
+<li>极坐标<br>  $\iint<em>Df(x,y)dxdy=\iint</em>{D’}f(r cos\theta,r sin\theta)|r|d\theta dr$</li>
+</ul>
+<p><img src="/.com//2022-03-28-08-17-23.png" alt></p>
+<blockquote>
+<p>用二重积分夹逼求出定积分~</p>
+</blockquote>
+<h2 id="三重积分"><a href="#三重积分" class="headerlink" title="三重积分"></a>三重积分</h2><ul>
+<li><p>柱线法/坐标面投影法<br>$\iiint<em>Df(x,y,z)dV=\int_a^bdx\int</em>{y<em>1(x)}^{y_2(x)}dy\int</em>{z_1(x,y)}^{z_2(x,y)}dz$</p>
+</li>
+<li><p>截面法<br>$\int<em>{h_1}^{h_2}F(z)dz=\int</em>{h<em>1}^{h_2}dz\iint</em>{D_z}f(x,y,z)dxdy$</p>
+</li>
+</ul>
+<h3 id="对称性-变量代换-略"><a href="#对称性-变量代换-略" class="headerlink" title="对称性 变量代换 略"></a><em>对称性 变量代换 略</em></h3><h4 id="柱面坐标系"><a href="#柱面坐标系" class="headerlink" title="柱面坐标系"></a>柱面坐标系</h4><p>$(r,\theta,z)$<br>  $\iint<em>Df(x,y,z)dxdy=\iint</em>{D’}f(r cos\theta,r sin\theta,z)|r|d\theta dr dz$</p>
+<blockquote>
+<p>两项平方和</p>
+<h4 id="球面坐标系"><a href="#球面坐标系" class="headerlink" title="球面坐标系"></a>球面坐标系</h4><p>$(\rho,\phi,\theta)$<br>  $\iint<em>Df(x,y,z)dxdy=\iint</em>{D’}f(\rho sin\phi cos\theta,\rho sin \phi sin\theta,\rho cos \phi)\rho^2 sin \phi d \rho d \phi d\theta $</p>
+<p>三项平方和<br>注意 $\phi$ 是与z轴夹角</p>
+</blockquote>
+<h1 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h1><h2 id="曲面面积"><a href="#曲面面积" class="headerlink" title="曲面面积"></a>曲面面积</h2><ul>
+<li><p>$z=f(x,y)$<br>$\bold{n}={z_x,z_y,-1}$<br>$S=\iint_D \sqrt{1+z_x^2+z_y^2}dxdy $</p>
+</li>
+<li><p>$x=x(u,v),y=y(u,v),z=z(u,v)$<br>$S=\iint_D \sqrt{EG-F^2}$</p>
+<p>$r=r(u,v)=r(x(u,v),y(u,v),z(u,v))$</p>
+<p>$n=r_u \times r_v=(A,B,C)$</p>
+<p>$s=\iint<em>{D</em>{uv}}\sqrt{A^2+B^2+C^2}dudv$</p>
+<blockquote>
+<p>$\displaystyle\frac{\partial(y,z)}{u,v}(A),\displaystyle\frac{\partial(z,x)}{u,v}(B),\displaystyle\frac{\partial(x,y)}{u,v}(C)$至少一个非0，S为光滑曲面</p>
+</blockquote>
+</li>
+</ul>
+<p><img src="/.com//2022-04-11-08-10-46.png" alt></p>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({ tex2jax: {inlineMath: [['$', '$']]}, messageStyle: "none" });
+</script>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/03/19/higher%20mathematics/%E7%A7%AF%E5%88%86/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Konjaccc">
+      <meta itemprop="description" content="QwQ">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Konjaccc の blogs">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/03/19/higher%20mathematics/%E7%A7%AF%E5%88%86/" class="post-title-link" itemprop="url">积分</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-03-19 10:58:33" itemprop="dateCreated datePublished" datetime="2022-03-19T10:58:33+08:00">2022-03-19</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-05-13 15:35:37" itemprop="dateModified" datetime="2022-05-13T15:35:37+08:00">2022-05-13</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/higher-mathematics/" itemprop="url" rel="index"><span itemprop="name">higher mathematics</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="定积分"><a href="#定积分" class="headerlink" title="定积分"></a>定积分</h2><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><p>分划 $\to$ 近似和 $\to$ 取极限</p>
+<p><strong>$\lambda=max_{1\le i \le n}{\Delta x_i}$</strong><br><strong>$A=lim<em>{\lambda \to 0}\sum</em>{i=1}^{n}f(\varepsilon_i)\Delta x_i$</strong> $\int_a^{b}f(x)dx$<br>有极限：<strong>黎曼可积</strong> :$\in R[a,b]$</p>
+<ul>
+<li>上下限，积分区间，被积函数，积分变量 略</li>
+</ul>
+<p>教材</p>
+<ul>
+<li>[ ] 例5.3<h3 id="性质"><a href="#性质" class="headerlink" title="性质"></a>性质</h3><h4 id="施瓦兹不等式-Schwarz"><a href="#施瓦兹不等式-Schwarz" class="headerlink" title="施瓦兹不等式(Schwarz)"></a>施瓦兹不等式(Schwarz)</h4>$f,g \in C[a,b]:(\int_a^bf(x)g(x)dx)^2&lt;=\int_a^bf^2(x)\cdot \int_a^bg^2(x)$</li>
+</ul>
+<h4 id="积分中值定理"><a href="#积分中值定理" class="headerlink" title="积分中值定理"></a>积分中值定理</h4><p>$g$不变号！</p>
+<h2 id="变上限积分"><a href="#变上限积分" class="headerlink" title="变上限积分"></a>变上限积分</h2><ul>
+<li>[ ] 可积的变上限积分连续，连续的变上限积分可导 <h4 id="牛顿-莱布尼兹公式-微积分基本定理"><a href="#牛顿-莱布尼兹公式-微积分基本定理" class="headerlink" title="牛顿-莱布尼兹公式(微积分基本定理)"></a>牛顿-莱布尼兹公式(微积分基本定理)</h4><h4 id="求导"><a href="#求导" class="headerlink" title="求导"></a>求导</h4>$\frac{d}{dx}\int_{\psi(x)}^{\phi(x)}f(t)dt=f[\phi(x)]\phi’(x)-f[\psi(x)]\psi’(x)$<h2 id="不定积分"><a href="#不定积分" class="headerlink" title="不定积分"></a>不定积分</h2><ul>
+<li>[ ] 有限个断点不改变积分<h3 id="第一换元法-凑微分法"><a href="#第一换元法-凑微分法" class="headerlink" title="第一换元法(凑微分法)"></a>第一换元法(凑微分法)</h3></li>
+</ul>
+</li>
+</ul>
+<p>乘法形式</p>
+<h3 id="第二换元法"><a href="#第二换元法" class="headerlink" title="第二换元法"></a>第二换元法</h3><p>三角换元<br>根式换元<br>倒数代换</p>
+<h3 id="分部积分法"><a href="#分部积分法" class="headerlink" title="分部积分法"></a>分部积分法</h3><h2 id><a href="#" class="headerlink" title="#"></a>#</h2><ul>
+<li>有理函数：部分分式之和</li>
+<li>万能代换 $t=tan \frac x 2$<h1 id="-1"><a href="#-1" class="headerlink" title="#"></a>#</h1><h3 id="沃利斯-Wallis-公式"><a href="#沃利斯-Wallis-公式" class="headerlink" title="沃利斯(Wallis)公式"></a>沃利斯(Wallis)公式</h3></li>
+</ul>
+<p>$I_n=\int_0^\frac \pi 2sin^nx=\int_0^\frac \pi 2cos^nx=\displaystyle\frac{(n-1)!!}{n!!}[*(\frac \pi 2),n偶]$</p>
+<h2 id="反常积分"><a href="#反常积分" class="headerlink" title="反常积分"></a>反常积分</h2><h3 id="-2"><a href="#-2" class="headerlink" title=" "></a> </h3><p>$\int_a^{+\infty}\displaystyle\frac{dx}{x^p} $<br>p&gt;1收敛 p&lt;=1 发散<br>奇点：任意邻域无界</p>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({ tex2jax: {inlineMath: [['$', '$']]}, messageStyle: "none" });
+</script>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
       
   
   
@@ -1242,7 +1461,7 @@ v_1 & v_2 & v_3 \\
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">57</span>
+          <span class="site-state-item-count">59</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>

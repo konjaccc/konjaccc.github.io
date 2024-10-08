@@ -132,7 +132,7 @@
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">57</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">59</span></a>
 
   </li>
         <li class="menu-item menu-item-resources">
@@ -165,6 +165,220 @@
 
           <div class="content index posts-expand">
             
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/04/25/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Konjaccc">
+      <meta itemprop="description" content="QwQ">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Konjaccc の blogs">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/04/25/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" class="post-title-link" itemprop="url">数据结构</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-04-25 10:15:32" itemprop="dateCreated datePublished" datetime="2022-04-25T10:15:32+08:00">2022-04-25</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-06-06 21:22:06" itemprop="dateModified" datetime="2022-06-06T21:22:06+08:00">2022-06-06</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/programs/" itemprop="url" rel="index"><span itemprop="name">programs</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h2><h2 id="线性"><a href="#线性" class="headerlink" title="线性"></a>线性</h2><h2 id="树"><a href="#树" class="headerlink" title="树"></a>树</h2><h2 id="动态查找表"><a href="#动态查找表" class="headerlink" title="动态查找表"></a>动态查找表</h2><h3 id="二叉查找树-二叉排序树"><a href="#二叉查找树-二叉排序树" class="headerlink" title="二叉查找树/二叉排序树"></a>二叉查找树/二叉排序树</h3><p>左节点&lt;根&lt;右键点<br>存储：指针 链式<br>查找/插入<br>删除：两个子节点时：找到左节点的最大值或右节点的最小值作为替换，删掉那个节点<br>tip: 注意插入和删除时的引用</p>
+<h3 id="AVL-树-平衡树"><a href="#AVL-树-平衡树" class="headerlink" title="AVL 树/平衡树"></a>AVL 树/平衡树</h3><p>左右子树高度差不超过1<br>LL/RR: 单旋转 把该子树转成当前父节点 把子树中的中间子树移给它原来的爸爸</p>
+<p>LR/RL: 双旋转 先对不平衡的子树反单旋转 再对根节点单旋转</p>
+<h2 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h2><h3 id="插入排序"><a href="#插入排序" class="headerlink" title="插入排序"></a>插入排序</h3><h4 id="直接插入排序"><a href="#直接插入排序" class="headerlink" title="直接插入排序"></a>直接插入排序</h4><h4 id="二分插入排序"><a href="#二分插入排序" class="headerlink" title="二分插入排序"></a>二分插入排序</h4><ul>
+<li>插入过程依旧O(n)</li>
+</ul>
+<h4 id="希尔排序"><a href="#希尔排序" class="headerlink" title="希尔排序"></a>希尔排序</h4><p>step 多轮插入 $h_1=1$</p>
+<p>希尔建议: N/2<br>O(N^2) O(N^{1.5}) O(N^{1.25})</p>
+<h3 id="选择排序"><a href="#选择排序" class="headerlink" title="选择排序"></a>选择排序</h3><p>略</p>
+<h3 id="堆排序"><a href="#堆排序" class="headerlink" title="堆排序"></a>堆排序</h3><p>O(NlogN)<br>出堆的放在数组最后</p>
+<h3 id="交换排序"><a href="#交换排序" class="headerlink" title="交换排序"></a>交换排序</h3><h4 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h4><p>跳出</p>
+<h4 id="快速排序"><a href="#快速排序" class="headerlink" title="快速排序"></a>快速排序</h4><h2 id="外部查找"><a href="#外部查找" class="headerlink" title="外部查找"></a>外部查找</h2><blockquote>
+<p>磁带: 保存</p>
+<p>磁盘: 磁道 柱面 扇区</p>
+</blockquote>
+<h3 id="B树"><a href="#B树" class="headerlink" title="B树"></a>B树</h3><p>根节点儿子数: 0, 2 ~ m<br>内部结点: $[m/2]\le s \le m$<br>结点:$(n,A_0,(K_1, R_1),A_1,\cdots,A_n)$</p>
+<h4 id="查找"><a href="#查找" class="headerlink" title="查找"></a>查找</h4><p>lue</p>
+<h4 id="插入"><a href="#插入" class="headerlink" title="插入"></a>插入</h4><ul>
+<li>未满 直接插</li>
+<li><p>已满 插完分裂，父节点s+1，继续往上判断<br>  也可以寄养</p>
+<h4 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h4></li>
+<li><p>非底层 找右子树最左/左子树最右代替</p>
+</li>
+<li>底层 若删完$s&lt;[M/2]-1$ 问邻居节点借/合并</li>
+</ul>
+<h3 id="B-树"><a href="#B-树" class="headerlink" title="B+树"></a>B+树</h3><p>数据存于叶子节点 其它层为索引<br>m阶<br>l: 数据块大小$[[l/2],l]$<br>最坏访问$log_{M/2}N+1$</p>
+<h4 id="查找-1"><a href="#查找-1" class="headerlink" title="查找"></a>查找</h4><h4 id="插入-1"><a href="#插入-1" class="headerlink" title="插入"></a>插入</h4><ul>
+<li>未满 直接插</li>
+<li>已满 插完分裂，父节点s+1，继续往上判断<br>  也可以寄养</li>
+</ul>
+<h4 id="删除-1"><a href="#删除-1" class="headerlink" title="删除"></a>删除</h4><p>同B树 领养/合并</p>
+<h2 id="外部排序"><a href="#外部排序" class="headerlink" title="外部排序"></a>外部排序</h2><h3 id="归并排序"><a href="#归并排序" class="headerlink" title="归并排序"></a>归并排序</h3><ul>
+<li><p>置换选择<br>适用于较有序的数据，分成不同排序段</p>
+</li>
+<li><p>多阶段归并 斐波那契数列分解</p>
+</li>
+</ul>
+<h2 id="图"><a href="#图" class="headerlink" title="图"></a>图</h2><h3 id="存储"><a href="#存储" class="headerlink" title="存储"></a>存储</h3><p>邻接矩阵 邻接表</p>
+<h3 id="遍历"><a href="#遍历" class="headerlink" title="遍历"></a>遍历</h3><p>DFS BFS<br>O(|E|+|V|)<br>O(|V|^2)<br>欧拉路径(回路)<br>欧拉回路计算方法: 拼接路径<br>clone函数<br>外部函数<br>内部函数</p>
+<h3 id="有向图的连通性"><a href="#有向图的连通性" class="headerlink" title="有向图的连通性"></a>有向图的连通性</h3><p>dfs一遍后用后序标号<br>把每个树的最大标号逆向后开始dfs</p>
+<h3 id="拓扑排序"><a href="#拓扑排序" class="headerlink" title="拓扑排序"></a>拓扑排序</h3><p>不停输出入度为0的点，更新减边<br>AOV</p>
+<h3 id="关键路径-关键活动"><a href="#关键路径-关键活动" class="headerlink" title="关键路径 关键活动"></a>关键路径 关键活动</h3><p>两个拓扑<br>AOE</p>
+<h1 id="树-1"><a href="#树-1" class="headerlink" title="树"></a>树</h1><ul>
+<li>[x] 空集也是树</li>
+<li>[x] 根不是内部节点</li>
+<li>[x] 度 直接后继节点数</li>
+<li>[x] 根的层次是1</li>
+<li>[x] 树的高度 最大层次</li>
+<li>[x] 节点高度 以其为根的子树高度</li>
+<li>[x] 满二叉树 完全二叉树</li>
+<li>[x] 包裹函数</li>
+<li>[x] 二叉树前中后序的非递归实现</li>
+<li>[x] 算术表达式转树</li>
+<li>[x] 哈夫曼树 不等长编码</li>
+<li>[x] 孩子兄弟链表示法</li>
+<li><p>[x] 森林表示法 把树转成二叉树 把Bi作为Bi-1根节点的右子树</p>
+<h1 id="优先级队列"><a href="#优先级队列" class="headerlink" title="优先级队列"></a>优先级队列</h1></li>
+<li><p>[x] 二叉堆 完全二叉树</p>
+</li>
+<li>[x] buildHeap 先全读入然后对非叶子节点percolateDown O(N)</li>
+<li>[ ] D堆 插入比删除多得多的时候 / 减少内外存交换</li>
+<li>[x] 多服务台排队系统的模拟 取出到达后加上服务时间作为结束时间重新插入优先队列，取出结束时间时使用中服务台— 等待队列(普通队列)</li>
+<li>[x] 合并两个最小化堆的时间复杂度O(logn) 二项堆?? 插入O(1)<h1 id="静态查找表"><a href="#静态查找表" class="headerlink" title="静态查找表"></a>静态查找表</h1></li>
+<li>[x] 插值查找 外部 均匀有序</li>
+<li>[x] 分块查找 外部常用 无需有序</li>
+<li>[x] STL find/binary_search(l,r,x) //vector对象 返回位置指针/TF<h1 id="动态查找表-1"><a href="#动态查找表-1" class="headerlink" title="动态查找表"></a>动态查找表</h1><h2 id="二叉查找树"><a href="#二叉查找树" class="headerlink" title="二叉查找树"></a>二叉查找树</h2></li>
+<li>[x] 插入/删除的时候一定要引用</li>
+<li>[x] 删除 左子树最大/右子树最小</li>
+<li>[x] 平均1.38logn<h2 id="AVL树"><a href="#AVL树" class="headerlink" title="AVL树"></a>AVL树</h2></li>
+<li>[x] 单旋转/多旋转</li>
+<li>[x] 删除时的5种情况<h2 id="散列表"><a href="#散列表" class="headerlink" title="散列表"></a>散列表</h2></li>
+<li>[x] 直接/余数/数字分析/平方取中/折叠</li>
+<li>[x] 迟删除</li>
+<li>[x] 二次探测法 H<em>i+x^2 (负载因子&lt;0.5 H</em>{i-1}+2*i-1)</li>
+<li>[x] 再散列法 两个散列函数</li>
+<li>[x] 开散列表<h1 id="排序-1"><a href="#排序-1" class="headerlink" title="排序"></a>排序</h1><h2 id="希尔排序-1"><a href="#希尔排序-1" class="headerlink" title="希尔排序"></a>希尔排序</h2></li>
+<li>[x] 一个h<em>k 有序的序列经过h</em>{k-1}排序后依旧h_k有序<h2 id="直接选择排序"><a href="#直接选择排序" class="headerlink" title="直接选择排序"></a>直接选择排序</h2></li>
+<li>[x] 不稳定</li>
+</ul>
+<h1 id="图-1"><a href="#图-1" class="headerlink" title="图"></a>图</h1><ul>
+<li>[x] 欧拉回路</li>
+<li>[x] 连通性 dfs 后序编号 逆向dfs</li>
+<li>[x] AOE 先找出拓扑排序，正反都走一下<br>1 2 3 4</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/04/21/CAD/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Konjaccc">
+      <meta itemprop="description" content="QwQ">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Konjaccc の blogs">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/04/21/CAD/" class="post-title-link" itemprop="url">未命名</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-04-21 14:01:14" itemprop="dateCreated datePublished" datetime="2022-04-21T14:01:14+08:00">2022-04-21</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
       
   
   
@@ -908,185 +1122,6 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/04/04/sstream/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Konjaccc">
-      <meta itemprop="description" content="QwQ">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Konjaccc の blogs">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/04/04/sstream/" class="post-title-link" itemprop="url">sstream载入流的小笔记</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2022-04-04 12:49:41 / 修改时间：21:59:12" itemprop="dateCreated datePublished" datetime="2022-04-04T12:49:41+08:00">2022-04-04</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/C/" itemprop="url" rel="index"><span itemprop="name">C++</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="stringstream-载入流"><a href="#stringstream-载入流" class="headerlink" title="stringstream 载入流"></a>stringstream 载入流</h1><hr>
-<h2 id="1-int"><a href="#1-int" class="headerlink" title="1.int"></a>1.int</h2><p>读入当前指针所指的数字后并自动跳过后面的<code>tab</code> <code>\n</code> <code>\0</code><br>如==1 3== 一开始指向1 读完1后指向3</p>
-<h2 id="2-char"><a href="#2-char" class="headerlink" title="2.char"></a>2.char</h2><p>也会跳过空格等，但是无法跳过/读到<code>eof</code>,只能让它强行读下一个<br>==a b c== 读完a指b 读完b指c 读完c还是c 再读一次指向eof</p>
-<ul>
-<li>此条没查到 是我猜的，暂时未与实践矛盾</li>
-</ul>
-<h2 id="3-string"><a href="#3-string" class="headerlink" title="3.string"></a>3.string</h2><p>读入当前位置开始至缓冲结束 类似 <code>.str()</code><br>移动到下一个开始处<br>==abc cba== 读完abc后指向c</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/04/01/Physics/formulas/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Konjaccc">
-      <meta itemprop="description" content="QwQ">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Konjaccc の blogs">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/04/01/Physics/formulas/" class="post-title-link" itemprop="url">physics_formulas</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2022-04-01 12:33:00" itemprop="dateCreated datePublished" datetime="2022-04-01T12:33:00+08:00">2022-04-01</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-06-04 08:32:37" itemprop="dateModified" datetime="2022-06-04T08:32:37+08:00">2022-06-04</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/physics/" itemprop="url" rel="index"><span itemprop="name">physics</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="刚体力学"><a href="#刚体力学" class="headerlink" title="刚体力学"></a>刚体力学</h1><h2 id="定轴转动"><a href="#定轴转动" class="headerlink" title="定轴转动"></a>定轴转动</h2><p>$a<em>t=r</em>\perp \beta$<br>$a<em>n=r</em>\perp \omega^2$</p>
-<blockquote>
-<p>与一维匀变速运动相似</p>
-</blockquote>
-<h2 id="刚体定轴转动的角动量定理"><a href="#刚体定轴转动的角动量定理" class="headerlink" title="刚体定轴转动的角动量定理"></a>刚体定轴转动的角动量定理</h2><ul>
-<li><p>$M_z=\displaystyle\frac{dL_z}{dt}$</p>
-</li>
-<li><p>$\bold{L_i}=\bold{R_i} \times \Delta m_i\bold{v_i}$<br>  $L_z=(\sum_i \Delta m_i r_i^2)\omega=J\omega$</p>
-</li>
-<li><p>$J=\sum_i \Delta m_i r_i^2$</p>
-</li>
-</ul>
-<h2 id="刚体定轴转动定理"><a href="#刚体定轴转动定理" class="headerlink" title="刚体定轴转动定理"></a>刚体定轴转动定理</h2><p>$M=J \beta$</p>
-<p>$\int<em>{t_0}^t Mdt=\int</em>{J_0\omega_0}^{J \omega}d(J \omega)=J \omega-J_0 \omega_0$</p>
-<ul>
-<li>remember:</li>
-<li><ul>
-<li>中心垂直转轴 $J=\frac{1}{12}ml^2$</li>
-</ul>
-</li>
-<li><ul>
-<li>一端垂直转轴 $J=\frac{1}{3}ml^2$</li>
-</ul>
-</li>
-</ul>
-<h2 id="平行轴定理"><a href="#平行轴定理" class="headerlink" title="平行轴定理"></a>平行轴定理</h2><p>$J=J_c+md^2$</p>
-<blockquote>
-<p>$J_c$ 为转轴通过质心C时的转动惯量</p>
-<h2 id="垂直轴定理"><a href="#垂直轴定理" class="headerlink" title="垂直轴定理"></a>垂直轴定理</h2><p>厚度可忽略的薄板</p>
-</blockquote>
-<p>$J_z=J_x+J_y$</p>
-<h1 id="热力学"><a href="#热力学" class="headerlink" title="热力学"></a>热力学</h1><h2 id="准平衡"><a href="#准平衡" class="headerlink" title="准平衡"></a>准平衡</h2><p>$A=\int pdV$</p>
-<h2 id="过程分析"><a href="#过程分析" class="headerlink" title="过程分析"></a>过程分析</h2><h3 id="等体过程"><a href="#等体过程" class="headerlink" title="等体过程"></a>等体过程</h3>
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -1158,7 +1193,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">57</span>
+          <span class="site-state-item-count">59</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>

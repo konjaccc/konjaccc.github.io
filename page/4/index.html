@@ -132,7 +132,7 @@
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">57</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">59</span></a>
 
   </li>
         <li class="menu-item menu-item-resources">
@@ -165,6 +165,185 @@
 
           <div class="content index posts-expand">
             
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/04/04/sstream/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Konjaccc">
+      <meta itemprop="description" content="QwQ">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Konjaccc の blogs">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/04/04/sstream/" class="post-title-link" itemprop="url">sstream载入流的小笔记</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2022-04-04 12:49:41 / 修改时间：21:59:12" itemprop="dateCreated datePublished" datetime="2022-04-04T12:49:41+08:00">2022-04-04</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/C/" itemprop="url" rel="index"><span itemprop="name">C++</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="stringstream-载入流"><a href="#stringstream-载入流" class="headerlink" title="stringstream 载入流"></a>stringstream 载入流</h1><hr>
+<h2 id="1-int"><a href="#1-int" class="headerlink" title="1.int"></a>1.int</h2><p>读入当前指针所指的数字后并自动跳过后面的<code>tab</code> <code>\n</code> <code>\0</code><br>如==1 3== 一开始指向1 读完1后指向3</p>
+<h2 id="2-char"><a href="#2-char" class="headerlink" title="2.char"></a>2.char</h2><p>也会跳过空格等，但是无法跳过/读到<code>eof</code>,只能让它强行读下一个<br>==a b c== 读完a指b 读完b指c 读完c还是c 再读一次指向eof</p>
+<ul>
+<li>此条没查到 是我猜的，暂时未与实践矛盾</li>
+</ul>
+<h2 id="3-string"><a href="#3-string" class="headerlink" title="3.string"></a>3.string</h2><p>读入当前位置开始至缓冲结束 类似 <code>.str()</code><br>移动到下一个开始处<br>==abc cba== 读完abc后指向c</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/04/01/Physics/formulas/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Konjaccc">
+      <meta itemprop="description" content="QwQ">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Konjaccc の blogs">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/04/01/Physics/formulas/" class="post-title-link" itemprop="url">physics_formulas</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-04-01 12:33:00" itemprop="dateCreated datePublished" datetime="2022-04-01T12:33:00+08:00">2022-04-01</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-06-04 08:32:37" itemprop="dateModified" datetime="2022-06-04T08:32:37+08:00">2022-06-04</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/physics/" itemprop="url" rel="index"><span itemprop="name">physics</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="刚体力学"><a href="#刚体力学" class="headerlink" title="刚体力学"></a>刚体力学</h1><h2 id="定轴转动"><a href="#定轴转动" class="headerlink" title="定轴转动"></a>定轴转动</h2><p>$a<em>t=r</em>\perp \beta$<br>$a<em>n=r</em>\perp \omega^2$</p>
+<blockquote>
+<p>与一维匀变速运动相似</p>
+</blockquote>
+<h2 id="刚体定轴转动的角动量定理"><a href="#刚体定轴转动的角动量定理" class="headerlink" title="刚体定轴转动的角动量定理"></a>刚体定轴转动的角动量定理</h2><ul>
+<li><p>$M_z=\displaystyle\frac{dL_z}{dt}$</p>
+</li>
+<li><p>$\bold{L_i}=\bold{R_i} \times \Delta m_i\bold{v_i}$<br>  $L_z=(\sum_i \Delta m_i r_i^2)\omega=J\omega$</p>
+</li>
+<li><p>$J=\sum_i \Delta m_i r_i^2$</p>
+</li>
+</ul>
+<h2 id="刚体定轴转动定理"><a href="#刚体定轴转动定理" class="headerlink" title="刚体定轴转动定理"></a>刚体定轴转动定理</h2><p>$M=J \beta$</p>
+<p>$\int<em>{t_0}^t Mdt=\int</em>{J_0\omega_0}^{J \omega}d(J \omega)=J \omega-J_0 \omega_0$</p>
+<ul>
+<li>remember:</li>
+<li><ul>
+<li>中心垂直转轴 $J=\frac{1}{12}ml^2$</li>
+</ul>
+</li>
+<li><ul>
+<li>一端垂直转轴 $J=\frac{1}{3}ml^2$</li>
+</ul>
+</li>
+</ul>
+<h2 id="平行轴定理"><a href="#平行轴定理" class="headerlink" title="平行轴定理"></a>平行轴定理</h2><p>$J=J_c+md^2$</p>
+<blockquote>
+<p>$J_c$ 为转轴通过质心C时的转动惯量</p>
+<h2 id="垂直轴定理"><a href="#垂直轴定理" class="headerlink" title="垂直轴定理"></a>垂直轴定理</h2><p>厚度可忽略的薄板</p>
+</blockquote>
+<p>$J_z=J_x+J_y$</p>
+<h1 id="热力学"><a href="#热力学" class="headerlink" title="热力学"></a>热力学</h1><h2 id="准平衡"><a href="#准平衡" class="headerlink" title="准平衡"></a>准平衡</h2><p>$A=\int pdV$</p>
+<h2 id="过程分析"><a href="#过程分析" class="headerlink" title="过程分析"></a>过程分析</h2><h3 id="等体过程"><a href="#等体过程" class="headerlink" title="等体过程"></a>等体过程</h3>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
       
   
   
@@ -1132,171 +1311,6 @@ f_z(z)=  \left\{
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/03/19/Physics/note/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Konjaccc">
-      <meta itemprop="description" content="QwQ">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Konjaccc の blogs">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/03/19/Physics/note/" class="post-title-link" itemprop="url">未命名</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2022-03-19 10:58:34" itemprop="dateCreated datePublished" datetime="2022-03-19T10:58:34+08:00">2022-03-19</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-06-04 08:32:30" itemprop="dateModified" datetime="2022-06-04T08:32:30+08:00">2022-06-04</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>$\Delta r=|r_2|-|r_1| &lt;|\Delta r|$<br><img src="/.com//2022-02-23-19-40-53.png" alt></p>
-<p><img src="/.com//2022-02-23-22-27-33.png" alt><br><img src="/.com//2022-03-24-11-35-15.png" alt><br><img src="/.com//2022-03-24-10-58-23.png" alt><br><img src="/.com//2022-03-29-08-35-07.png" alt><br><img src="/.com//2022-03-29-08-39-47.png" alt><br><img src="/.com//2022-03-29-09-43-00.png" alt></p>
-<p><img src="/.com//2022-03-31-11-38-28.png" alt><br><img src="/.com//2022-04-07-11-41-54.png" alt></p>
-<p><img src="/.com//2022-04-12-09-41-31.png" alt><br><img src="/.com//2022-04-14-11-46-10.png" alt><br><img src="/.com//2022-04-19-09-45-37.png" alt><br><img src="/.com//2022-04-21-11-41-54.png" alt><br><img src="/.com//2022-04-24-09-35-38.png" alt><br><img src="/.com//2022-04-24-09-37-27.png" alt><br><img src="/.com//2022-04-26-08-12-44.png" alt><br><img src="/.com//2022-04-26-09-41-06.png" alt><br><img src="/.com//2022-04-28-11-45-12.png" alt><br><img src="/.com//2022-05-05-11-46-55.png" alt><br><img src="/.com//2022-05-10-09-42-33.png" alt><br><img src="/.com//2022-05-12-11-43-32.png" alt><br><img src="/.com//2022-05-17-11-43-32.png" alt><br><img src="/.com//2022-05-19-10-32-13.png" alt><br><img src="/.com//2022-05-19-11-39-33.png" alt><br><img src="/.com//2022-05-24-09-46-16.png" alt><br>2022-05-31-09-43-03.png</p>
-<h2 id="2022-06-02-11-40-05-png"><a href="#2022-06-02-11-40-05-png" class="headerlink" title="2022-06-02-11-40-05.png"></a>2022-06-02-11-40-05.png</h2><p>打击中心<br>固定点刚好无水平方向力</p>
-<p><img src="/.com//2022-03-29-08-07-17.png" alt></p>
-<blockquote>
-<p>法二！！！</p>
-</blockquote>
-<p><img src="/.com//2022-03-29-08-21-30.png" alt></p>
-<blockquote>
-<p>选取合适的参照(z轴)角动量守恒</p>
-</blockquote>
-<p><img src="/.com//2022-04-14-11-02-08.png" alt></p>
-<ul>
-<li>[ ] 为啥绕质心转</li>
-<li>[ ] a_cx a_cy怎么算 </li>
-</ul>
-<p><img src="/.com//2022-04-14-13-35-06.png" alt></p>
-<p><img src="/.com//2022-04-15-17-01-30.png" alt></p>
-<p><img src="/.com//2022-04-15-17-01-48.png" alt></p>
-<p><img src="/.com//2022-04-15-17-02-02.png" alt></p>
-<blockquote>
-<p>别忘了r^2<br>tip:注意系统角动量守恒要求角动量是关于同一轴的！！！</p>
-</blockquote>
-<p><img src="/.com//2022-04-26-20-10-12.png" alt><br><img src="/.com//2022-04-26-20-13-27.png" alt><br><img src="/.com//2022-04-26-20-14-26.png" alt></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/03/19/Machine%20Learning/PyTorch/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Konjaccc">
-      <meta itemprop="description" content="QwQ">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Konjaccc の blogs">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/03/19/Machine%20Learning/PyTorch/" class="post-title-link" itemprop="url">未命名</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2022-03-19 10:58:34" itemprop="dateCreated datePublished" datetime="2022-03-19T10:58:34+08:00">2022-03-19</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-03-16 19:01:20" itemprop="dateModified" datetime="2022-03-16T19:01:20+08:00">2022-03-16</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="PyTorch"><a href="#PyTorch" class="headerlink" title="PyTorch"></a>PyTorch</h1><hr>
-<h2 id="data-reading"><a href="#data-reading" class="headerlink" title="data_reading"></a>data_reading</h2><blockquote>
-<p>torch.utils.data</p>
-</blockquote>
-<ul>
-<li>torch.dataset</li>
-<li>torch.dataloader:  groups of batches<br>shuffle</li>
-</ul>
-<p>.shape() dimensions</p>
-<p>.tensor([[],[]])<br>.from_numpy(np.array([,]))</p>
-<p>.zeros .ones</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -1368,7 +1382,7 @@ f_z(z)=  \left\{
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">57</span>
+          <span class="site-state-item-count">59</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
